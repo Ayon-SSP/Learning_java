@@ -476,8 +476,8 @@ class Exceptions {
 }
 */
 
-import java.sql.SQLOutput;
-import java.util.*;
+// import java.sql.SQLOutput;
+// import java.util.*;
 /*
 class baby {
 
@@ -620,7 +620,7 @@ public class baby {
  */
 
 //Functions
-import java.util.*;
+// import java.util.*;
 //public class baby {
 //    public static int funk(int n){
 //        return n*n;
@@ -869,7 +869,7 @@ public class baby{
     }
 }
 */
-
+/*
 // import java.util.*;
 public class baby {
     public static class person {
@@ -923,23 +923,24 @@ public class baby {
     }
 
 }
+ */
 
 
+// public class baby {
+//     public static void main(String[] args) {
 
+// //        PriorityQueue<Integer> pq = new PriorityQueue<>(); // if you want the smallest value higher priority
+//         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder()); // if you want the smallest value higher priority
 
+//         int[] ranks = {3,4,222,7867,443,1,4,7,86,5,678,};
 
+//         for(int val: ranks){
+//             pq.add(val);
+//         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//         while(pq.size() > 0){
+//             System.out.println(pq.peek());
+//             pq.remove();
+//         }
+//     }
+// }
