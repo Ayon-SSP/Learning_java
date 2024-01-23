@@ -1,3 +1,5 @@
+package multithreading_synchronization;
+
 import java.lang.Thread;
 
 class A extends Thread {
