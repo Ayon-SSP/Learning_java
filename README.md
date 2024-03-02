@@ -1,4 +1,5 @@
 # Java
+- class name's should be in `pascal case` ![case](https://khalilstemmler.com/img/blog/camel-snake-pascal-case/camel-case-snake-case-pascal-case.png)
 
 <!-- steps to run a java file -->
 ## ▶️ Java Program Execution Steps
