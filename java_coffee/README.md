@@ -19,6 +19,22 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 jvm: platform dependent(.class -> native code)
 
+
+
+
+
+
+
+
+
+Learning Source:
+	ref:
+  	- Oracle Docs: https://docs.oracle.com/javase/tutorial
+  	- Kunal OOPs: https://youtube.com/playlist?list=PL9gnSGHSqcno1G3XjUbwzXHL8_EttOuKk&si=wdLQQfKG84VjKypD
+  	- javatpoint: https://www.javatpoint.com/java-oops-concepts
+
+
+
 Architecture: 
 - ![](https://static.javatpoint.com/images/jdk2.png)
   - Java: Development Environment
@@ -142,6 +158,34 @@ public class Main {
 ```
 - Java is a platform independent language. *.class can be shared and runed on any OS.
 - one .java file can have `multiple classes` but only `one public class`.
+
+
+
+
+
+
+
+
+
+
+### Array:
+	- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - OOPS
   - static block: loaded even before object creation.
   - object block: only if we create obj.
@@ -374,6 +418,7 @@ Polymorphism
 		overload the constructor 
 		if you overload constructor you must mention default constructor
 		if you are not adding any constructor by default it calls default constructor Object
+		Arbitrary Number of Arguments: [Link](https://docs.oracle.com/javase/tutorial/java/javaOO/arguments.html)
 4. Overriding Object.toString()-> Greeting/Contact -> to provide custom string on the call of toString()
 ######################################################
 basic: demo
@@ -468,7 +513,10 @@ use all datamember constructor for Reading/retriving data.
 		
 	
 	
-	
+- outside classes canot be static.
+- static methods can only access static variables and methods.
+- static class can only have static methods and variables.
+- static class are always created inside the non-static class.
 	
 	
 	
@@ -496,16 +544,53 @@ counter++=>	++ post increment counter=counter+1 =>it will assign the value and t
 
 
 ### Array
+```java
+public class className extends ParentClass implements Interface1, Interface2{
+	// Fields(class members, Instance variables) [A variable which is created inside the class but outside the method is known as an instance variable. Instance variable doesn't get memory at compile time. It gets memory at runtime when an object or instance is created. That is why it is known as an instance variable.]
+
+	// Constructors
+
+	// Methods (class members, Instance methods, getter and setter methods)
+		// local variables, parameters
+
+	// Blocks(first static block, then instance block)
+		// static block
+		// instance block
+		static {
+
+		}
+		{
+
+		}
+
+	
+	// Nested class
+
+	// Nested interface
+}
+```
 - int arr[]; arr getting defined in the stack
 - arr = new int[5]; and now the memory is allocated in the heap.
 - int arr[] = new int[5]; // 5 is the size of the array
 
-
+- ToWatch: 
+  - Class format: Traner_notes\src\org\training\learn\model\Book.java
+  - Class Object: Traner_notes\src\org\training\OuterClass.java
 
 OOPS:
 ref:
 	- Kunal OOPs: https://youtube.com/playlist?list=PL9gnSGHSqcno1G3XjUbwzXHL8_EttOuKk&si=wdLQQfKG84VjKypD
 	- javatpoint: https://www.javatpoint.com/java-oops-concepts
+	- 
+
+
+
+
+
+
+
+
+
 
 
 - instanceof: test whether the object is an instance of the specified type (class or subclass or interface). || obj instanceof className
@@ -549,7 +634,7 @@ A class in Java can contain: [correct order](C:\CODE\1]_Lets_Compile\3]_learning
 	- ClassName(){this(a = 1, b = 4)} => default constructor
 	- ClassName(int a, int b){} => overloaded constructor
 
-- in `java premitive datatypes` are not created as objects(they are stored in stack it self) but String is created as object. (objects are stored in stack memory) but 10, 2.95, 'a' are `stored directly in the compiled code` cause they are objects.
+- in `java premitive datatypes` are not created as objects(they are stored in stack it self) but String is created as object. (objects are stored in stack memory) but 10, 2.95, 'a', 9_452_123 are `stored directly in the compiled code` cause they are objects.
   - `String str = new String("Hello");` // str is stored on the stack, but the String object "Hello" is stored on the heap
 - what ever things are stored in the stack it give a unique id to it. that unique id -> contains the address of the object in the heap/stored directly in the compiled code.
 - when a non-premitive is `final` we canot reassign it.
@@ -562,7 +647,7 @@ A class in Java can contain: [correct order](C:\CODE\1]_Lets_Compile\3]_learning
   - Box boxweight1 = new BoxWeight(1,2,3,4); // valid all the Box methods and variables are initialized.
   - BoxWeight boxweight1 = new Box(1,2,3); // error BoxWeight.weight is not initialized 
   - you are in boxweight class and you want to set the x, y or z values use super.x = x; super.y = y; super.z = z;.
-  - type objName = new className(); => type: access depends on LHS, object: methods depends on RHS eg. parent obj = new chile(); Funk are called from child() and access/definication and declaration are from parent(). code: Traner_notes\src\Splendor.java
+  - type objName = new className(); => type: access depends on LHS(compile time), object: methods depends on RHS(runtime) eg. parent obj = new chile(); Funk are called from child() and access/definication and declaration are from parent(). code: Traner_notes\src\Splendor.java
 Types of Inheritance:
 	1. Single Inheritance: A -> B
 	2. Multilevel Inheritance: A -> B -> C
@@ -589,6 +674,12 @@ Types of Inheritance:
       - late binding: method call is resolved at runtime
 ### Abstraction
 - Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+#### abstract class
+- A class that is declared as abstract is known as an abstract class. It needs to be extended and its method implemented. It cannot be instantiated.
+- parent will give just the definition not the implementation(body)
+- child class must override the abstract methods || if inheriting any abstract then it must be abstract class
+- Cannot create an object of an abstract class || can't create abstract constructor || static and final methods can be in abstract class cause we can't override them.
+
 
 ### Encapsulation
 - Encapsulation is a process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines.
@@ -606,9 +697,3 @@ Types of Inheritance:
    1. Accessor Method getVal(): returns the value of the variable
    2. Mutator Method setVal(): sets the value of the variable
 3. Abstract Method: abstract void method_name(); (abstract method is a method declared without an implementation)
-
-#### abstract class
-- A class that is declared as abstract is known as an abstract class. It needs to be extended and its method implemented. It cannot be instantiated.
-- parent will give just the definition not the implementation(body)
-- child class must override the abstract methods || if inheriting any abstract then it must be abstract class
-- Cannot create an object of an abstract class || can't create abstract constructor || static and final methods can be in abstract class cause we can't override them.
