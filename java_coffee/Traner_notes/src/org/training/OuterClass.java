@@ -1,6 +1,6 @@
 package org.training;
 /*
- * Non-static && Static class and method
+ * Nested/inner class: Non-static && Static class and method
  */
 public class OuterClass {
     private int outerField;
@@ -9,8 +9,20 @@ public class OuterClass {
         this.outerField = outerField;
     }
 
+    public void display() {
+        System.out.println("Outer class");
+        class LocalClass {
+            public void display() {
+                System.out.println("Local class");
+            }
+        }
+    }
+
+    // use LocalClass
+    
+
     // Non-static nested class
-    public class InnerClass {
+    private class InnerClass {
         private int innerField;
 
         public InnerClass(int innerField) {
@@ -24,19 +36,30 @@ public class OuterClass {
         }
     }
 
+    static int staticInt = 10;
+
     static class InnerStaticMain {
         int innerInt = 10;
         private int innerStaticInt = 20;
     }
 
     public static void main(String[] args) {
-        // inside of the class
+        // inside of the class || static nested class
         InnerStaticMain innerStaticMain = new InnerStaticMain();
-        System.out.println(innerStaticMain.innerStaticInt);
-
+        System.out.println(innerStaticMain.innerStaticInt);        
+        // To access the `static method` out of the class
+        // OuterClass.InnerStaticMain innerStaticMain = new OuterClass.InnerStatic
+        // innerStaticMain.innerStaticInt = 20;
+        
+        
+        // non-static nested class
+        OuterClass.staticInt = 9;
         OuterClass outer = new OuterClass(10);
         OuterClass.InnerClass inner = outer.new InnerClass(20);
         inner.display();
+        // to access the non-static method out of the class or package
+        // OuterClass.InnerClass inner = outer.new InnerClass(20);
+        
 
 
         // outside of the class
@@ -47,6 +70,9 @@ public class OuterClass {
         System.out.println(Greeting.staticInt);
         System.out.println(greeting.defaultInt);
     }
+
+    // use LocalClass
+    
 }
 
 

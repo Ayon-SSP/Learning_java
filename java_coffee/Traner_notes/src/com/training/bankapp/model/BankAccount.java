@@ -63,4 +63,14 @@ public class BankAccount {
         return "BankAccount [accNo=" + accNo + ", accName=" + accName + ", balance=" + balance + "]";
     }
 
+    public double deposit(double amount) {
+		this.balance = this.balance + amount;
+		return this.balance;
+	}
+
+	public double withdraw(double amount) {
+		this.balance = this.balance - amount;
+		return this.balance;
+	}
+
 }

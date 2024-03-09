@@ -25,5 +25,4 @@ public abstract class Parent{
     public static void myStaticMethod() {
         System.out.println("This is a static method");
     }
-    
 }

@@ -1,6 +1,8 @@
 package com.training.bankapp;
 
 import com.training.bankapp.model.BankAccount;
+import com.training.bankapp.model.PayTmAccount;
+// import com.training.bankapp.model.SavingAccount;
 
 /*
  * when class is invoked static block is called first and then constructor is called.
@@ -35,6 +37,10 @@ public class Main {
             * if want to access non-static variable in static function, then we need to create object of class and then access the variable.
             * we can get static variable in static/non-static function. using obj.variablename or classname.variablename or directly variablename. 
         */
+
+		final PayTmAccount payTmAccount=new PayTmAccount(account1);
+		final String msg=payTmAccount.transferMoneyTo(account2, 10000);
+		System.out.println(msg);
     }
 
 }

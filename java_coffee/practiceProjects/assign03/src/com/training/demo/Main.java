@@ -1,5 +1,7 @@
 package com.training.demo;
 
+import java.util.Scanner;
+
 import com.training.demo.model.Product;
 public class Main {
     // Main.java -> Create object of Product Class where Product (id,pid,productName,unitPrice)
