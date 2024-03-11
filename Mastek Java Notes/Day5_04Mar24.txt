@@ -1,0 +1,107 @@
+OOP : Object->Class
+
+class-> Blueprint -> what will be their in real time object
+
+
+Default 
+Default class -> only accessible to the classes within same package 
+public class -> accessible to all classes within same package as well as outside the package
+public class -> we can creet the object of this class any where
+public datmember-> we can access the instance variable/data member/feild variables 
+					of the object any where 
+
+data member-> private only accessible within class 
+getter/setter->public 					
+
+
+public -> any where you can access
+private-> only within the class 
+default-> in same class, classes from the same package
+protected-> inteheritance
+
+
+
+				Greeting
+				-message
+		
+EnglishGreeting 		GermanGreeting		
+	 
+Inheritance 
+if Parent class ahs data member which is having default modifier->package access
+ 1. Accessible to child class present in same package
+ 2. not accessile to child classes out side the package
+ 
+ 
+if protected data member in inheritance
+1. accessible to the classes within the package even if not a child class
+2. accessible to the child classes within the package
+3. accessible to the child classes out side the package 
+
+JavaBeans are java classes
+1. default constructor
+2. private datamember
+3. public getter/setter for private data member
+
+BankApp04
+	BankAccount has two methods withdraw(double) and deposit(double) 
+	Created object of BankAccount and called the methods 
+** Please note its generic operation on bank acccount.
+
+
+OOP give solution to real life scenario/problms
+In reality BankAccount is of two types 
+			a. SalaryAccount -> Zero balance    >=0
+			b. SavingAccount -> Minimum balance >=10000
+
+There is slight change in the withdraw() logic as per the type of bankaccount
+public String withdraw(double amount) {
+
+		final double diffBalance = this.balance - amount;
+		if (diffBalance >= 0) {
+			this.setBalance(diffBalance);
+			return this.accNo + " debited with" + amount + ". Current blance is " + this.balance;
+		}
+		return "Insufficient Balance in account.";
+	}
+In this situation best solution is extend BankAccount and override the withdraw() method
+in child class
+
+Why Inheritance? 
+ To provide scalability to exisiting code
+
+BankApp05
+SavingAccount extends BankAccount
+
+Ensure that parent class constuctors are called
+
+When we are implementing Inheritance, Polymorphism is also acheived
+In below code parent class is looking at child class instance at RUN tIME (Execution)
+BankAccount account=new SavingAccount("Amit",10000.00);
+So whenever we are calling account withdraw() method as below
+	String msg=account.withdraw(10000.00);
+At runtime JVM loads the SavingAccount.withdraw() method 
+This is called as Dynamic Polymorphism
+** Polymorphism is only happens at run time 
+	
+
+
+
+
+
+
+
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+

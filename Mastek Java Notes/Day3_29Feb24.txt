@@ -1,0 +1,136 @@
+Java has own in build classes 
+Problem/Requirement need of different class is their =>Customization 
+OOP
+Abstraction
+Encapsulation
+Inheritance
+Polymorphism		
+######################################################	
+
+1. Class
+	public 
+		private data member/field/instance variable
+		public methods 
+2. Object
+	ClassName objectName=new ClassName();
+3. Constructor
+		Special Method which donot have return type
+		it is always called with new keyword and returns object of the class
+		initializes the datamember/field/instance variable
+		overload the constructor 
+		if you overload constructor you must mention default constructor
+		if you are not adding any constructor by default it calls default constructor Object
+4. Overriding Object.toString()-> Greeting/Contact -> to provide custom string on the call of toString()
+######################################################
+basic: demo
+application : bankapp01...
+
+We need to create 3 bank accounts accNo,accName,balance
+two withdraw() and deposit() >>>> balance
+
+1. 3 Constructor
+	BankAccount()
+	BankAccount(accNo,accName,balance)
+	BankAccount(accName,balance)
+2. use of Static variable
+	static counter=>assign unique values to accno
+######################################################
+project Name: always in small case (followed by some number only during training)
+e.g. bankapp for training bankapp01/demo01
+class Name: PascalCase  Greeting.java, Student.java, BankAccount.java
+object Name: camelCase	greeting,student,bankAccount
+variable : camelCase 	balance
+MethodName: camelCase   withdraw()
+packagename : all small case e.g. com.training.bankapp or com.training.demo
+######################################################
+POJO : Plain old Java Object
+What is POJO?
+Every class in Java is POJO 
+when it is not extending any classes except the serialziation package 
+
+What is JavaBean?
+If any class full fils below its a Java Bean
+0. Class is Pojo where it is exteding till Serializable
+1. Class has default constructor
+2. class has private data members 
+3. class has public getter and setter for private datamembers 
+
+
+Every JavaBean is a Pojo, but not every pojo is java bean
+######################################################
+Java allows overloading of function
+1. Function name is same
+2. There is change in the parameters
+	a. number of parameters
+	b. order of paramenters 
+
+Difference between bankapp01 and bankapp02
+1. In bankapp01 we have used BankAccount(1,"Amit",222222) constructor
+	where we are providing all the details of an object 
+2. In bankapp02 we have created account object using BankAccount("Amit",222222.00) 
+	where we used a static variable to provide the accNo value
+	
+As in Real time when we open an Bank Account, the bank system generates the account number.
+To achieve this same logic through Java Programming we used static Variables
+Why Static Variables?
+1. These are class variables 
+2. Every oject can access them 
+3. Its a single copy
+4. It helped us to auto increment the value of accNo
+
+### Static variable as data member in the BankAccount
+### static variable inside a method
+When on instance/class variable you provide only getter method that variable is ReadOnly
+When on instance/class variable you provide getter and setter method that variable is ReadWrite Editable
+
+//static block which gets called even before an object is created 
+//init satic block where we can do initializatio	
+	
+1. Static	 ->variable,functions, iniUtblock
+2. non static ->variable,functions,initblock
+	
+use default and overloaded constructor (excluding auto generated variable) for : Creation
+use all datamember constructor for Reading/retriving data.
+	Summary
+	1 How to create objects using different construtors
+	2.How to use static and non static variables
+	3.How to use static and non static functions
+	4. Class variable-> static varaibles
+	5. class methods=> static methods in a class
+	6. use of init blocks 
+		a. static=> called only once and used to initialise the static variables
+		b. non-static=>called everytime an object is created used to initialise the object/instance variable
+	7. Arrays in java : 1 dimensional array
+		a. Primitive array : int
+		b. REference type array: String
+	8. For loop
+		a. basic for loop
+		b. For each / Enhanced for loop
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+#######################################
+Point 1:
+1. Always create a Java Bean with overloaded constructor and overide a toString() method
+2. if creating any model class it must be a java bean
+3. System.out.println(account); => System.out.println(String.valueof(obj));=>toString()
+4. this.accNo=++counter;=> 
+++counter=>	++ pre increment counter=counter+1 =>it will increment the value and assign
+counter++=>	++ post increment counter=counter+1 =>it will assign the value and then increment
+5. We have created 	private static int counter = 0; in BankAccount class
+	a. Its a private static variable in BankAccount class
+	b. As per the definitio nof static variable you can get its value by Class name
+		BankAccount.getCounter()
+	c. You dont need object for accessing Static variable data
+	d. However you can access the static variable data  using objects also
+		account1.getCounter()
+	e. There is single copy of static variable created for all object 	
+	f. Static variable in side the class are called Class Variable

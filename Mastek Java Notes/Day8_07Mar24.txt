@@ -1,0 +1,131 @@
+Type of Classes
+1. Concrete Classes ->we can create object of this class
+2. Abstact classes  ->class marked as abstrct and we can't create object of this class
+3. Nested/Inner classes -> class within the class
+	a.static class
+	b.non static class
+4. Anonymous class 
+5. Singletone
+###########################################
+javac -d ./ Main.java
+	-com.trining.demo.Main.class
+	-com.training.demo.Main$InnerClass.class
+	
+Anonymous class =>always created within method body 
+			    => they don't have name 
+				=> We don't want to inherit from a class however
+				 we want to change the internal functionality 
+				 only for specific instance then we create Anonymous class
+				 
+greeting=new Greeting(){
+			public String greet(){ return "Called using Anonymous class object";}		
+		};	
+//using inheritance	-> Named class 	
+class MyGreeting extends Greeting{
+			public String greet(){ return "Called using Anonymous class object";}		
+}
+	
+javac -d ./ Main.java
+		-Greeting.java
+		-MainWithAnonymousClass.class
+		-MainWithAnonymousClass$1.class
+
+There is an application in which we are having operations on Employee data
+This application works on calculating the monthly salary for peramanant employee,
+invoice for contract employee, stipend interns payment. 
+
+company there are 100 permanant employee
+contractors are 20
+interns are 5 
+
+
+
+Looking at this can you identify the Model in this scenario 
+					Employee (empno,ename,job,hiredate)
+
+	FullTimeEmp(salary)    PartTimeEmp(fees)  
+
+
+Domnic Miranda Contractor Fees -> 50% salary 50% fee=> anonymous class
+
+payment to this object only at that time 
+
+#######################################################
+OOP SOLID PRINCIPLE 
+S SRP 						:Single Responsibility Principle
+O OCP Open/Closed Principle : Open for extenstion Close for modification
+L LSP Liskov Substitution Principle: 
+I ISP Interface Segregation Principle:
+D DSP Dependency Inversion Principle:
+
+
+Demo33 : 
+### SRP:Single Responsibility Principle
+A class should have only one reason to change
+meaning is should have only one responsibility
+It implies taht a class should encapsulate only one piece of 
+functionlity and tht functionality should be entirly encapsulated by the class
+
+User class has a responsibility of registring user 
+EmailSender has responsibility to send notification after registration.
+
+Use class is respoisble for managing User data e.g. registration
+EmailSender is responsible for sending notification emails 
+
+Each class has a single responsibility making code modular, maintainable, and 
+easier to understand 
+
+if suppose there are changes will be done in repective classes as per SRP 
+User
+EmailSender 
+
+OCP : Open for extension Closed for Modification
+
+	Shape		calculateArea() 
+	Circle		calculateArea()
+	Triangle	calculateArea()
+	Rectangle   calculateArea()
+	
+	IShape {	void draw();	}
+	IAreaCalculator{ double calculateArea()}
+	Circle	is IShape	
+	Triangle is IShape
+	Rectangle is IShape
+	Polygon is IShape
+	Line is IShape
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		

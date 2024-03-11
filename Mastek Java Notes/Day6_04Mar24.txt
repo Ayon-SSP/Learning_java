@@ -1,0 +1,114 @@
+class and object
+Four Pillars : 
+a. Abstraction	: When you identify an Object and its data member+Behaviors
+e.g.
+Realworld	Coffee Machine 
+			1. Expresso
+			2. Latte
+			3. Americano
+b. Encapsulation
+e.g. 
+Class =>object
+Static class 
+interface 
+coding	: accessible public,private,protected,default		
+	
+c. Inheritance
+extendable 
+	extends	 		class extends class, interface extends interface
+	implements 		class implements interface 
+	
+d. Polymorphism : dynamic
+Coffee
+	Expresso
+	Americano
+	Latte
+
+=============================================================
+polymorphism
+1. Inheritance
+2. Override functionality of parent in the childclass
+
+Function signature :
+
+Paren: 	<access_specifier> <return_type> <method_name>(params){ what?}
+
+Child:  <access_specifier> <return_type> <method_name>(params){ what?}
+
+
+Polymorphism
+
+BankAccount account1=new SavingAccount(1,"Amit",222);
+BankAccount account2=new SalaryAccount(2,"Amit",222);
+
+
+account1.withdraw(10000); -> Min bal
+account2.withdraw(10000); -> bal 0
+//below is not a polymorphism
+SavingAccount account3=new SavingAccount(3,"Amit",222);
+
+//Overloading 
+BankAccount()
+BankAccount(accno,accName,balance)
+BankAccount(accName,balance)
+
+
+boolean => is<methodName>()
+int/char/...=> anyName()
+Get values =>type get<Value>()
+Set Value  =>set<Value>(type){}
+update emp 
+set sal=sal+comm
+
+
+Arbitrary Number of Arguments
+Valid  : private static int sum(String msg,int... numbers)
+Invalid:private static int sum(int... numbers,String msg)
+
+using Array as parameter 
+private static int sum(String msg,int[] numbers);
+Invalid:private static int sum(int[] numbers,String msg)
+###########################################################
+1. IS A			: extends and implents 
+	Abhishek is a child of Amitabh
+	SavingAccount is a child class of  BankAccount
+	SavingAccount is a BankAccount
+2. Has A 
+	Car has a Engine
+	Car has a Engine 
+	Object of one class in another class as data member its a Has A
+3. Use 
+	We use Computers 
+	You call object of some class in a method of another class 
+
+Create  a Circle.java 
+		centerPoint 
+bankapp07
+	BankAccount.java
+	SavingAccount.java extends BankAccount
+	SalaryAccount.java extends BankAccount
+	
+	PayTMAccount.java
+		BankAccount account1;
+		transferMoney(account2)
+	
+###########################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

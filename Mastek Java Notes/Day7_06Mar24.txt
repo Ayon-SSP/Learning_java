@@ -1,0 +1,161 @@
+class	 : blueprint of an object === we can create an object	
+interface: pure abstraction : all methods in interface are abstract
+			collection of constant variables and public methods
+			we implment interfaces in a class 
+
+keyword/marker  abstract -> class / interface 
+
+Class Types 
+1.Concrete class: class who's object can be created 
+	public class ClassName{
+	}
+
+2.Abstract class: class who's object can't be created 
+				  its a class marked with abstract keyword
+				  its a class which may have abstract methods and non abstract methods
+				  
+				  
+	public abstract class ClassName{
+	}
+#########################################
+Real world scenario what exist in reality? what is just a concept?
+Bank Account Opening form 
+		BankAccount - abstraction (accNo,accName,balance) withdraw(double) deposit(double)
+		SavingAccount-minbalance
+		SalaryAccount-zerobalance
+	
+			Vehicle
+		Car Bike  Truck
+		
+Abstract Method:When you want to enforce child class to provide/must override 
+				  parent class methods you mark that method as an abstact method		
+	Method: 
+		public String draw() {
+		return shapeName+" Drawn!";
+	}
+	Abstract method end with semicolon thy don't have any body
+		public String draw(); 
+	
+ * if a class has abstract method it must be marked abstract
+ * if a class is abstract class not necessary the methods are abstract
+		abstract class may or may not have abstract methods 
+ * its mandatory in abstract class to mark a method abstact explicitly	
+ * child class of an abstract class must override the abstract method 
+ * if a child do not override the abstract methods of parent class 
+	then it must marked as abstract
+ 	
+bankapp08
+					com.training.bankapp.model
+					(a)BankAccount
+					   -accNo,accName,balance
+					   +public abstract double withdraw(double)
+					   
+		(c) SavingAccount 				(c)SalaryAccount
+	
+#########################################
+abstract -> class and method 
+abstract class=>
+1. we cant create an object of an abstract class
+2. if a class has a abstract method it must be marked as an abstract class
+3. an abstract class may or may not have abstract methods
+4. an abstract class contains 
+	instance varialbe
+	constant variable
+	non-abstract methods
+	abstract methods
+5. if any class inherits from the abstract class then it must 
+	override all the abstract methods of that class 
+6. if any class inherits from the abstract class but do not 
+	override all the abstract method it must be marked as abstract
+abstract method=>
+0. ensure that abstract methos are public (best practice)
+1. the abstract method just have method declaration statement which ends with ";"
+		e.g. public String withdraw(double amount);
+2. abstract method donot have any method body i.e. ends with ";" and dont have {}
+3. The child class must override the abstract method
+4. Error : if we change the access of method 
+	 protected String withdraw(doble amount); - BankAccount
+	 public String withdraw(double amount);
+	 Its allowed however 
+	 when we call 
+		System.out.println(account.withdraw(10000));
+	 we get an error that withdraw() is not visible in BankAccount
+	 So to solve this we can cast the parent object as child
+	 System.out.println(((SavingAccount)account).withdraw(10000));
+5. while overriding we Cannot reduce the visibility of the inherited method 
+	we can't mark it private/default
+
+
+### While calling a child class method using parent ref variable
+### we must cast it as a child like below :
+System.out.println(((StringLogger)logger).myLogger("calling child method"));
+
+access modifiers order in inheritance
+		private->default->protected->public 
+		
+########## pure abstraction : interface 
+1. you declare interface as below 
+	public interface <Interface_Name>{}
+2. Interface is a collection of 
+	a. constants 
+	b. implicit abstract methods 
+3. in case of an interface we don't have to write
+	public abstract on the method by default its public abstract
+4. we cant create object of an interface
+5. The class implements interface 
+6. The class implementing interface must override the abstract method
+
+
+
+
+API =>Application Programming Interface 
+	App communicate APP we need an interface 
+	
+BankAccount 					Paytm/Gpay/UPI.......	
+	ICICI							TRANSFERAMOUNT()
+	AXIS							TRANSFERAMOUNT()
+	KOTAK							TRANSFERAMOUNT()	
+	
+
+(I)IBankService
+		withdraw(doble):String
+		deposit(double):String
+(A)BankAccount	implements IBankService
+(C)SavingAccount extends BankAccount
+(C)SalaryAccount extends BankAccount	
+#################################
+DataStructure
+1. way of storing data
+2. way of accessing or processing data in your programming 
+
+
+####Summary: 
+1. Abstraction 
+	a. Abstract class
+	b. Interface 
+2. abstract keyword - class
+3. abstract keyword - methods
+4. cration of an Iterface
+5. implementing interface 
+6. Innerclass concept
+	where a class has declared internal interface and implemented it 
+	inside the inner class
+7. Iterator<Integer> ->hasNext() next() 
+8. We implemented Iterator<Iteger> used the hasNext() next() methods
+
+https://docs.oracle.com/javase/tutorial/java/javaOO/localclasses.html
+	
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+

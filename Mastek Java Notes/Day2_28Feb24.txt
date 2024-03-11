@@ -1,0 +1,154 @@
+8 Data types
+Primitive: byte,short,int,long,float,double,char,boolean
+Wrapper Class:Byte,Short,Integer,Long,Float,Double,Char,Boolean
+
+Programming 
+Networking   Source <====> Destination => Object
+1. wrapping		int->Integer
+2. unwrapping  Integer=>int
+
+
+Java Numeric Default : 
+Number without decimal : int			123,12345
+Number with decimal    : double 		12.12
+Float : 12.12F
+Long  : 123L
+
+-- variable 
+	1. declare
+	2. initialize
+	3. use
+C/c++ forgot initialize add junk variable 
+Java if you do not provide values/initialize in case of Field variable
+byte	0
+short	0
+int		0
+long	0L
+float	0.0f
+double	0.0
+char	null \000
+boolean	false
+
+*Incase of local variables we must follow 
+	1. declare
+	2. initialize
+	3. use
+###########################################################
+Lets create a simple Greeting class 
+this greeting class should have a message variable which can be edited 
+1. class: Greeting => encapsulation
+2. field variable called message which is private
+3. functions to change the value : 
+	getMessage(): return message   -> getting the value	
+	setMessage(String m):message=m -> updating value
+#############################################################
+Project must have one public class with public void static main(String [] args){}:- Main.java/App.java
+Project all classes should be kept inside relevant packages 
+package for Main.java => com.training.demo.Main.java
+for classes which represents data => com.training.demo.model 
+for classes which represents controllers => com.training.demo.controller
+for classes which represents data access logic => com.training.demo.dao
+for classes which represents services => com.training.demo.services
+
+
+String concatenation : we used + 
+System.out.println(""+greeting1.getGreetingNo());
+greeting1.getGreetingNo()=> calling a method on greeting1 object		
+
+
+
+new Greeting()=> Constructor of the Greeting Class =>Default Constructor
+Constructor
+	->Special method/function which has same name as that of the class
+	->Constructor is called with new keyword to return the object of that class
+	->purpose of constructor is initializing field variables with default value
+	->Please note constructor do not have the return type 
+	->If no constructor is provided due inheritance it calls Parent class Default construtor
+		i.e. Greeting -> Object -> Object()
+	->In java we can override Constructor	
+
+
+create a project demo06
+				 com.training.demo.Main.java
+					main()
+						Person p1=new Person();
+						Person p2=new Person();
+						//print the uid and name for p1 and p2					
+						
+				 com.training.demo.Person
+					private int uid;
+					private String name;
+
+Greeting 
+
+Contact		 id   name		phoneNo		email
+			  1  Ajit 		9876543210  amit@some.com 		
+			  2  Ajit 		9876543210  amit@some.com 		
+			  3  Ajit 		9876543210  amit@some.com 		
+			  4  Ajit 		9876543210  amit@some.com 		
+			  
+Object to STrin conversion which is done by 
+Overriding toString() 
+Overriding -> Parent and child 
+Parent -> object 
+Child -> Contact 		
+Object class is a parent of all classes in Java 
+Inheritance => Object Hierarchical 
+
+public String toString() {
+        return getClass().getName() + "@" + Integer.toHexString(hashCode());
+    }		  
+		
+contact1.toString(): com.training.demo.model.Contact@626b2d4a
+contact1.toString(): com.training.demo.model.Contact@5e91993f
+contact1.toString(): com.training.demo.model.Contact@1c4af82c
+contact1.toString(): com.training.demo.model.Contact@379619aa
+
+1, Ajit, 9876543210, ajit@some.com		
+		
+System.out.println(greeting2);		=> toString() method 
+		
+1. Local variable -> function paratmeters {} variable 
+2. Field/Instance -> class , private, the get initialised when constructor => multiple copies
+3. statick variable-> single copy
+
+
+Assignment 1 : 
+1. Create a projet assign01 
+	Main.java -> Create object of Book Class where Book (id,bookName,authorName)
+2. Create a projet assign02 
+	Main.java -> Create object of Student Class where Student (id,studentName,courseName)
+3. Create a projet assign03 
+	Main.java -> Create object of Product Class where Product (id,pid,productName,unitPrice)
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+
+	
+	
+

@@ -1,0 +1,51 @@
+Array
+ 1. Dyanmic Array -> public static void main(String [] args) 
+	String [] args =>dynamic array
+	java com.training.demo.Main 10 20 30 40 50 		-> args.length=5
+	java com.training.demo.Main Amit Ankit Ajit Sumit ->args.length=4
+String to Integer conversion Parsingto int
+   int num=Integer.parseInt("11111") => 11111 as number on which we can do the arithmatic operations
+// Print sum of 10 numbers 
+int sum=0;
+for (int num :numbers){
+	sum=sum+num;
+}
+sysout("Sum"+sum);
+
+Q.I was asking if we are directly going to assign value of one array to an other array then what is going to happen to ref variable.
+e.g. 
+
+	int[] numbers1={10,20,30,40,50};
+	int[] numbers2=numbers1;
+	
+	Both numbers1 and numbers2 are pointing to same array object
+
+Super Entities:	
+class Parent {}
+interface MyInterface {}
+Sub Entity ==> Inheritance (extends class, implements interface)
+class Child extends Parent implements MyInterface {}
+Below is an example of Dynamic Polymorphism	
+     Parent obj2 = new Child();
+	 The obj2 a refrence variable of type Parent
+	 Who is point to objectof child new Child();
+	 At runtime JVM will understand obj2 will behave like Child
+	 
+	 
+	 BankAccount account=new BankAccount()
+	 BankAccount
+	 SavingAccount nikhil
+	 CurrentAccount Shumbham 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 

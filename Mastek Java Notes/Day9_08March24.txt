@@ -1,0 +1,149 @@
+String name1="Dhanashree";		=>new String("Dhanashree");
+String name2="Dhanashree";
+
+String "" -> Jvm allocates to it
+if the same string is refered by another varialbe instead re creating the string
+it uses already available string
+
+String it advisable to use "" to assign the reference varialbe instead of
+creating new String();
+
+Java -> Object.java is parent class for all classes 
+		+toString(): String
+		+equals():boolean
+		+hashCode():int
+
+Compare objects most the time we use .equals()
+*.equals()-> hashCode();
+
+While doing String object comperison
+
+obj1==obj2		: whether obj1 and obj2 are refering to same object in heap memory
+
+obj1.equals(obj2): as per equal logic it compares values/datamembervalues of obj1 and obj2
+					if both obj1 and obj2 have same values for each datamember => true
+					other returns false
+
+
+if you use == it compares the memory location 
+if you use .equals() it compares datamembers 
+
+account1=new BankAccount(1,"Amit",10000);
+account2=new BankAccount(1,"Amit",10000);
+
+account1.equals(account2)=> true 
+
+
+Model -> 
+1. JavaBean
+2. toString()
+3. equals() hashcode()
+
+
+
+
+user1==user2: false			user1.equals(user2): false
+user1==user3: true			user1.equals(user3): true
+
+
+When you do not override the equals() and hashcode() 
+by default Object.equals() ==> "=="
+Hence we must override equals() and hashcode()
+
+user1==user2: false		user1.equals(user2): true
+user1==user3: true		user1.equals(user3): true
+
+	in Object.equals: 
+	public boolean equals(Object obj) {
+			return (this == obj);
+		}
+#####################################################
+ARRAYS : a block of memory with similar type data
+		1. similar type data ->+
+		2. Fixed size 		->short coming
+#####################################################
+Amazon -> Products 
+customer cart 
+10	
+5
+1
+0
+####################################################
+Collection API 
+				IS A 
+		(I)Colllection
+		
+		 (I)List	->ArrayList, LinkedList
+		 (I)Set	    ->HashSet
+			-(I)SortedSet	->TreeSet
+		 (I)Queue   ->LinkedList
+		
+		HAS A
+		(I)MAP			->HashMap
+		(I)Sorted Map	->TreeMap
+
+
+JDK 1.5 -> CollectionAPI 
+Database :Tables -> Rows of records
+	Retrive
+	Create
+	Update
+	Delete 
+
+Programming when we want to work on collection of dat we need 
+similar functionalities
+(I)Collection
+	boolean isEmpty();
+	boolean contains(Object o);
+	Iterator<E> iterator();
+	boolean add(E e);
+	boolean remove(Object o);
+########################################
+Arrays 				Collection		JDK 1.5 Generic
+Fized size			Dynamic			Dynamic
+Similar type 		Hetro			Similar type
+
+Collection c=new ArrayList();
+if we are storing data in collection there is an 
+additional step of comparing type of the data to perform operations 
+ahead
+That cause Performance issue 
+#### Dimond <> =>Generics ->1.5
+
+Collection<String>c=new ArrayList<String>();
+#### Dimond <> =>Generics ->1.7
+
+Collection<String>c=new ArrayList<>();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	
+	
+
+
+
+

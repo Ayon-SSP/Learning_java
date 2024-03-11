@@ -1,0 +1,178 @@
+Java 
+Architecture 
+	a. JDK -> Java Development Kit     ->will have files/exe which will support building of java app
+	b. JRE -> Java Runtime Environment ->supports execution application build on java
+	C. jvm -> java virtual machine 
+				.java ->compile->.class
+				.class-> executed
+JDK8 	
+>=JDK9 -> modules 	
+
+Oracle Database=>installer =>JRE
+
+install -> 32 bit
+		   64 bit
+		   
+	path
+	classpath
+	JAVA_HOME
+============================================================================
+1. Keywords
+2. data type
+3. variable.: types of variable, scope variable
+4. Opearators
+5. Dicision Control statement: ifelse,switch case
+6. Looping  Control statement: do-while,while,for-loop,enhanced forloop
+7. Array, Collection,Generics,lambda
+8. Reusable -> Function 
+9. OOP class,object, OOP principle
+============================================================================
+Why?
+	*SEcure : Two way checking of the .class 
+		
+	1. Platform independant 
+	JVM ->OS dependant 
+		->.class which is platform independant 
+	2. Scalable 
+		OOP 
+			Abstraction
+			Encapsulation
+			Inheritance
+			Polymorphism 
+	3. Threading
+	4. Collection
+	5. JDBC
+	6. Servelt & JSP 
+	7. Packaging	
+	....
+What?
+How ?
+############################################################################################
+Step 1 >javac Main.java =>Main.class
+Step 2 >java Main 
+
+
+Step1 -> a. Syntax -> Main.class
+Step2 -> java Main-> loading the class-> checking is it valid file-> if valid -> output
+																	 else     -> error							
+############################################################################################
+1. .java file must have one public class and it should be saved with the name of public class
+	e.g. public class Greeting {} => Greeting.java 
+		 public class Main2 {}  => Main2.java
+2. Class name are meaning full and following PascalCase
+
+
+How to create main classes in java?
+How to complie the classes ?
+How to create an object of an class?
+How to call a method of another class using an object?
+
+we understood what is package?
+How to compile the code which has first line as package -> javac -d . *.java 
+How to execute -> java com.training.Main3 (using the classified name of the class)
+How to import classes from the other package? -> import -> public 
+com.training.Main3.java
+com.training.Greeting.java
+org.training.Greeting.java
+
+d:\workspace\javaws
+c:\workspace\javaws
+
+com.training.zomato
+com.training.swiggy
+
+//local variable : declared within the functions exist within that function 
+1. local varialbe has block scope {} 
+2. must have data type metioned and initialized before use
+3. depending on it type 
+	variable -> cameCase	->num1,num2 
+	constatnt -> CAPITALCASE
+	Name of variable is alphanumeric starting always with character numbers can come from 2nd positon
+	and it also supports _
+Types of methods:
+1. Static Methods : marked with static keyword 
+	
+//Static Methods 
+public static void main(String[] args) {}
+Static method can call static methods only 
+i.e. another method marked with static keyword 
+2. Non Static method : which is not marked static 
+publi add(int num1,int num2){
+}
+To call a non-static method in static method we must create an object of the class
+
+Main main=new Main();
+
+Main main=>variable in your function pointing to the real object 
+new Main()=>actual object which has a memory
+new	=>keyword used to allocate a memory to object
+Main()=> default constructor/non parameterised constructor 
+	=> used in allocation of memory along with new keyword and always returns object
+	=> Its a special method which don't have a return type
+	
+Calculator	
+add
+sub
+mul
+div	
+			
+
+Creating project certain -> business need
+package-> com.zomato
+			controller
+			view
+			model 
+			
+use case - > package
+use case -> 
+Main.class
+
+
+
+
+
+
+
+
+
+
+ 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+	
