@@ -24,26 +24,27 @@ public class App {
 
         // create table
         Statement st = con.createStatement();
-        // st.execute("create table dept(deptno number, dname varchar2(20), loc varchar2(20))");
-        // System.out.println("Table created");
+        st.execute("create table dept8(deptno number, dname varchar2(20), loc varchar2(20))");
+        System.out.println("Table created");
 
         // insert data
-        PreparedStatement ps = con.prepareStatement("insert into dept values(?,?,?)");
+        PreparedStatement ps = con.prepareStatement("insert into dept8 values(?,?,?)");
         ps.setInt(1, 10);
-        // ps.setString(2, "IT");
-        // ps.setString(3, "Pune");
-        // ps.executeUpdate();
-        // System.out.println("Data inserted");
+        ps.setString(2, "IT");
+        ps.setString(3, "Pune");
+        ps.executeUpdate();
+        System.out.println("Data inserted");
 
         // // update data
-        // ps = con.prepareStatement("update dept set loc=? where deptno=?");
+        // ps = con.prepareStatement("update dept8 set loc=? where deptno=?");
         // ps.setString(1, "Mumbai");
         // ps.setInt(2, 10);
         // ps.executeUpdate();
         // System.out.println("Data updated");
         
         // display data
-        ResultSet rs = st.executeQuery("select * from whoami");
+        // ResultSet rs = st.executeQuery("select * from whoami");
+        ResultSet rs = st.executeQuery("select * from dept8");
         while(rs.next()) {
             System.out.println(rs.getInt(1) + " " + rs.getString(2) + " " + rs.getString(3));
         }
