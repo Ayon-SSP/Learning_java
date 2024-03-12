@@ -3,7 +3,7 @@ Architecture
 	a. JDK -> Java Development Kit     ->will have files/exe which will support building of java app
 	b. JRE -> Java Runtime Environment ->supports execution application build on java
 	C. jvm -> java virtual machine 
-				.java ->compile->.class
+				.java -> compile-> .class
 				.class-> executed
 JDK8 	
 >=JDK9 -> modules 	
