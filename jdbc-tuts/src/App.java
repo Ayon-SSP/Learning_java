@@ -24,16 +24,16 @@ public class App {
 
         // create table
         Statement st = con.createStatement();
-        st.execute("create table dept8(deptno number, dname varchar2(20), loc varchar2(20))");
-        System.out.println("Table created");
+        // st.execute("create table dept8(deptno number, dname varchar2(20), loc varchar2(20))");
+        // System.out.println("Table created");
 
         // insert data
-        PreparedStatement ps = con.prepareStatement("insert into dept8 values(?,?,?)");
-        ps.setInt(1, 10);
-        ps.setString(2, "IT");
-        ps.setString(3, "Pune");
-        ps.executeUpdate();
-        System.out.println("Data inserted");
+        // PreparedStatement ps = con.prepareStatement("insert into dept8 values(?,?,?)");
+        // ps.setInt(1, 10);
+        // ps.setString(2, "IT");
+        // ps.setString(3, "Pune");
+        // ps.executeUpdate();
+        // System.out.println("Data inserted");
 
         // // update data
         // ps = con.prepareStatement("update dept8 set loc=? where deptno=?");
@@ -50,7 +50,7 @@ public class App {
         }
 		
 		con.close();
-		ps.close();
+		// ps.close();
         st.close();
         sc.close();
 	}

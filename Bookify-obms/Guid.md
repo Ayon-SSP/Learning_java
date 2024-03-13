@@ -581,6 +581,7 @@ public class BookCategory {
     private String categoryId;
     private String categoryName;
     private String categoryDescription;
+    private String categoryImage;
 
     public BookCategory() {
     }
@@ -731,51 +732,52 @@ public class Author {
     }
 }
 ```
-
-4. Book.java
 ```java
-package com.bookify.model;
+package com.bookstore.model;
 
-import java.sql.Date;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class Book {
     private String bookId;
-    private String authorId;
-    private String categoryId;
-    private String genreIds;
-    private String bookTitle;
-    private String bookDescription;
-    private Date bookPublishDate;
-    private double bookPrice;
+    private Author author;
+    private Category category;
+    private List<Genre> genres;
+    private String title;
+    private String description;
+    private Date publishDate;
+    private double price;
     private int discontinued;
-    private int bookPages;
-    private double bookDiscount;
-    private int availableQuantity;
-    private String bookLanguage;
-    private String bookPublisher;
-    private String bookIsbn;
-    private String bookCoverImage;
+    private int pages;
+    private double discount;
+    private int quantity;
+    private String language;
+    private String publisher;
+    private String isbn;
+    private String coverImage;
 
     public Book() {
+        this.genres = new ArrayList<>();
     }
 
-    public Book(String bookId, String authorId, String categoryId, String genreIds, String bookTitle, String bookDescription, Date bookPublishDate, double bookPrice, int discontinued, int bookPages, double bookDiscount, int availableQuantity, String bookLanguage, String bookPublisher, String bookIsbn, String bookCoverImage) {
+    public Book(String bookId, Author author, Category category, List<Genre> genres, String title, String description, Date publishDate, double price, int discontinued, int pages, double discount, int quantity, String language, String publisher, String isbn, String coverImage) {
         this.bookId = bookId;
-        this.authorId = authorId;
-        this.categoryId = categoryId;
-        this.genreIds = genreIds;
-        this.bookTitle = bookTitle;
-        this.bookDescription = bookDescription;
-        this.bookPublishDate = bookPublishDate;
-        this.bookPrice = bookPrice;
+        this.author = author;
+        this.category = category;
+        this.genres = genres;
+        this.title = title;
+        this.description = description;
+        this.publishDate = publishDate;
+        this.price = price;
         this.discontinued = discontinued;
-        this.bookPages = bookPages;
-        this.bookDiscount = bookDiscount;
-        this.availableQuantity = availableQuantity;
-        this.bookLanguage = bookLanguage;
-        this.bookPublisher = bookPublisher;
-        this.bookIsbn = bookIsbn;
-        this.bookCoverImage = bookCoverImage;
+        this.pages = pages;
+        this.discount = discount;
+        this.quantity = quantity;
+        this.language = language;
+        this.publisher = publisher;
+        this.isbn = isbn;
+        this.coverImage = coverImage;
     }
 
     public String getBookId() {
@@ -786,62 +788,61 @@ public class Book {
         this.bookId = bookId;
     }
 
-    public String getAuthorId() {
-        return authorId;
+    public Author getAuthor() {
+        return author;
     }
 
-    public void setAuthorId(String authorId) {
-        this.authorId = authorId;
+    public void setAuthor(Author author) {
+        this.author = author;
     }
 
-    public String getCategoryId() {
-        return categoryId;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setCategoryId(String categoryId) {
-        this.categoryId = categoryId;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
-    public String getGenreIds() {
-        return genreIds;
+    public List<Genre> getGenres() {
+        return genres;
     }
 
-    public void setGenreIds(String genreIds) {
-        this.genreIds = genreIds;
+    public void setGenres(List<Genre> genres) {
+        this.genres = genres;
     }
 
-    public String getBookTitle() {
-        return bookTitle;
+    public String getTitle() {
+        return title;
     }
 
-    public void setBookTitle(String bookTitle) {
-        this.bookTitle = bookTitle;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getBookDescription() {
-        return bookDescription;
+    public String getDescription() {
+        return description;
     }
 
-    public void setBookDescription(String bookDescription) {
-        this.bookDescription = bookDescription;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public Date getBookPublishDate() {
-        return bookPublishDate;
+    public Date getPublishDate() {
+        return publishDate;
     }
 
-    public void setBookPublishDate(Date bookPublishDate) {
-        this.bookPublishDate = bookPublishDate;
+    public void setPublishDate(Date publishDate) {
+        this.publishDate = publishDate;
     }
 
-    public double getBookPrice() {
-        return bookPrice;
+    public double getPrice() {
+        return price;
     }
 
-    public void setBookPrice(double bookPrice) {
-        this.bookPrice = bookPrice;
+    public void setPrice(double price) {
+        this.price = price;
     }
-
 
     public int getDiscontinued() {
         return discontinued;
@@ -851,81 +852,81 @@ public class Book {
         this.discontinued = discontinued;
     }
 
-    public int getBookPages() {
-        return bookPages;
+    public int getPages() {
+        return pages;
     }
 
-    public void setBookPages(int bookPages) {
-        this.bookPages = bookPages;
+    public void setPages(int pages) {
+        this.pages = pages;
     }
 
-    public double getBookDiscount() {
-        return bookDiscount;
+    public double getDiscount() {
+        return discount;
     }
 
-    public void setBookDiscount(double bookDiscount) {
-        this.bookDiscount = bookDiscount;
+    public void setDiscount(double discount) {
+        this.discount = discount;
     }
 
-    public int getAvailableQuantity() {
-        return availableQuantity;
+    public int getQuantity() {
+        return quantity;
     }
 
-    public void setAvailableQuantity(int availableQuantity) {
-        this.availableQuantity = availableQuantity;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
-    public String getBookLanguage() {
-        return bookLanguage;
+    public String getLanguage() {
+        return language;
     }
 
-    public void setBookLanguage(String bookLanguage) {
-        this.bookLanguage = bookLanguage;
+    public void setLanguage(String language) {
+        this.language = language;
     }
 
-    public String getBookPublisher() {
-        return bookPublisher;
+    public String getPublisher() {
+        return publisher;
     }
 
-    public void setBookPublisher(String bookPublisher) {
-        this.bookPublisher = bookPublisher;
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
     }
 
-    public String getBookIsbn() {
-        return bookIsbn;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public void setBookIsbn(String bookIsbn) {
-        this.bookIsbn = bookIsbn;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
-    public String getBookCoverImage() {
-        return bookCoverImage;
+    public String getCoverImage() {
+        return coverImage;
     }
 
-    public void setBookCoverImage(String bookCoverImage) {
-        this.bookCoverImage = bookCoverImage;
+    public void setCoverImage(String coverImage) {
+        this.coverImage = coverImage;
     }
 
     @Override
     public String toString() {
         return "Book{" +
                 "bookId='" + bookId + '\'' +
-                ", authorId='" + authorId + '\'' +
-                ", categoryId='" + categoryId + '\'' +
-                ", genreIds='" + genreIds + '\'' +
-                ", bookTitle='" + bookTitle + '\'' +
-                ", bookDescription='" + bookDescription + '\'' +
-                ", bookPublishDate=" + bookPublishDate +
-                ", bookPrice=" + bookPrice +
+                ", author=" + author +
+                ", category=" + category +
+                ", genres=" + genres +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", publishDate=" + publishDate +
+                ", price=" + price +
                 ", discontinued=" + discontinued +
-                ", bookPages=" + bookPages +
-                ", bookDiscount=" + bookDiscount +
-                ", availableQuantity=" + availableQuantity +
-                ", bookLanguage='" + bookLanguage + '\'' +
-                ", bookPublisher='" + bookPublisher + '\'' +
-                ", bookIsbn='" + bookIsbn + '\'' +
-                ", bookCoverImage='" + bookCoverImage + '\'' +
+                ", pages=" + pages +
+                ", discount=" + discount +
+                ", quantity=" + quantity +
+                ", language='" + language + '\'' +
+                ", publisher='" + publisher + '\'' +
+                ", isbn='" + isbn + '\'' +
+                ", coverImage='" + coverImage + '\'' +
                 '}';
     }
 }

@@ -53,7 +53,9 @@ public class User {
 			return false;
 		User other = (User) obj;
 		
-		return  this.id==other.id&&this.userName.equals(other.userName)&&this.emailid.equals(other.emailid);
+		return this.id==other.id 
+			&& this.userName.equals(other.userName)
+			&& this.emailid.equals(other.emailid);
 	}
 	
 	

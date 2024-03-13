@@ -546,6 +546,18 @@ online-bookstore-ms/
     |__ unit/
     |__ integration/
 
+Topices to use in the porject:
+1. lambda expression
+2. Stream
+3. interface, inheritance & abstract class if needed
+4. use HAS-A relationship
+5. exception handling must
+6. JDBC
+7. Servlet
+8. JSP
+9. JSTL
+10. 
+
 
 ## create all java packages:
 > path: src/main/java/com/bookify
@@ -596,10 +608,155 @@ com.bookify.util
   12. UserReview.java
   13. Orders.java
   14. OrderDetail.java
+> model class: JavaBean /Comparable/hashCode/equals/toString
+> 
 
+
+1.  BookCategory.java
+```java
+package com.bookify.model;
+
+public class BookCategory {
+    private String categoryId;
+    private String categoryName;
+    private String categoryDescription;
+
+    public BookCategory() {
+    }
+
+    public BookCategory(String categoryId, String categoryName, String categoryDescription) {
+        this.categoryId = categoryId;
+        this.categoryName = categoryName;
+        this.categoryDescription = categoryDescription;
+    }
+
+    public String getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(String categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public String getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
+
+    public String getCategoryDescription() {
+        return categoryDescription;
+    }
+
+    public void setCategoryDescription(String categoryDescription) {
+        this.categoryDescription = categoryDescription;
+    }
+
+    @Override
+    public String toString() {
+        return "BookCategory [categoryId=" + categoryId + ", categoryName=" + categoryName + ", categoryDescription="
+                + categoryDescription + "]";
+    }
+
+}
 ```
-jdbc.driver=
-jdbc.url=
-jdbc.username=
-jdbc.password=
+2. Genre.java
+```java
+package com.bookify.model;
+
+public class Genre {
+    private String genreId;
+    private String genreName;
+    private String genreDescription;
+
+    public Genre() {
+    }
+
+    public Genre(String genreId, String genreName, String genreDescription) {
+        this.genreId = genreId;
+        this.genreName = genreName;
+        this.genreDescription = genreDescription;
+    }
+
+    public String getGenreId() {
+        return genreId;
+    }
+
+    public void setGenreId(String genreId) {
+        this.genreId = genreId;
+    }
+
+    public String getGenreName() {
+        return genreName;
+    }
+
+    public void setGenreName(String genreName) {
+        this.genreName = genreName;
+    }
+
+    public String getGenreDescription() {
+        return genreDescription;
+    }
+
+    public void setGenreDescription(String genreDescription) {
+        this.genreDescription = genreDescription;
+    }
+
+    @Override
+    public String toString() {
+        return "Genre [genreId=" + genreId + ", genreName=" + genreName + ", genreDescription=" + genreDescription + "]";
+    }
+
+}
+```
+3. Author.java
+```java
+package com.bookify.model;
+
+public class Author {
+    private String authorId;
+    private String authorName;
+    private String authorBio;
+
+    public Author() {
+    }
+
+    public Author(String authorId, String authorName, String authorBio) {
+        this.authorId = authorId;
+        this.authorName = authorName;
+        this.authorBio = authorBio;
+    }
+
+    public String getAuthorId() {
+        return authorId;
+    }
+
+    public void setAuthorId(String authorId) {
+        this.authorId = authorId;
+    }
+
+    public String getAuthorName() {
+        return authorName;
+    }
+
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
+    }
+
+    public String getAuthorBio() {
+        return authorBio;
+    }
+
+    public void setAuthorBio(String authorBio) {
+        this.authorBio = authorBio;
+    }
+
+    @Override
+    public String toString() {
+        return "Author [authorId=" + authorId + ", authorName=" + authorName + ", authorBio=" + authorBio + "]";
+    }
+
+}
 ```

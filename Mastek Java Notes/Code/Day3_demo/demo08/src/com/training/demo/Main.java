@@ -10,6 +10,7 @@ public class Main {
 //		System.out.println("Number2: "+number2); //error
 		Main main = new Main();
 		System.out.println("number2= " + main.number2);
+		// System.out.println(number2); //error
 
 		System.out.println("Number1: " + number1);
 		System.out.println("Number1: " + Main.number1);
@@ -27,3 +28,5 @@ public class Main {
 //	1. directly call the variable
 //	2. call it with the class name Main.number1
 //  3. call it with the object main.number1
+
+// we can't access any non static things in static methods or blocks or nested classes.

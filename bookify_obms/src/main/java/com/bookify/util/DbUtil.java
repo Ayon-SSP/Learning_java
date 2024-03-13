@@ -8,7 +8,7 @@ public class DbUtil {
     public static Connection getConnection() {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            return DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "321654");
+            return DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "obms_system", "321654");
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
             throw new RuntimeException("Error connecting to the database");

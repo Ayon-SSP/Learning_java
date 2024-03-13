@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class OracleConnection {
 
     public static void main(String[] args) {
-        String connectionUrl = "jdbc:oracle:thin:@localhost:1521:xepdb1";
+        String connectionUrl = "jdbc:oracle:thin:@localhost:1521:xe";
         String username = "ayonssp";
         String password = "321654";
 

@@ -77,6 +77,7 @@ Invalid:private static int sum(int[] numbers,String msg)
 	Car has a Engine
 	Car has a Engine 
 	Object of one class in another class as data member its a Has A
+	a tree has a node.
 3. Use 
 	We use Computers 
 	You call object of some class in a method of another class 

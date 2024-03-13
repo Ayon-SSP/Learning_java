@@ -3,6 +3,6 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "c:\\CODE\\1]_Lets_Compile\\3]_learning_java\\jdbc-jre-file\\ojdbc11-23.2.0.0.jar"
+        "c:\\Users\\admin\\Downloads\\ojdbc8-23.3.0.23.09.jar"
     ]
 }

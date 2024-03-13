@@ -35,7 +35,7 @@ public class PayTmAccount {
 	 * @param amount
 	 * @return
 	 */
-	public String transferMoneyTo(BankAccount payee,double amount) {
+	public String transferMoneyTo(BankAccount payee, double amount) {
 		//1. from account amount will be deducted
 		this.account.withdraw(amount);
 		//2. amount will be added to transfer account
