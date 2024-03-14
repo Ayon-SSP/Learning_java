@@ -1,6 +1,7 @@
 package com.bookify.model;
 
 import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Book implements Comparable<Book> {
@@ -43,6 +44,9 @@ public class Book implements Comparable<Book> {
         this.bookIsbn = bookIsbn;
         this.bookCoverImage = bookCoverImage;
     }
+
+    // you can add list of all userReviews of a book // notGoodPractice?
+    ArrayList<UserReview> userReviews = new ArrayList<>();
 
     public String getBookId() {
         return bookId;
@@ -170,6 +174,22 @@ public class Book implements Comparable<Book> {
 
     public void setBookCoverImage(String bookCoverImage) {
         this.bookCoverImage = bookCoverImage;
+    }
+
+    public ArrayList<UserReview> getUserReviews() {
+        return userReviews;
+    }
+
+    public void setUserReviews(ArrayList<UserReview> userReviews) {
+        this.userReviews = userReviews;
+    }
+
+    public void addUserReview(UserReview userReview) {
+        this.userReviews.add(userReview);
+    }
+
+    public void removeUserReview(UserReview userReview) {
+        this.userReviews.remove(userReview);
     }
 
     @Override

@@ -1,29 +1,5 @@
 package com.bookify.model;
-/*
-CREATE TABLE tbl_author 
-( 
-    author_id VARCHAR2(10) NOT NULL, 
-    author_name VARCHAR2(50) NOT NULL, 
-    author_bio VARCHAR2(1000), 
-    author_score NUMBER, 
-    author_image VARCHAR2(255),
-    author_birth_date DATE, 
-CONSTRAINT pk_author 
-    PRIMARY KEY (author_id),
-CONSTRAINT ck_author_id
-    CHECK (REGEXP_LIKE(author_id, 'au[0-9]{5}')),
-CONSTRAINT ck_author_score   CHECK ((author_score >= 0 AND author_score <= 5))
-) 
-/
 
-1. java bean
-2. has-a relationship
-3. comparable
-4. hashcode
-5. equals
-6. toString
-
- */
 public class Author implements Comparable<Author> {
     private String authorId;
     private String authorName;

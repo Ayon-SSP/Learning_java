@@ -26,6 +26,13 @@ public class Main {
             // System.out.println(BookCategory1.compareTo(BookCategory2));
             // System.out.println(BookCategory1.equals(BookCategory3));
 
+            // bookCategorys.stream().forEach(System.out::println);
+            // sort bookCategorys
+            // bookCategorys.sort((BookCategory1, BookCategory2) -> BookCategory1.compareTo(BookCategory2));
+            // NOW REVERSE SORT THIS
+            // bookCategorys.sort((BookCategory1, BookCategory2) -> BookCategory2.compareTo(BookCategory1));
+            // bookCategorys.stream().forEach(System.out::println);
+
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (Exception e) {

@@ -106,7 +106,7 @@ public class OrderDetail implements Comparable<OrderDetail> {
         int result = 1;
         result = prime * result + ((orderDetailId == null) ? 0 : orderDetailId.hashCode());
         return result;
-    }
+    } // notGoodPractice?
 
     @Override
     public boolean equals(Object obj) {

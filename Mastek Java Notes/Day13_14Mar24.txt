@@ -38,27 +38,27 @@ Granularity
 Java Object		-- Mapped -- Relation database
 --------------------				Orders (orderid,orderdate)	
 	Orders 							OrderDetails(oderid,productid,quantiyPurchased)	
---------------------				Product(productid,productname,unitprice)
-	-List<Product>
-	-purchaseQuantity
-	-orderid
-	-orderdate
+--------------------				book(bookid,bookname,unitprice)
+	-Orderid
+	-List<OrderDetails>
+	-OrderDate
+	-TotalAmount
+	-TotalQuantity
+
 --------------------
+	OrderDetails
+---------------------
+
+	-Orderid
+	-bookid
+	-QuantityPurchased
+	-UnitPrice
+	-TotalAmount
+	-book
+	-Order
+----------------------
 
 BankAccount [ACCNO,ACCNAME,BALANCE]
 SALARYACCOUNT ISA BANKACCOUN
 SavingAccount ISA  BANKACCOUNT 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
