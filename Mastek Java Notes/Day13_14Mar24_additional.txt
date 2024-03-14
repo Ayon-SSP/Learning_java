@@ -1,0 +1,71 @@
+XML => EXtensible Markup Language
+Markup=> HyperText Markup Lnaguage=> HTML 
+Transfer Data over network 
+Structure used for Data definition and transfer is an xml
+Markup Language => which forms Tags
+<> </> : body tags <opening>Some information</opening>
+ or 
+ </>   :empty tag <input type="text" id="a" />
+ 
+ pom.xml => <?xml version="1.0" encoding="UTF-8"?>
+ <?php 
+ 
+ ....
+ 
+ ?>
+ namespace/package: xmlns
+ 
+pom.xml 
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	
+</project>	
+
+URI=> UniformResourceIndicator : http://maven.apache.org/POM/4.0.0
+
+
+SDLC ->PROJECT
+
+DESIGN
+CODE + TESTING 
+BUILD
+DEPLOYMENT
+
+
+Unit Testing 
+Input => Process => Output
+id=3
+User user=new User(3,"Ankit Verma","ankit.verma@example.com"
+
+dao.update(id,user)=>
+a. record updated=> true		valid
+b. record not update=> false 	invalid
+
+
+assertTrue(dao.update(id,user));->true -> successfull
+assertTrue(dao.delete(24));->true -> successfull
+assertTrue(dao.delete(1));->False -> fail
+
+
+assert(Expected values,ActualValues) comparison
+assertTrue(true) => success
+assertTrue(false) => Fail
+assertFales(false)=>success
+assertFales(true)=>fail
+Calculator.add(10,20)=> 30
+Calculator.add(-10,-20)=> -30
+
+assertEquals(30,Calculator.add(10,20)) = >success
+assertEquals(-30,Calculator.add(-10,-20)) = >success
+assertEquals(30,Calculator.add(-10,-20)) = >fail
+
+
+
+
+
+
+
+
+
+

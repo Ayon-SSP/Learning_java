@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.training.jdbcdemo.UserDaoTest" time="0.248" tests="4" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\workspace\internsjavaws\jdbcdemo02\target\test-classes;D:\workspace\internsjavaws\jdbcdemo02\target\classes;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\jdbc\ojdbc8\12.2.0.1\ojdbc8-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\jdbc\ucp\12.2.0.1\ucp-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\security\oraclepki\12.2.0.1\oraclepki-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\security\osdt_cert\12.2.0.1\osdt_cert-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\security\osdt_core\12.2.0.1\osdt_core-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\ha\simplefan\12.2.0.1\simplefan-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\ha\ons\12.2.0.1\ons-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Dhanash14473\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="C:\Users\Dhanash14473\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\DHANAS~1\AppData\Local\Temp\surefire4857541107737677222\surefirebooter711235221262401762.jar C:\Users\Dhanash14473\AppData\Local\Temp\surefire4857541107737677222 2024-03-14T12-07-18_955-jvmRun1 surefire11978834079090422514tmp surefire_014394037953179365939tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\workspace\internsjavaws\jdbcdemo02\target\test-classes;D:\workspace\internsjavaws\jdbcdemo02\target\classes;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\jdbc\ojdbc8\12.2.0.1\ojdbc8-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\jdbc\ucp\12.2.0.1\ucp-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\security\oraclepki\12.2.0.1\oraclepki-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\security\osdt_cert\12.2.0.1\osdt_cert-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\security\osdt_core\12.2.0.1\osdt_core-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\ha\simplefan\12.2.0.1\simplefan-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\com\oracle\database\ha\ons\12.2.0.1\ons-12.2.0.1.jar;C:\Users\Dhanash14473\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Dhanash14473\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Dhanash14473"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.home" value="C:\Users\Dhanash14473\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="D:\workspace\internsjavaws\jdbcdemo02"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\DHANAS~1\AppData\Local\Temp\surefire4857541107737677222\surefirebooter711235221262401762.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.5+8"/>
+    <property name="user.name" value="Dhanash14473"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.5+8"/>
+    <property name="localRepository" value="C:\Users\Dhanash14473\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\DHANAS~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.5"/>
+    <property name="user.dir" value="D:\workspace\internsjavaws\jdbcdemo02"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\Dhanash14473\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Dhanash14473/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933/jre/bin/server;C:/Users/Dhanash14473/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933/jre/bin;C:\app\Dhanash14473\product\21c\dbhomeXE\bin;C:\Program Files\Eclipse Foundation\jdk-16.0.2.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\Dhanash14473\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Dhanash14473\AppData\Local\Programs\Python\Python311\;C:\Users\Dhanash14473\AppData\Local\Microsoft\WindowsApps;C:\Users\Dhanash14473\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Dhanash14473\AppData\Roaming\npm;C:\Users\Dhanash14473\AppData\Local\Programs\Azure Dev CLI\;D:\Git\cmd;C:\WINDOWS\system32;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.5+8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testCreateUserDao" classname="com.training.jdbcdemo.UserDaoTest" time="0.138"/>
+  <testcase name="testUpdateUserDao" classname="com.training.jdbcdemo.UserDaoTest" time="0.003"/>
+  <testcase name="testDeleteUserDao" classname="com.training.jdbcdemo.UserDaoTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testFindOneUserDao" classname="com.training.jdbcdemo.UserDaoTest" time="0.107"/>
+</testsuite>

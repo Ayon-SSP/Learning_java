@@ -1390,4 +1390,33 @@ public class Main {
 }
  ```
 TODO: Need to complet lambda pdf.
+
+### JDBC: Day12_jdbc_singlton_thread & Day13_jdbcdemo02_junit4
+### Working with Maven(Oracle JDBC)
+- have a look at jdbc-tuts. ***
+- https://maven.apache.org/ - one time jdbc connector(marvin)
+create a Maven project: [TO Learn](https://www.javatpoint.com/how-to-create-a-maven-project)
+1. Maven
+2. org.apache.maven.archetypes:maven-archetype-quickstart
+3. version: 1.4
+4. groupid: com.projectname
+5. artifactid: projectname
+6. Goto: https://mvnrepository.com
+7. search for a:oracle and select 'Ojdbc8'
+8. select the version: 12.2.0.1
+9. copy the dependency and paste it in the pom.xml file between <dependencies> </dependencies>
+```xml
+	<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8 -->
+	<dependency>
+		<groupId>com.oracle.database.jdbc</groupId>
+		<artifactId>ojdbc8</artifactId>
+		<version>12.2.0.1</version>
+	</dependency>
+	``` 
+	parally change the version `<version>1.8</version>`
+10. Right click on the project and select Maven -> Update Project
+11. util to connect with db
+```java
+...
 ```
+12. `junit4`: unit testing look jdbcdemo2 ma'ams code.

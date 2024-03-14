@@ -61,7 +61,7 @@ public class UserDao implements IDao<User> {
 //			User user = new User(resultSet.getInt("userId"), resultSet.getString("userName"),resultSet.getString("email"));
 			// using column position in result
 			User user = new User(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3));
-			System.out.println(user);
+			// System.out.println(user);
 			users.add(user);
 
 		}

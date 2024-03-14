@@ -1,0 +1,64 @@
+JDBC API
+1.Connection
+2.Statement/PreparedStatement/CallableStatement
+3.ResultSet
+4.Driver
+5.DriverManager 
+
+URL : jdbc:oracle:thin:@localhost:1521:xe 
+userName: dj
+password: root
+
+Data First Approach
+1. Create schema dj 
+2. Create table 		User
+3. sample records in it 
+
+1. Table has attributes / fields
+2. Java class has attributes/instance variables 
+
+Table User	:userId,userName,email 
+Java  
+_____________________
+		User
+_____________________
+-userId:int
+-userName:String
+-email:String
+_____________________
+
+UserDao=> CRUD 
+
+
+1. IS A
+2. Has A 
+Hibernate -> Framework ORM 	
+Granularity
+
+Java Object		-- Mapped -- Relation database
+--------------------				Orders (orderid,orderdate)	
+	Orders 							OrderDetails(oderid,productid,quantiyPurchased)	
+--------------------				Product(productid,productname,unitprice)
+	-List<Product>
+	-purchaseQuantity
+	-orderid
+	-orderdate
+--------------------
+
+BankAccount [ACCNO,ACCNAME,BALANCE]
+SALARYACCOUNT ISA BANKACCOUN
+SavingAccount ISA  BANKACCOUNT 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
