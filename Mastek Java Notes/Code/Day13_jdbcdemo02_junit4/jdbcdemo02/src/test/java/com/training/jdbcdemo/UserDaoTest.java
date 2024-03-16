@@ -1,6 +1,7 @@
 package com.training.jdbcdemo;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
+// import static org.junit.Assert.assertFalse;
 
 import java.sql.SQLException;
 
@@ -30,15 +31,18 @@ public class UserDaoTest {
 			e.printStackTrace();
 		}
 	}
+
 	@Ignore
 	@Test
 	public void testDeleteUserDao() {
 		try {
+			// assertFalse(dao.delete(23));
 			assertTrue(dao.delete(23));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+
 	@Test
 	public void testUpdateUserDao() {
 		try {

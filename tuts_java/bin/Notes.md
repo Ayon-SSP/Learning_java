@@ -385,7 +385,7 @@ public class className extends ParentClass implements Interface1, Interface2{
 ```
 
 - ClassName objectName=new ClassName(); ClassName is the reference type BUT int val = 10; val is not reference type. its premite type.
-## `Student Student1 = new Student();`  (constructor is called)
+- `Student Student1 = new Student();`  (constructor is called)
 - Student Student1 => reference to the object(compile time) (by default in gives a unique id)
 - allocate memory `dynamically` at `run time` 
 - stack => reference to the object || Student1
@@ -870,16 +870,6 @@ interface Three extends One, Two {
 
 
 
-
-
-
-
-
-
-
-
-
-
 ### Encapsulation
 - Encapsulation is a process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines.
 
@@ -986,8 +976,10 @@ class TestNestedInterface1 implements Showable.Message {
 
 
 
-
-
+### Singleton class in Java 
+> [singleton-class-in-java](https://www.javatpoint.com/singleton-class-in-java)
+- Lazy Initialization
+- e
 
 ### More
 #### Java Lambda Expressions
@@ -1391,7 +1383,7 @@ public class Main {
  ```
 TODO: Need to complet lambda pdf.
 
-
+### JDBC: Day12_jdbc_singlton_thread & Day13_jdbcdemo02_junit4
 ### Working with Maven(Oracle JDBC)
 - have a look at jdbc-tuts. ***
 - https://maven.apache.org/ - one time jdbc connector(marvin)
@@ -1401,11 +1393,12 @@ create a Maven project: [TO Learn](https://www.javatpoint.com/how-to-create-a-ma
 3. version: 1.4
 4. groupid: com.projectname
 5. artifactid: projectname
-6. Goto: https://mvnrepository.com
-7. search for a:oracle and select 'Ojdbc8'
-8. select the version: 12.2.0.1
-9. copy the dependency and paste it in the pom.xml file between <dependencies> </dependencies>
-```xml
+6. version: 1.8
+7. Goto: https://mvnrepository.com
+8. search for a:oracle and select 'Ojdbc8'
+9. select the version: 12.2.0.1
+10. copy the dependency and paste it in the pom.xml file between <dependencies> </dependencies>
+	```xml
 	<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8 -->
 	<dependency>
 		<groupId>com.oracle.database.jdbc</groupId>
@@ -1414,4 +1407,19 @@ create a Maven project: [TO Learn](https://www.javatpoint.com/how-to-create-a-ma
 	</dependency>
 	``` 
 	parally change the version `<version>1.8</version>`
-10. Right click on the project and select Maven -> Update Project
+1.  Right click on the project and select Maven -> Update Project
+2.  util to connect with db
+3.  `junit5`: unit testing look jdbcdemo2 ma'ams code.
+
+#### Go to `C:\CODE\1]_Lets_Compile\3]_learning_java\JDBC\jdbc-tuts2` to learn more about JDBC
+	1. Model
+	2. DAO
+	3. collection
+	4. service
+	5. controller.
+
+1. Serialization and Deserialization in Java [Link](https://www.javatpoint.com/serialization-in-java)
+2. Hibernate Tutorial [Link](https://www.javatpoint.com/hibernate-tutorial)
+3. exception-handling-in-java [Link](https://www.javatpoint.com/exception-handling-in-java)
+4. file io
+5. jdbc-rowset [Link](https://www.javatpoint.com/jdbc-rowset)

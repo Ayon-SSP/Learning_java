@@ -1,9 +1,9 @@
 package com.training.jdbcdemo;
 
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
+// import static org.junit.Assert.assertNull;
 
-import java.sql.Connection;
+// import java.sql.Connection;
 import java.sql.SQLException;
 
 import org.junit.Test;

@@ -38,7 +38,7 @@ Granularity
 Java Object		-- Mapped -- Relation database
 --------------------				Orders (orderid,orderdate)	
 	Orders 							OrderDetails(oderid,productid,quantiyPurchased)	
---------------------				book(bookid,bookname,unitprice)
+--------------------				books(booksid,booksname,unitprice)
 	-Orderid
 	-List<OrderDetails>
 	-OrderDate
@@ -50,11 +50,11 @@ Java Object		-- Mapped -- Relation database
 ---------------------
 
 	-Orderid
-	-bookid
+	-booksid
 	-QuantityPurchased
 	-UnitPrice
 	-TotalAmount
-	-book
+	-books
 	-Order
 ----------------------
 
