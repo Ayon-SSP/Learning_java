@@ -285,18 +285,82 @@ String(string buffer, string pul, string object)
 
 
 
-## Collections in Java
+## Collections API in Java [img](https://media.geeksforgeeks.org/wp-content/uploads/20230406131807/Collections-in-Java.webp)
 - *Code:* [src.com.training.learn.collections.\*.java]
-1. Array
-2. ArrayList
-3. Set
-4. Map
+- [gfg-collections-class-in-java](https://www.geeksforgeeks.org/collections-class-in-java/)
+- IS-A
+1. List -> ArrayList, LinkedList, Vector, Stack
+2. Set -> HashSet, LinkedHashSet, TreeSet
+3. Queue -> PriorityQueue, Deque
+- HAS-A
+4. Map -> Map & SortedMap
 
 
+```java
+Collection<String> c = new ArrayList<String>();
+c.add("A");
+c.remove("A");
+c.contains("A");
+c.size();
+c.isEmpty(); ... go to the file and check the methods
 
+List<User> users = new ArrayList<>();
+Iterator<User> iterator = users.iterator();
+while(iterator.hasNext()){
+  User user = iterator.next();
+  System.out.println(user);
+}
 
+Set<User> set = new HashSet<User>(); // no duplicate, unordered -hashcode and equals
+SortedSet<User> set = new TreeSet<User>(); // no duplicate, ordered -comparable and comparator
+
+Set<User> set = new LinkedHashSet<User>(); // no duplicate, ordered -insertion order
+Set<User> set = new TreeSet<User>(); // no duplicate, ordered -comparable and comparator
+Queue<User> queue = new PriorityQueue<User>(); // no duplicate, ordered -natural order
+Deque<User> deque = new ArrayDeque<User>(); // no duplicate, ordered -natural order
+Map<Integer, User> map = new HashMap<Integer, User>(); // no duplicate, unordered -hashcode and equals
+Map<Integer, User> map = new TreeMap<Integer, User>(); // no duplicate, ordered -comparable and comparator
+Map<Integer, User> map = new LinkedHashMap<Integer, User>(); // no duplicate, ordered -insertion order
+Collection<User> c = new ArrayList<User>();
+Comparator<User> comparator = new Comparator<User>(){
+  public int compare(User u1, User u2){
+	return u1.getName().compareTo(u2.getName());
+  }
+};
+
+for (Map.Entry<Integer, User> entry : map.entrySet()) {
+  System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+}
+```
+```java
+class Registration{
+	private static Map<Student, List<Course>> studentCourseMap = new HashMap<Student, List<Course>>(); // where registration is a view which allws to use both objects.
+	to itrate
+	for (Map.Entry<Student, List<Course>> entry : studentCourseMap.entrySet()) {
+		System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+		for(Course course: entry.getValue()){
+			System.out.println(course);
+		}
+		
+	}
+}
+```
 ## Object Oriented Programming in Java
+OOP SOLID PRINCIPLE :
+1. S SRP 						:Single Responsibility Principle
+2. O OCP Open/Closed Principle : Open for extenstion Close for modification
+3. L LSP Liskov Substitution Principle: 
+4. I ISP Interface Segregation Principle:
+5. D DSP Dependency Inversion Principle:
 
+### Types of classes:
+1. Concreate class: class with implementation(POJO, JavaBean) | public class ClassName{}  | can be instantiated
+2. Abstract class: class without implementation | public abstract class ClassName{} | can't be instantiated
+3. Nested/inner class: class inside a class | public class ClassName{ public [static] class InnerClass{} } | can be instantiated [must do concepts]
+   1. Static Classes
+   2. Non-static Classes
+4. Anonymous class: class without a name | 
+5. Singleton class: class with only one object | public class ClassName{ private static ClassName obj = new ClassName(); private ClassName(){} public static ClassName getInstance(){ return obj; } } | can be instantiated.
 #### POJO vs JavaBean
 > [pojo-in-java](https://www.javatpoint.com/pojo-in-java)
 ##### POJO:
@@ -582,7 +646,25 @@ Types of Inheritance:
 	implements 		class implements interface 
 
 #### Aggregation(HAS-A) open link [aggregation-in-java](https://www.javatpoint.com/aggregation-in-java)
-
+##### bankapp11
+```java
+interface IDeposit{String deposit(double amount);}
+interface IWithdraw{String withdraw(double amount) throws InsufficientBalanceException;}
+interface IBankService extends IDeposit, IWithdraw{}
+abstract class BankAccount implements IBankService {getter/setter hashcode and equals...}
+class SavingAccount extends BankAccount{SavingAccount(){} public String withdraw(double amount) throws InsufficientBalanceException {}}
+// for this code  got to - *Code:* [src.com.training.learn.exception.\*.java]
+```
+diagram
+```
+		IDeposit    IWithdraw
+		    |		   |
+			IBankService
+				|
+			BankAccount
+				|	
+	SavingAccount + CurrentAccount + SalaryAccount
+```
 
 
 ### Polymorphism
@@ -806,7 +888,7 @@ There are two ways to achieve abstraction in java
 
 #### Interface in Java
 - *Code:* [src.com.training.learn.interfaceclass.\*.java]
-- public `abstract` class Parent{`abstract` void methodsFoo();} || public class Son `implements` Parent{}/public class Daughter `implements` Parent{} | ![ALL](https://static.javatpoint.com/images/core/interfacerelation.jpg) | ![](https://static.javatpoint.com/images/core/multipleinheritance.jpg)
+- public `abstract` class Parent{`abstract` void methodsFoo();} || public class Son `implements` Parent{}/public class Daughter `implements` Parent{} | ![ALL](https://static.javatpoint.com/images/core/interfacerelation.jpg) | ![All](https://static.javatpoint.com/images/core/multipleinheritance.jpg)
 - default methods ***
 ```java
   class Car extends Vehicle implements Engine, Media, Break
@@ -851,6 +933,19 @@ interface Two {
 interface Three extends One, Two {
 }
 ```
+##### Functional Interface
+```java
+public interface Runnable {
+  run();
+};
+public interface Comparator<T> {
+  int compareTo(T t1, T t2);
+};
+public interface FileFilter {
+  boolean accept(File pathname);
+};
+
+```
 
 
 #### Difference between Abstract class and Interface
@@ -866,10 +961,6 @@ interface Three extends One, Two {
   in interface: if we declare fealds is alwasys public static final but in abstract class we can have non-static and non-final fields which is access to every class so abstract is introduced to restrict the access of the fields.
 
 
-
-
-
-
 ### Encapsulation
 - Encapsulation is a process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines.
 
@@ -881,11 +972,6 @@ interface Three extends One, Two {
 
 
 #### Data Hiding
-
-
-
-
-
 
 
 ### Java Nested & Inner Classes
@@ -901,7 +987,15 @@ interface Three extends One, Two {
 #### Inner Anonymous Classes
 1. Class (may be abstract or concrete).
 2. Interface
-
+```java
+Employee specialCase =new PartTimeEmployee(3, "Dominic", "Assistant", 5000, 0, LocalDate.of(1999, 5, 4), 10,4,10) {
+	@Override
+	public double calculateSalary() {				
+		
+		return 40000+(baseSalary*this.getHoursPerDay()*this.getWorkingDays());
+	}
+};
+```
 - [Generics in java](https://www.javatpoint.com/generics-in-java)
 ```java
 class MyGen<T>{  
@@ -911,9 +1005,6 @@ T get(){return obj;}
 }  
 MyGen<Integer> m=new MyGen<Integer>();
 ```
-
-
-
 
 #### Internal class generated by the compiler:
 ```java
@@ -952,60 +1043,19 @@ class TestNestedInterface1 implements Showable.Message {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Singleton class in Java 
+**Code**: [src.com.training.learn.singleton.\*.java] and multithreading
 > [singleton-class-in-java](https://www.javatpoint.com/singleton-class-in-java)
 - Lazy Initialization
 - e
 
 ### More
-#### Java Lambda Expressions
+#### Java Lambda Expressions & Functional Interfaces & Stream
 > *Code:* [src.com.training.learn.lambda.\*.java]
 ```java
 (argument-list) -> {body}  
 
 ```
-#### Enum in Java
-- predefined set of values that don't change. eg. days of the week.
-```java
-public enum Booleans{  
-  TRUE, FALSE  
-}
-Booleans b=Booleans.TRUE;  
-if (b==Booleans.TRUE){
-  //perform action
-}
-
-public enum Day{  
-  SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY  
-}
-  Day.valueOf("MONDAY"); // MONDAY
-
-```
-
 ```java
 
 import java.util.ArrayList;
@@ -1059,6 +1109,288 @@ public class Main {
     }
 }
 
+```
+```java
+FileFilter filter = (File file) -> file.getName().endsWith(".java");
+Runnable r = () -> {
+	for (int i = 0; i < 5; i++) {
+		System.out.println("Hello world!");
+	}
+};
+
+Comparator<String> c = (String s1, String s2) -> Integer.compare(s1.length(), s2.length()); -<or>-
+Comparator<String> c = (s1, s2)               -> Integer.compare(s1.length(), s2.length()); -<or>-
+Comparator<String> c = new Comparator<String>(String s1, String s2) {
+
+    public boolean compareTo(String s1, String s2) {
+		Integer.compare(s1.length(), s2.length());
+    }
+}; 
+
+Function<String, String> f = s -> s.toLowerCase(); -<or>-
+Function<String , String> f = String::toLowerCase;
+
+Comparator<Integer> c = (i1, i2) -> Integer.compare(i1, i2);
+Comparator<Integer> c = Integer::compare;
+
+List<Customer> list = ...;
+list.forEach(customer -> System.out.println(customer));
+list.forEach(System.out::println);
+
+Consumer<T> c = p ‐> System.out.println(p);
+Consumer<T> c = System.out::println; // Method reference
+
+List<String> list = new ArrayList<>();
+Consumer<String> c1 = list::add; // same as c1 = s ‐> list.add(s);
+Consumer<String> c2 = System.out::println;
+```
+
+3 Categories of operations. 
+1. forEach(Consumer) and peek()
+2. filter(Predicate) (lazy)
+3. map() and flatMap()
+
+```java
+List<Integer> ages = ... ;
+Stream<Integer> stream = ages.stream();
+Integer sum =
+stream.reduce(0, (age1, age2) ‐> age1 + age2);
+
+BinaryOperation<Integer> max = (i1, i2) ‐> i1 > i2 ? i1 : i2;
+```
+
+
+```java
+comparation for equlality -> equals() and hashCode() method
+java.lang.Comparable => obj1.compareTo(obj2) => 1, 0, -1
+java.util.Comparator => (obj1, obj2) -> obj1.compareTo(obj2)
+```
+
+##### Stream
+- are not objects, they are interfaces - can perform operations on a sequence of objects.
+- if gives ways to process data efficiently
+- it does not holdes any data
+- process from right to left
+- it's lazy, it does not start processing until it's required
+```java
+List<Contact> contacts = contactList.findAll();
+Consumer<Contact> consumer = (contact) -> System.out.println(contact);
+contacts.forEach(consumer); // constacts.forEach((contact) -> System.out.println(contact));
+
+
+List<Person> persons = ... ;
+Map<Integer, Long> result =
+persons.stream()
+.filter(person ‐> person.getAge() > 20)
+.collect(
+Collectors.groupingBy(Person::getAge),
+Collectors.counting() // the downstream collector
+);
+
+List<Person> persons = ... ;
+if (persons.isParallel()):
+persons.map(person ‐> person.getLastName())
+.allMatch(length < 20); 
+
+
+
+ages.stream().max()
+ages.stream().max().ifPresent(max -> System.out.println(max));
+```
+Booliean reduction:
+1. allMatch()
+2. anyMatch()
+3. noneMatch()
+
+```java
+List<String> list = Arrays.asList("abc1", "abc2", "abc3");
+list.stream().map(s -> s.substring(0, 3)).forEach(System.out::println);
+```
+```java
+List<String> list = Arrays.asList("abc1", "abc2", "abc3");
+list.stream().map(s -> {
+	System.out.println("map: " + s);
+	return s.toUpperCase();
+}).anyMatch(s -> {
+	System.out.println("anyMatch: " + s);
+	return s.startsWith("A");
+});
+```
+```java
+List<String> list = Arrays.asList("abc1", "abc2", "abc3");
+list.stream().map(s -> {
+	System.out.println("map: " + s);
+	return s.toUpperCase();
+}).filter(s -> {
+	System.out.println("filter: " + s);
+	return s.startsWith("A");
+}).forEach(s -> System.out.println("forEach: " + s));
+```
+
+```java
+		Optional<Integer> minAge=peopleSet.stream()
+										  .map(person->person.getAge())
+										  .filter(age->age>20)
+										  .min(Comparator.naturalOrder());
+		if(minAge.isPresent()) {
+			System.out.println("Min Age"+minAge.get());
+		}
+		
+		BinaryOperator<Integer> sumOperator=(n1,n2)->n1+n2;
+		int result=Stream.of(1,2,3,4,5).reduce(0,sumOperator);
+		System.out.println("Number sum: "+result);
+		Integer sumAge=peopleSet.stream()
+							  .map(person->person.getAge()) // `person.getAge()` will sent to next and stored in `age`
+							  .filter(age->age>20)
+							  .reduce(0,sumOperator);
+```
+
+
+
+```java
+package com.training.demo.model;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
+import java.util.function.BinaryOperator;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
+
+import com.training.demo.util.People;
+
+public class Main {
+
+	public static void main(String[] args) {
+		People people=new People();
+		Set<Person> peopleSet=people.findAll();
+		peopleSet.add(new Person(1, "Amit", 17));
+		peopleSet.add(new Person(2, "Ajit", 17));
+		peopleSet.add(new Person(3, "Ajit", 17));
+		peopleSet.add(new Person(4, "Ajit", 17));
+		peopleSet.add(new Person(5, "Ajit", 17));
+		peopleSet.add(new Person(6, "Ajit", 17));
+		peopleSet.add(new Person(7, "Ajit", 17));
+		peopleSet.add(new Person(8, "Ajit", 17));
+		peopleSet.add(new Person(9, "Ajit", 17));
+		peopleSet.add(new Person(10, "Ajit", 17));
+		peopleSet.add(new Person(11, "Ajit", 18));
+		peopleSet.add(new Person(12, "Ajit", 18));
+		peopleSet.add(new Person(11, "Ajit", 19));
+		peopleSet.add(new Person(12, "Ajit", 19));
+		peopleSet.add(new Person(13, "Ajit", 20));
+		peopleSet.add(new Person(14, "Ajit", 20));
+		peopleSet.add(new Person(15, "Ajit", 20));
+		peopleSet.add(new Person(16, "Ajit", 20));
+		peopleSet.add(new Person(17, "Ajit", 20));
+		peopleSet.add(new Person(18, "Ajit", 20));
+		peopleSet.add(new Person(19, "Ajit", 20));
+		peopleSet.add(new Person(20, "Ajit", 20));
+		peopleSet.add(new Person(21, "Ajit", 22));
+		peopleSet.add(new Person(22, "Ajit", 22));
+		peopleSet.add(new Person(23, "Ajit", 25));
+		peopleSet.add(new Person(24, "Ajit", 25));
+		peopleSet.add(new Person(25, "Ajit", 25));
+		peopleSet.add(new Person(26, "Ajit", 25));
+		peopleSet.add(new Person(27, "Ajit", 25));
+		peopleSet.add(new Person(28, "Ajit", 30));
+		peopleSet.add(new Person(29, "Ajit", 30));
+		peopleSet.add(new Person(30, "Ajit", 30));
+
+//		oldway(peopleSet);
+
+		System.out.println("Line 52 :");
+		peopleSet.stream().filter(p->p.getAge()>20).forEach(System.out::println);
+		//filter -> functional interface predicate help us to filter the
+		Predicate<Person> p=person->person.getAge()>20;
+		Consumer<Person> c=System.out::println;
+		System.out.println("Line 56 :");
+		peopleSet.stream().filter(p).forEach(c);
+		
+		System.out.println("As per slide 190");
+		Optional<Integer> minAge=peopleSet.stream()
+										  .map(person->person.getAge())
+										  .filter(age->age>20)
+										  .min(Comparator.naturalOrder());
+		if(minAge.isPresent()) {
+			System.out.println("Min Age"+minAge.get());
+		}
+		
+		BinaryOperator<Integer> sumOperator=(n1,n2)->n1+n2;
+		int result=Stream.of(1,2,3,4,5).reduce(0,sumOperator);
+		System.out.println("Number sum: "+result);
+		Integer sumAge=peopleSet.stream()
+										  .map(person->person.getAge())
+										  .filter(age->age>20)
+										  .reduce(0,sumOperator);
+		System.out.println(sumAge);
+		
+		Optional<Integer> sumOptionalAge=peopleSet.stream()
+		.filter(person->person.getAge()>20)
+		.map(person->person.getAge())
+		.reduce(sumOperator);
+		
+		if(sumOptionalAge.isPresent()) {
+			System.out.println("Avg sum"+sumOptionalAge.get()/10);
+		}else {
+			System.out.println("Nothing");
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+	private static void oldway(Set<Person> peopleSet) {
+		for(Person p: peopleSet) {
+			System.out.println(p);
+		}
+		//step 1 : extract the age in some collection
+		final List<Integer> ageList=new ArrayList<>();
+		//step 2  : extract age from person 
+		for(Person p: peopleSet) {
+			ageList.add(p.getAge());
+		}
+		//step 3: group of people age>20
+		final List<Integer> ageGroupGt20List=new ArrayList<>();
+		for(int age: ageList) {
+			if(age>20) {
+				ageGroupGt20List.add(age);
+			}
+				
+		}
+		//step 3: do the iteration ove agelist and get the sum
+		int sum=0;
+		for(int age:ageGroupGt20List) {
+			sum=sum+age;
+		}
+		final double averageAge=sum/ageList.size();
+		System.out.println("Average of age for group gt ageof 20 : "+averageAge);
+	}
+
+}
+```
+
+#### Enum in Java
+- predefined set of values that don't change. eg. days of the week.
+```java
+public enum Booleans{  
+  TRUE, FALSE  
+}
+Booleans b=Booleans.TRUE;  
+if (b==Booleans.TRUE){
+  //perform action
+}
+
+public enum Day{  
+  SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY  
+}
+  Day.valueOf("MONDAY"); // MONDAY
 ```
 
 
@@ -1383,7 +1715,118 @@ public class Main {
  ```
 TODO: Need to complet lambda pdf.
 
-### JDBC: Day12_jdbc_singlton_thread & Day13_jdbcdemo02_junit4
+
+
+
+
+## Exception Handling:
+- *Code:* [src.com.training.learn.exception.\*.java]
+- Exception and others.. <must>
+- Make a notes of multiple throws and one try catch function inside function.....
+
+
+
+Exception in java is a Throwable object
+Exception terminates the execution
+You can handle exception gracefull by writing down try-catch-finally block
+Two types or Error
+Syntax which is caused at compilation
+Logical Error which is detected at run time
+Exception occurs at run time and terminates the execution of the code
+1. Null Pointer Exception
+2. Array index out of bound
+3. Devide by zero
+
+-> Any method throws an exception of type java.lang.Exception => Checked Exception 
+you must handle checked exception 
+i.e. either in main method you write throws or you handle it with try{}catch()
+
+java.lang.Exception
+
+unchecked Exception 
+   RuntimeException java.lang.ArithmeticException: /by zero=> Summary
+   - no need to handle(try chtch block)
+
+1. Thorwable -> Exception
+2. Create custom exception
+	a. extends Exception -> must called in try{}catch() () throws exception
+	b. extends RuntimeException
+3. Always remember we can have multiple catch on single try
+```java
+try{}
+catch(InsufficientBalanceException e) {}
+catch (RuntimeException e) {} // maintain the hiriarchy
+catch (Exception e) {}
+catch (Throwable e) {}
+finally{} // used to close resources
+```
+- custom exceptions
+
+
+
+## File io
+- **Code:** [src.com.training.learn.fileio.\*.java]
+- Complete File io [oracle docs](https://docs.oracle.com/javase/tutorial/essential/io/)
+
+
+### Serialization and Deserialization in Java [Link](https://www.javatpoint.com/serialization-in-java)
+
+
+## Blob Data with Oracle DB
+```java
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
+public class OracleBlobExample {
+
+    public static void main(String[] args) {
+        String url = "jdbc:oracle:thin:@//localhost:1521/yourDatabase";
+        String user = "yourUsername";
+        String password = "yourPassword";
+
+        try (Connection conn = DriverManager.getConnection(url, user, password)) {
+            createTable(conn);
+            insertBlobData(conn, "filePath");
+            System.out.println("Blob data inserted successfully.");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void createTable(Connection conn) throws SQLException {
+        String createTableSQL = "CREATE TABLE blob_table (id NUMBER PRIMARY KEY, blob_data BLOB)";
+        try (PreparedStatement pstmt = conn.prepareStatement(createTableSQL)) {
+            pstmt.executeUpdate();
+        }
+    }
+
+    private static void insertBlobData(Connection conn, String filePath) throws SQLException {
+        String insertSQL = "INSERT INTO blob_table (id, blob_data) VALUES (?, ?)";
+        try (PreparedStatement pstmt = conn.prepareStatement(insertSQL)) {
+            pstmt.setInt(1, 1); // Set your ID
+            pstmt.setBlob(2, getBlobData(filePath));
+            pstmt.executeUpdate();
+        }
+    }
+
+    private static InputStream getBlobData(String filePath) {
+        InputStream inputStream = null;
+        try {
+            inputStream = new FileInputStream(filePath);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return inputStream;
+    }
+}
+```
+
+## JDBC: Day12_jdbc_singlton_thread & Day13_jdbcdemo02_junit4
 ### Working with Maven(Oracle JDBC)
 - have a look at jdbc-tuts. ***
 - https://maven.apache.org/ - one time jdbc connector(marvin)
@@ -1405,11 +1848,21 @@ create a Maven project: [TO Learn](https://www.javatpoint.com/how-to-create-a-ma
 		<artifactId>ojdbc8</artifactId>
 		<version>12.2.0.1</version>
 	</dependency>
-	``` 
+	``` &&
+	```xml
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+	```
 	parally change the version `<version>1.8</version>`
-1.  Right click on the project and select Maven -> Update Project
-2.  util to connect with db
-3.  `junit5`: unit testing look jdbcdemo2 ma'ams code.
+11. Right click on the project and select Maven -> Update Project
+12. util to connect with db
+13. `junit5`: unit testing look jdbcdemo2 ma'ams code.
+14. to run a maven project: in the terminal `mvn clean package` `mvn clean install`
+15. (tomcat vscode extension) -> install tomcat server and run the project.
 
 #### Go to `C:\CODE\1]_Lets_Compile\3]_learning_java\JDBC\jdbc-tuts2` to learn more about JDBC
 	1. Model
@@ -1423,3 +1876,25 @@ create a Maven project: [TO Learn](https://www.javatpoint.com/how-to-create-a-ma
 3. exception-handling-in-java [Link](https://www.javatpoint.com/exception-handling-in-java)
 4. file io
 5. jdbc-rowset [Link](https://www.javatpoint.com/jdbc-rowset)
+
+
+#### JDBC [Link](https://www.javatpoint.com/java-jdbc)
+##### hibernate-tutorial: [Link](https://www.javatpoint.com/hibernate-tutorial)
+#### DAO: 
+- [The DAO Pattern in Java](https://www.baeldung.com/java-dao-pattern) - 🎉[*** imp Has-A relation]
+- [DAO Class in Java](https://www.javatpoint.com/dao-class-in-java)
+#### Collection: 
+#### Services: [Service Locator Pattern and Java](https://www.baeldung.com/java-service-locator-pattern)
+#### DTO: [The DTO Pattern (Data Transfer Object)](https://www.baeldung.com/java-dto-pattern)
+##### Conclusion:
+- DAOs are more granular and deal with one specific entity.
+- Services provide macro level functionalities and can end up using more than one DAO.
+- Typically, Services are used for defining transaction boundaries to gain atomicity.
+- In other words, if you end up updating multiple tables using multiple DAOs, defining transaction boundary at service will help in either committing or rollbacking all the changes done to DB.
+- DAO patterns, are used to divide high level business services from low level data accessing APIs
+- common operations to be carried out on a model object
+##### data-access-object-pattern: [layered-architecture](https://www.geeksforgeeks.org/data-access-object-pattern/)
+##### layered-architecture: [layered-architecture](https://medium.com/java-vault/layered-architecture-b2f4ebe8d587)
+
+#### servelate: [Link](https://www.javatpoint.com/servlet-tutorial)
+#### [create-a-dynamic-web-project-in-vs-code](https://stackoverflow.com/questions/76013263/how-can-we-create-a-dynamic-web-project-in-vs-code)

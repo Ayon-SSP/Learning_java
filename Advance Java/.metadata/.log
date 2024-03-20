@@ -1,0 +1,1442 @@
+!SESSION 2024-03-20 12:01:08.199 -----------------------------------------------
+eclipse.buildId=4.30.0.20231201-1200
+java.version=21.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-03-20 12:01:32.525
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-03-20 12:02:31.134
+!MESSAGE Logback config file: C:\CODE\1]_Lets_Compile\3]_learning_java\Advance Java\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.1.20231030-1438.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-03-20 12:02:34.140
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-20 12:02:34.140
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-03-20 12:02:39.259
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-03-20 14:00:12.138 -----------------------------------------------
+eclipse.buildId=4.30.0.20231201-1200
+java.version=21.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-03-20 14:00:14.822
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-03-20 14:00:45.414
+!MESSAGE Logback config file: C:\CODE\1]_Lets_Compile\3]_learning_java\Advance Java\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.1.20231030-1438.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-03-20 14:00:47.437
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-20 14:00:47.437
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-03-20 14:00:51.951
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2024-03-20 14:05:02.083
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2024-03-20 14:05:02.083
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.083
+!MESSAGE Software being installed: m2e-wtp - Maven Integration for WTP 1.2.1.20150819-2220 (org.eclipse.m2e.wtp.feature.feature.group 1.2.1.20150819-2220)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.083
+!MESSAGE Software currently installed: M2E - Maven Integration for Eclipse 2.4.200.20231119-0901 (org.eclipse.m2e.feature.feature.group 2.4.200.20231119-0901)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.083
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.083
+!MESSAGE M2E Maven Integration for Eclipse Core 2.6.0.20240220-1109 (org.eclipse.m2e.core 2.6.0.20240220-1109)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.083
+!MESSAGE Maven Integration for Eclipse 1.6.0.20150526-2032 (org.eclipse.m2e.core 1.6.0.20150526-2032)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.083
+!MESSAGE Maven Integration for Eclipse 1.6.2.20150902-0002 (org.eclipse.m2e.core 1.6.2.20150902-0002)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.083
+!MESSAGE M2E Maven Integration for Eclipse Core 2.4.1.20231119-0901 (org.eclipse.m2e.core 2.4.1.20231119-0901)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.083
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.083
+!MESSAGE From: M2E - Maven Integration for Eclipse 2.4.200.20231119-0901 (org.eclipse.m2e.feature.feature.group 2.4.200.20231119-0901)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.083
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.m2e.core [2.4.1.20231119-0901,2.4.1.20231119-0901]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.083
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.083
+!MESSAGE From: Maven Integration for Eclipse WTP 1.2.1.20150819-2220 (org.eclipse.m2e.wtp 1.2.1.20150819-2220)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.083
+!MESSAGE To: osgi.bundle; org.eclipse.m2e.core [1.6.0,2.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.083
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.083
+!MESSAGE From: m2e-wtp - Maven Integration for WTP 1.2.1.20150819-2220 (org.eclipse.m2e.wtp.feature.feature.group 1.2.1.20150819-2220)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.083
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.m2e.wtp [1.2.1.20150819-2220,1.2.1.20150819-2220]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2024-03-20 14:05:02.102
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2024-03-20 14:05:02.102
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.102
+!MESSAGE Software being installed: m2e-wtp - Maven Integration for WTP 1.2.1.20150819-2220 (org.eclipse.m2e.wtp.feature.feature.group 1.2.1.20150819-2220)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.102
+!MESSAGE Software currently installed: M2E - Maven Integration for Eclipse 2.4.200.20231119-0901 (org.eclipse.m2e.feature.feature.group 2.4.200.20231119-0901)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.102
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.102
+!MESSAGE M2E Maven Integration for Eclipse Core 2.6.0.20240220-1109 (org.eclipse.m2e.core 2.6.0.20240220-1109)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.102
+!MESSAGE Maven Integration for Eclipse 1.6.0.20150526-2032 (org.eclipse.m2e.core 1.6.0.20150526-2032)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.102
+!MESSAGE Maven Integration for Eclipse 1.6.2.20150902-0002 (org.eclipse.m2e.core 1.6.2.20150902-0002)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.102
+!MESSAGE M2E Maven Integration for Eclipse Core 2.4.1.20231119-0901 (org.eclipse.m2e.core 2.4.1.20231119-0901)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.102
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.102
+!MESSAGE From: M2E - Maven Integration for Eclipse 2.4.200.20231119-0901 (org.eclipse.m2e.feature.feature.group 2.4.200.20231119-0901)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.102
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.m2e.core [2.4.1.20231119-0901,2.4.1.20231119-0901]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.102
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.102
+!MESSAGE From: Maven Integration for Eclipse WTP 1.2.1.20150819-2220 (org.eclipse.m2e.wtp 1.2.1.20150819-2220)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.102
+!MESSAGE To: osgi.bundle; org.eclipse.m2e.core [1.6.0,2.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.102
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.102
+!MESSAGE From: m2e-wtp - Maven Integration for WTP 1.2.1.20150819-2220 (org.eclipse.m2e.wtp.feature.feature.group 1.2.1.20150819-2220)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.102
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.m2e.wtp [1.2.1.20150819-2220,1.2.1.20150819-2220]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2024-03-20 14:05:02.140
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2024-03-20 14:05:02.140
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.140
+!MESSAGE Software being installed: m2e-wtp - Maven Integration for WTP 1.2.1.20150819-2220 (org.eclipse.m2e.wtp.feature.feature.group 1.2.1.20150819-2220)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.140
+!MESSAGE Software currently installed: M2E - Maven Integration for Eclipse 2.4.200.20231119-0901 (org.eclipse.m2e.feature.feature.group 2.4.200.20231119-0901)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.140
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.140
+!MESSAGE M2E Maven Integration for Eclipse Core 2.6.0.20240220-1109 (org.eclipse.m2e.core 2.6.0.20240220-1109)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.140
+!MESSAGE Maven Integration for Eclipse 1.6.0.20150526-2032 (org.eclipse.m2e.core 1.6.0.20150526-2032)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.140
+!MESSAGE Maven Integration for Eclipse 1.6.2.20150902-0002 (org.eclipse.m2e.core 1.6.2.20150902-0002)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.140
+!MESSAGE M2E Maven Integration for Eclipse Core 2.4.1.20231119-0901 (org.eclipse.m2e.core 2.4.1.20231119-0901)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.140
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.140
+!MESSAGE From: M2E - Maven Integration for Eclipse 2.4.200.20231119-0901 (org.eclipse.m2e.feature.feature.group 2.4.200.20231119-0901)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.140
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.m2e.core [2.4.1.20231119-0901,2.4.1.20231119-0901]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.140
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.140
+!MESSAGE From: Maven Integration for Eclipse WTP 1.2.1.20150819-2220 (org.eclipse.m2e.wtp 1.2.1.20150819-2220)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.140
+!MESSAGE To: osgi.bundle; org.eclipse.m2e.core [1.6.0,2.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.140
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.140
+!MESSAGE From: m2e-wtp - Maven Integration for WTP 1.2.1.20150819-2220 (org.eclipse.m2e.wtp.feature.feature.group 1.2.1.20150819-2220)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.140
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.m2e.wtp [1.2.1.20150819-2220,1.2.1.20150819-2220]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2024-03-20 14:05:02.141
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2024-03-20 14:05:02.141
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.141
+!MESSAGE Software being installed: m2e-wtp - Maven Integration for WTP 1.2.1.20150819-2220 (org.eclipse.m2e.wtp.feature.feature.group 1.2.1.20150819-2220)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.141
+!MESSAGE Software currently installed: M2E - Maven Integration for Eclipse 2.4.200.20231119-0901 (org.eclipse.m2e.feature.feature.group 2.4.200.20231119-0901)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.141
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.141
+!MESSAGE M2E Maven Integration for Eclipse Core 2.6.0.20240220-1109 (org.eclipse.m2e.core 2.6.0.20240220-1109)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.141
+!MESSAGE Maven Integration for Eclipse 1.6.0.20150526-2032 (org.eclipse.m2e.core 1.6.0.20150526-2032)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.141
+!MESSAGE Maven Integration for Eclipse 1.6.2.20150902-0002 (org.eclipse.m2e.core 1.6.2.20150902-0002)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.141
+!MESSAGE M2E Maven Integration for Eclipse Core 2.4.1.20231119-0901 (org.eclipse.m2e.core 2.4.1.20231119-0901)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.141
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.141
+!MESSAGE From: M2E - Maven Integration for Eclipse 2.4.200.20231119-0901 (org.eclipse.m2e.feature.feature.group 2.4.200.20231119-0901)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.141
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.m2e.core [2.4.1.20231119-0901,2.4.1.20231119-0901]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.141
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.141
+!MESSAGE From: Maven Integration for Eclipse WTP 1.2.1.20150819-2220 (org.eclipse.m2e.wtp 1.2.1.20150819-2220)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.141
+!MESSAGE To: osgi.bundle; org.eclipse.m2e.core [1.6.0,2.0.0)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2024-03-20 14:05:02.141
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.141
+!MESSAGE From: m2e-wtp - Maven Integration for WTP 1.2.1.20150819-2220 (org.eclipse.m2e.wtp.feature.feature.group 1.2.1.20150819-2220)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2024-03-20 14:05:02.141
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.m2e.wtp [1.2.1.20150819-2220,1.2.1.20150819-2220]
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:33.652
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,java_cup.runtime,0.10.0.v201005080400 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:33.653
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,com.ibm.icu,54.1.1.v201501272100 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:06:33.653
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,javax.persistence,2.1.0.v201304241213.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:33.653
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,javax.wsdl,1.5.1.v201012040544 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:34.731
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.commons.codec,1.6.0.v201305230611 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:34.732
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,javax.annotation,1.2.0.v201401042248 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:34.732
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,javax.inject,1.0.0.v20091030 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:34.733
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.axis,1.4.0.v201411182030 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:34.733
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,javax.servlet,3.1.0.v201410161800 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:34.733
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.commons.discovery,0.2.0.v201004190315 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:36.029
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.commons.logging,1.0.4.v201101211617 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:36.090
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.log4j,1.2.15.v201012070815 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:36.155
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.velocity,1.5.0.v200905192330 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:36.228
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.wsil4j,1.0.0.v200901211807 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:06:36.408
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.apache.xalan,2.7.1.v201005080400.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:36.409
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.xerces,2.9.0.v201101211617 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:36.409
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.apache.xml.resolver,1.2.0.v201005080400 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:36.585
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.equinox.coordinator,1.3.100.v20150410-1453 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:37.642
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jem,2.0.600.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:37.642
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jem.beaninfo,2.0.300.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:38.031
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jem.beaninfo.vm,2.0.300.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:38.517
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jem.beaninfo.vm.common,2.0.300.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:06:39.580
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.jem.proxy,2.0.500.v201504161518.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:39.720
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jem.util,2.1.200.v201404021757 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:39.853
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jem.workbench,2.0.400.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:40.038
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jetty.webapp,9.2.9.v20150224 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:41.232
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jetty.xml,9.2.9.v20150224 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:41.344
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.common.eclipselink.branding,1.3.100.v201309202144 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:42.133
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.common.eclipselink.core,1.3.100.v201308091549 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:06:42.529
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jpt.common.eclipselink.feature,1.3.101.v201410241959.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:42.606
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.dbws.eclipselink.branding,1.2.100.v201309202144 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:42.787
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.dbws.eclipselink.core.gen,1.1.100.v201308132122 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:06:43.158
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jpt.dbws.eclipselink.feature,1.2.101.v201501152048.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:43.841
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.dbws.eclipselink.ui,1.1.101.v201501152048 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:43.893
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.doc.user,3.2.100.v201308231650 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:43.982
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jaxb.branding,1.4.0.v201309202144 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:44.026
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jaxb.core,1.4.1.v201501152041 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:44.080
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jaxb.core.schemagen,1.1.100.v201309202144 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:44.118
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jaxb.eclipselink.branding,1.4.100.v201309202144 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:44.483
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jaxb.eclipselink.core,1.3.101.v201501171820 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:45.250
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jaxb.eclipselink.core.schemagen,1.2.100.v201309202144 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:06:45.311
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jpt.jaxb.eclipselink.feature,1.4.102.v201501171820.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:45.366
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jaxb.eclipselink.ui,1.4.100.v201308271450 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:06:45.411
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jpt.jaxb.feature,1.5.2.v201501171820.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:45.885
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jaxb.ui,1.5.0.v201308091549 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:46.541
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpa.annotate,1.0.100.v201309261652 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:46.637
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpa.branding,3.4.0.v201309202144 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:46.743
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpa.core,3.4.0.v201312052110 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:46.783
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpa.db,2.2.100.v201311150251 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:46.934
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpa.db.ui,2.1.100.v201309202144 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:47.877
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpa.eclipselink.branding,3.4.0.v201309202144 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:47.937
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpa.eclipselink.core,2.4.0.v201309122001 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:47.991
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpa.eclipselink.core.ddlgen,2.2.100.v201309202144 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:06:47.992
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jpt.jpa.eclipselink.feature,3.4.1.v201409111648.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:48.401
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpa.eclipselink.ui,2.4.0.v201308271953 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:48.445
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpa.ui,3.4.0.v201312022017 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:49.027
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpadiagrameditor.branding,1.2.101.v201501141513 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:49.306
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpadiagrameditor.doc.user,1.2.101.v201501141513 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:50.703
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpadiagrameditor.ui,1.2.101.v201501141513 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:50.820
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jsf.branding,3.5.0.v201309172308 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:06:51.335
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jsf.feature,3.8.0.v201505112336.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:51.491
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.common.annotations.controller,1.1.300.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:51.799
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.common.annotations.core,1.1.300.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:52.030
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.common.annotations.ui,1.1.300.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:06:52.702
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.common.fproj.enablement.jdt,3.6.3.v201501141810.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:53.092
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.common.project.facet.core,1.4.400.v201403261418 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:53.425
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.common.project.facet.ui,1.4.510.v201501141810 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:53.974
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.common.ui,1.0.201.v201208291950 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:54.213
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ejb.doc.user,1.1.301.v201105130955 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:54.591
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ejb.ui,1.1.900.v201402130359 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:55.727
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ejb.ui.infopop,1.0.300.v201002231012 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:06:56.741
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.enterprise_userdoc.feature,3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:56.777
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee,1.1.850.v201506041749 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:57.023
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.core,1.3.200.v201505041449 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:57.473
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.doc.user,1.1.400.v201008122207 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:57.545
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.ejb,1.1.800.v201404021607 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:58.029
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.ejb.annotation.model,1.1.300.v201004110730 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:58.084
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.ejb.annotations.emitter,1.1.200.v201004110730 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:58.984
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.ejb.annotations.ui,1.1.200.v201004261420 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:59.406
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.ejb.annotations.xdoclet,1.2.200.v201103302126 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:59.642
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.infopop,1.0.300.v201309091923 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:06:59.758
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.jca.ui,1.1.500.v201304231803 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:00.839
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.navigator.ui,1.1.600.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:00.930
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.web,1.1.850.v201503311656 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:01.149
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.webservice,1.1.400.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:01.267
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.webservice.ui,1.1.500.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:01.481
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.xdoclet.runtime,1.1.300.v201004280609 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:01.582
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jee,1.0.700.v201404092004 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:02.873
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jee.ejb,1.0.400.v201305061702 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:03.124
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jee.ui,1.0.701.v201408251535 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:03.182
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jee.web,1.0.500.v201404021628 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:03.385
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsf.apache.trinidad.tagsupport,1.4.0.v201309172102 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:03.457
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature,2.6.0.v201410101748.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:03.846
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsf.common,1.5.101.v201504022146 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:04.488
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsf.common.runtime,1.4.0.v201309172102 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:04.537
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsf.common.ui,1.5.0.v201309172102 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:04.600
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.jst.jsf.core,1.7.110.v201504071708.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:04.775
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsf.doc.user,1.5.0.v201309172352 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:04.897
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.jst.jsf.facelet.core,1.3.100.v201504071708.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:05.166
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsf.facelet.ui,1.3.100.v201505112336 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:07.010
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsf.facesconfig,1.5.0.v201309172102 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:07.068
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsf.facesconfig.ui,1.5.0.v201309172102 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:07.329
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsf.standard.tagsupport,1.5.0.v201309172102 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:07.436
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsf.ui,1.6.0.v201309172102 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:07.635
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsp.core,1.2.800.v201505130300 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:07.766
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsp.ui,1.1.1000.v201505130300 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:08.548
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.jsp.ui.infopop,1.0.200.v201309112106 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:09.563
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.pagedesigner.jsf.ui,1.5.0.v201309172102 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:09.739
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.pagedesigner.jsp.core,1.5.0.v201309172102 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:10.383
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.server.generic.core,1.0.900.v201402262303 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:10.415
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.server.generic.jonas,1.5.500.v201405151744 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:11.071
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.server.generic.ui,1.0.600.v201402262303 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:11.395
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.server.preview.adapter,1.1.300.v201309182039 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:11.642
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.server.tomcat.ui,1.1.400.v201311302002 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:12.141
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.server.ui,1.1.300.v201309182039 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:12.190
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.server.ui.doc.user,1.0.600.v201309182117 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:12.302
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.server.ui.infopop,1.0.500.v201309182117 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:12.699
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.server_adapters.feature,3.2.400.v201503102136.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:12.837
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.server_userdoc.feature,3.3.300.v201503102136.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:12.994
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.servlet.ui,1.1.801.v201409042158 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:13.325
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.servlet.ui.infopop,1.0.500.v201105121947 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:13.325
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.standard.schemas,1.2.201.v201501151629 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:13.571
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.web_userdoc.feature,3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:13.936
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws,1.0.750.v201503231435 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:14.000
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.annotations.core,1.2.200.v201311102023 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:14.138
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis.consumption.core,1.0.550.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:14.585
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis.consumption.ui,1.0.800.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:14.839
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis.creation.ui,1.0.850.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:14.876
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis.infopop,1.0.400.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:15.068
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis.ui.doc.user,1.1.200.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:15.423
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis2.consumption.core,1.0.200.v201309242118 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:15.470
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis2.consumption.ui,1.0.200.v201309242118 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:15.563
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis2.core,1.0.300.v201309242118 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:15.607
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis2.creation.core,1.0.200.v201309242118 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:15.675
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis2.creation.ui,1.0.200.v201309242118 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:15.872
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis2.ui,1.0.400.v201309242118 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:16.274
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.axis2.ui.doc.user,1.0.200.v201309242118 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:16.493
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.ws.axis2tools.feature,1.1.301.v201410160332.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:16.625
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.consumption,1.0.800.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:16.668
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.consumption.infopop,1.0.400.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:16.844
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.consumption.ui,1.1.800.v201504152025 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:16.936
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.consumption.ui.doc.user,1.0.700.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:17.036
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.creation.ejb.ui,1.0.250.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:17.074
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.creation.ui,1.0.900.v201503111711 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:17.109
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.cxf.consumption.core,1.0.300.v201309232152 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:17.418
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.cxf.consumption.ui,1.0.300.v201309232152 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:17.588
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.cxf.core,1.1.200.v201404292022 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:17.786
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.cxf.creation.core,1.0.401.v201408111743 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:17.912
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.cxf.creation.ui,1.0.300.v201403242125 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:18.019
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.cxf.doc.user,1.0.300.v201309232209 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:18.434
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.ws.cxf.feature,1.1.203.v201503151903.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:18.526
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.cxf.ui,1.0.300.v201309232152 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:18.803
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.doc.user,1.0.700.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:19.201
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.infopop,1.0.400.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:19.338
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.jaxb.core,1.0.200.v201309232152 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:19.473
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.jaxrs.core,1.0.600.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:19.613
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.jaxrs.ui,1.0.700.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:19.952
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.jaxws.doc.user,1.0.400.v201309232209 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:20.008
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.ws.jaxws.dom.feature,1.0.302.v201504272154.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:20.202
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.jaxws.dom.integration,1.0.300.v201308151836 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:20.438
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.jaxws.dom.runtime,1.0.300.v201308151836 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:20.585
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.jaxws.dom.ui,1.0.100.v201308151836 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:20.618
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.jaxws.ui,1.0.401.v201504291921 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:20.773
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.jaxws.utils,1.0.301.v201504272154 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:21.029
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.ws.jaxws_userdoc.feature,1.0.402.v201503151903.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:21.315
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.uddiregistry,1.0.600.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:21.562
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.ui,1.0.500.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:21.803
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.facet,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:22.029
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.facet.ui,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:22.030
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.libra.facet.feature,0.3.1.201405141436.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:22.323
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.framework.core,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:22.489
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.framework.editor.core,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:22.651
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.libra.framework.editor.feature,0.3.1.201405141436.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:22.696
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.framework.editor.integration,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:22.908
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.framework.editor.ui,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:22.940
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.framework.equinox,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:23.518
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.framework.felix.ui,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:23.519
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.framework.felix,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:23.519
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.libra.framework.feature,0.3.1.201405141436.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:23.520
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.framework.equinox.ui,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:23.752
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.framework.jonas,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:23.973
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.framework.jonas.ui,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:24.085
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.framework.knopflerfish,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:24.168
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.framework.knopflerfish.ui,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:24.310
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.framework.ui,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:24.737
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.warproducts.core,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:24.850
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.libra.warproducts.feature,0.3.1.201405141436.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:24.891
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.warproducts.help,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:24.961
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.libra.warproducts.ui,0.3.1.201405141436 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:25.169
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.persistence.antlr,3.2.0.v201302191141.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:25.367
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.persistence.asm,5.0.1.v201405080102.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:25.530
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.persistence.core,2.6.0.v20140809-296a69f.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:25.589
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.persistence.dbws,2.6.0.v20140809-296a69f.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:25.943
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.persistence.dbws.builder,2.6.0.v20140809-296a69f.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:26.116
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.persistence.jpa,2.6.0.v20140809-296a69f.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:26.194
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.persistence.jpa.jpql,2.6.0.v20140809-296a69f.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:26.289
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.persistence.moxy,2.6.0.v20130815-a4708b6.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:26.624
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.command.env,1.0.500.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:26.757
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.command.env.core,1.0.300.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:26.798
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.command.env.doc.user,1.5.400.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:27.241
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.command.env.infopop,1.0.200.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:28.093
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.command.env.ui,1.1.200.v201503231435 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:28.197
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.core,1.2.0.v200908251833 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:28.340
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.emf,1.2.400.v201505132009 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:28.415
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.emfworkbench.integration,1.2.101.v201107081800 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:28.511
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.environment,1.0.400.v200912181831 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:29.649
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.common.fproj,3.7.0.v201505072140.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:29.696
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.frameworks,1.2.200.v201304241450 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:30.072
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.frameworks.ui,1.2.400.v201504292002 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:30.631
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.infopop,1.0.300.v201309101952 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:31.157
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.modulecore,1.2.401.v201408132036 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:31.339
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.modulecore.ui,1.0.300.v201505072128 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:31.650
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.project.facet.core,1.4.300.v201111030423 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:31.745
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.project.facet.ui,1.4.600.v201505072140 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:31.778
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.snippets,1.2.200.v201208080420 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:31.892
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.ui,1.1.500.v200911182011 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:31.926
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.common.uriresolver,1.2.200.v201505132009 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:31.969
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.css.core,1.1.800.v201402172058 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:32.711
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.css.ui,1.0.901.v201501212057 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:33.541
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.doc.user,1.2.0.v201309112106 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:33.617
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.dtd.core,1.1.700.v201211012112 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:33.747
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.dtd.ui,1.0.801.v201308100602 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:33.853
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.dtd.ui.infopop,1.0.400.v201309112106 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:34.271
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.dtdeditor.doc.user,1.0.700.v201208081537 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:34.387
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.html.core,1.1.802.v201501312139 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:34.828
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.html.ui,1.0.1000.v201505130300 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:34.976
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.html.ui.infopop,1.0.201.v201409111852 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:35.691
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.internet.monitor.core,1.0.600.v201309182039 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:35.761
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.internet.monitor.ui,1.0.700.v201309182039 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:35.762
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.core,3.1.200.v201502261613 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:35.966
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.crossfire,1.0.500.v201505071819 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:36.037
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.rhino,1.0.400.v201503300052 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:36.630
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.rhino.debugger,1.0.500.v201503300052 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:36.754
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.rhino.ui,1.0.400.v201503270022 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:36.894
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.transport,1.0.300.v201502261613 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:37.127
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.debug.ui,1.0.500.v201502261613 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:37.412
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.manipulation,1.0.600.v201505071819 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:37.508
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.support.firefox,1.0.500.v201402051800 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:37.666
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.support.ie,1.0.600.v201505071819 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:37.987
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.web.core,1.0.800.v201505130300 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:38.251
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.web.support.jsp,1.0.600.v201307151913 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:38.369
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.web.ui,1.0.800.v201403271809 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:38.418
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.http.core,1.0.300.v201309182039 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:38.803
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.http.ui,1.0.400.v201309182039 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:39.142
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.preview,1.1.302.v201411112027 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:39.227
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.preview.adapter,1.1.300.v201309182039 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:39.529
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.ui.doc.user,1.1.600.v201309182117 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:39.609
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.ui.infopop,1.1.200.v201309182117 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:39.662
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.server_adapters.feature,3.2.402.v201505042029.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:39.793
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.server_userdoc.feature,3.3.300.v201405011426.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:40.193
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.sse.doc.user,1.1.100.v201208081537 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:40.460
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.sse.ui.infopop,1.0.300.v201309112106 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:40.499
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.standard.schemas,1.0.700.v201304171715 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:40.629
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.validation.infopop,1.0.300.v201309101952 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:40.812
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.validation.ui,1.2.500.v201310231452 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:40.853
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.web,1.1.800.v201312041437 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:41.001
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.web.ui,1.1.600.v201302011850 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:41.163
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.web.ui.infopop,1.0.300.v200805140206 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:41.210
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.web_userdoc.feature,3.6.0.v201405062147.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:41.498
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.webtools.doc.user,1.0.500.v201208081537 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:41.642
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws,1.1.400.v201503231435 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:41.845
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws.infopop,1.0.400.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:42.172
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws.parser,1.0.600.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:42.429
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws.service.policy,1.0.450.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:42.468
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws.service.policy.ui,1.0.500.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:42.615
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws.ui,1.1.300.v201503231435 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:42.653
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.ws_core.feature,3.7.0.v201505131719.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:42.852
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.ws_userdoc.feature,3.1.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:43.071
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.ws_wsdl15.feature,1.5.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:43.171
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsdl,1.2.400.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:43.171
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsdl.ui,1.2.700.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:43.580
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsdl.ui.doc.user,1.0.850.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:43.741
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsdl.validation,1.1.700.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:43.810
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsi,1.0.600.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:43.950
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsi.ui,1.0.600.v201505131719 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:44.125
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.wsi.ui.doc.user,1.0.750.v201309242123 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:44.142
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xml.core,1.1.902.v201501211904 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:44.210
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xml.ui,1.1.501.v201501212057 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:44.359
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xml.ui.infopop,1.0.400.v201309112106 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:45.182
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xml.xpath2,1.1.0.v201309251557 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:45.558
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xml.xpath2.processor,2.1.101.v201409111854 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:45.608
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xml.xpath2.processor.doc.user,2.0.0.v201209212251 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:45.696
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.xml.xpath2.processor.feature,2.0.301.v201409111854.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:45.817
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xml.xpath2.wtptypes,2.0.0.v201208081543 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:46.401
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.xml_userdoc.feature,3.6.0.v201405062147.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:46.508
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xmleditor.doc.user,1.0.700.v201208081537 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:46.737
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsd.core,1.1.900.v201401141857 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:47.096
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsdeditor.doc.user,1.0.800.v201208081537 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:47.720
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsl,1.2.0.v201309251559 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:47.868
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsl.core,1.1.301.v201405151730 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:48.136
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsl.debug.ui,1.0.302.v201304240928 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:48.362
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsl.exslt.core,1.0.0.v201005240422 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:48.362
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsl.doc,1.0.100.v201309251559 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:48.598
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsl.exslt.ui,1.0.0.v201006012004 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:48.704
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsl.jaxp.debug,1.0.300.v201304102131 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:48.932
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsl.jaxp.debug.ui,1.0.200.v201103081755 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:49.382
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsl.jaxp.launching,1.0.300.v201304102131 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:49.421
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsl.launching,1.1.0.v201304240928 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:49.773
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsl.saxon,1.0.200.v201103081755 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:49.871
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsl.ui,1.1.301.v201304222136 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:49.967
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsl.xalan,1.0.100.v201208081544 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:50.508
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.mozilla.javascript,1.7.4.v201504221540 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:50.544
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.uddi4j,2.0.5.v200805270300 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:50.795
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,osgi.enterprise,4.2.0.v201108120515 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:56.858
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jetty.io,9.2.13.v20150730 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:56.859
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jetty.continuation,9.2.13.v20150730 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:57.855
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jetty.http,9.2.13.v20150730 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:57.856
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jetty.server,9.2.13.v20150730 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:57.856
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jetty.xml,9.2.13.v20150730 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:57.857
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jetty.security,9.2.13.v20150730 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:57.857
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.common.frameworks,1.1.701.v201509021802 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:57.858
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jetty.webapp,9.2.13.v20150730 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:57.858
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jetty.util,9.2.13.v20150730 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:57.858
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jetty.servlet,9.2.13.v20150730 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:59.170
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.pagedesigner,1.7.100.v201507242118 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:59.298
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.server.tomcat.core,1.1.701.v201508232356 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:59.559
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.web_core.feature,3.7.1.v201509021802.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:59.559
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.doc,1.4.101.v201507140011 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:59.560
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.webpageeditor.feature,2.7.1.v201508270443.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:07:59.560
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.validation,1.2.700.v201508251749 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:59.561
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.server_adapters.ext.feature,3.3.401.v201508232356.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:07:59.561
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.common_core.feature,3.7.1.v201508262220.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:10.580
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.console.ui,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:10.581
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.core,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:11.530
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.core.index.sql,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:11.530
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.dltk.core,5.4.0.201602110510.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:11.530
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.annotations,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:11.530
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.console,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:11.531
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.core.index.sql.h2,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:11.531
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:11.531
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.dltk.core.index,5.4.0.201602110510.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:11.532
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.core.index,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:12.590
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.core.manipulation,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:12.863
+!MESSAGE No digest algorithm is available to verify download of binary,org.eclipse.dltk.core_root,5.4.0.201602110510.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:12.957
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.debug,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:13.002
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.debug.ui,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:13.295
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.formatter,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:13.340
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.launching,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:13.780
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.logconsole,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:13.803
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.logconsole.ui,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:13.893
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.testing,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:14.157
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.ui,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:14.235
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.validators.core,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:14.696
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.validators.externalchecker,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:14.823
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.dltk.validators.ui,5.4.0.201602110510 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:15.037
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jpt.jpa.feature,3.4.2.v201512181609.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:15.083
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jpt.jpa.gen,2.3.150.v201512181609 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:15.219
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jpt.jpadiagrameditor.feature,1.2.201.v201602090909.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:15.333
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.enterprise_core.feature,3.6.0.v201602161345.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:15.644
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.enterprise_ui.feature,3.7.0.v201602161345.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:16.106
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.jca,1.1.800.v201602161345 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:16.238
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.j2ee.ui,1.1.900.v201602161345 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:16.410
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.server.core,1.2.400.v201512031711 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:16.498
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.server_core.feature,3.4.200.v201512031711.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:16.601
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.server_ui.feature,3.4.200.v201512031711.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:16.708
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.web_ui.feature,3.7.1.v201512021921.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:17.739
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.jst.ws.jaxws.core,1.0.403.v201602092125 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:17.800
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.jst.ws.jaxws.feature,1.2.203.v201602092125.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:17.907
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.php.core,3.7.0.201602121754 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:17.907
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.php.core.parser,3.7.0.201602121754 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:19.119
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.php.debug.core,3.7.0.201602121754 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:20.174
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.php.debug.daemon,3.7.0.201602121754 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:20.638
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.php.debug.ui,3.7.0.201602121754 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:20.744
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.php.formatter.core,3.7.0.201602121754 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:20.745
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.php,3.7.0.201602121754.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:20.994
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.php.formatter.ui,3.7.0.201602121754 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:21.392
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.php.help,3.7.0.201602121754 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:21.503
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.php.refactoring.core,3.7.0.201602121754 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:22.093
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.php.refactoring.ui,3.7.0.201602121754 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:22.377
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.php.server.core,3.7.0.201602121754 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:22.662
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.php.server.ui,3.7.0.201602121754 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:22.965
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.php.ui,3.7.0.201602121754 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:23.635
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.rap.doc,3.0.2.20160122-1334 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:23.976
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.rap.tools.feature,3.0.2.20160209-0600.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:24.254
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.rap.tools.intro,3.0.2.20160122-1334 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:24.342
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.rap.tools.intro.source,3.0.2.20160122-1334.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:25.289
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.rap.tools.launch,3.0.2.20160122-1334 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:25.595
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.rap.tools.launch.rwt,3.0.2.20160122-1334 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:25.685
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.rap.tools.launch.source,3.0.2.20160122-1334.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:25.685
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.rap.tools.launch.rwt.source,3.0.2.20160122-1334.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:26.429
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.rap.tools.templates,3.0.2.20160122-1334 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:27.591
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,org.eclipse.rap.tools.templates.source,3.0.2.20160122-1334.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:27.753
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.common_ui.feature,3.7.2.v201510130022.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:27.826
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.internet.cache,1.0.701.v201510130022 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:28.671
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.core,1.3.401.v201511181529 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:29.075
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.jsdt.feature,1.6.201.v201512010225.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:29.147
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.jsdt.ui,1.1.601.v201512010225 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:29.320
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.core,1.8.0.v201601132216 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:29.605
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.discovery,1.2.0.v201601132216 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:30.785
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.server.ui,1.5.202.v201602111638 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:31.301
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.server_core.feature,3.3.600.v201601132216.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:33.336
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.server_ui.feature,3.3.601.v201602111638.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:33.541
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.sse.core,1.1.901.v201510130005 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:34.946
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.sse.ui,1.3.401.v201510130005 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:36.809
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.web_core.feature,3.7.1.v201601132216.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:37.816
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.web_ui.feature,3.7.1.v201602111638.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:38.430
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.ws.explorer,1.0.850.v201512021921 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:39.158
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.ws_ui.feature,3.7.1.v201512021921.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:39.469
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xml.xpath.core,1.3.1.v201509231858 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:40.068
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xml.xpath.ui,1.1.102.v201509231858 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:40.543
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.xml_core.feature,3.7.2.v201510130005.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:40.654
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.xml_ui.feature,3.7.2.v201511240257.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-03-20 14:08:40.753
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,org.eclipse.wst.xsd.ui,1.2.510.v201511240257 have severely compromised security. Please report this concern to the artifact provider.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-03-20 14:08:40.795
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,org.eclipse.wst.xsl.feature,1.3.401.v201509231858.

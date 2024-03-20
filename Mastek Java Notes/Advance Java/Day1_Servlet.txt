@@ -1,0 +1,103 @@
+1. Core Java
+	java.lang
+	java.util.Scanner
+	java.util.Collection/Generics
+	java.util.Thread
+	java.sql 
+2. Advance
+Web Application
+
+
+Web Client 					httpRequest
+httpClient					 http					HttpReq/Resp  Apache Web Server host[webapp/]
+Browser                     httpResponse
+
+
+webapp->hosted by Apache Server 
+-META-INF
+-WEB-INF
+INFORMATION 
+	=> META-INF =>META DATA ABOUT DATA 
+	=> WEB-INF  =>WEB INF container/folder containing the deployment instructions and static and dynamic webpages/content
+		=> Deployment Descriptor web.xml
+web.xml=> instruction to the webserver its a webapp		
+console Appliation: Main.java=>main=>run application=>Main.java=>main()
+<welcome-file-list>: describes the file names to be render on start of the application
+<welcome-file>index.html</welcome-file>=> index.html is the landing/home page of this application
+consoleapplication===> java archive file=>jar 
+<web-app></web-app>===> web archive file=>war
+enterprise appliation==>entrprise archive file => ear
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>web01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>
+		
+		port = 0-65535 out which [0-1025 not available] >1025
+		because many time some applicatin works on 8005/8080 we must change them as below
+		adminport 8005 to 12005
+		http/1.1  8080 to 12080
+		
+in java web application web container => org.apache.catalina
+Mar 20, 2024 12:20:38 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 725 ms
+Mar 20, 2024 12:20:38 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Catalina]
+Mar 20, 2024 12:20:38 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/8.5.78]
+Mar 20, 2024 12:20:39 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-12080"]
+Mar 20, 2024 12:20:39 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 775 ms
+
+
+url: http://localhost:12080/web01/index.html
+
+MyServlet.java=>Object=>output i.e. dyanamic page
+
+Default HttpMethod is GET 
+However we have below HTTP Methods
+GET			: GET Data from server
+POST        : Create new data on server
+PUT			: if data exist modify  if not create	
+DELETE      : remove the data
+OPTIONS		: additional data	some config instructions
+PATCH		: additional data	
+HEAD		: header configuration
+
+
+@WebServlet({ "/MyServlet", "/dynamic", "/fun" })
+http://localhost:12080/web01/MyServlet
+http://localhost:12080/web01/dynamic
+http://localhost:12080/web01/fun
+
+
+response.getWriter().append("Served at: ").append(request.getContextPath());
+HttpServletREquest request=>
+HttpServletResponse response=> give output based on httpRequest
+
+PrintWriter =>response.getWriter()
+1. Retriving data from the request object on Server where client is making Get Requst
+index.html
+	Enter your name =>userName
+GreetingServlet
+	print Welcome userName.
+	
+
+web03
+index.html
+	bookId
+	bookName
+	authorName 
+	
+	
+
+

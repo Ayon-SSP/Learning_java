@@ -1,0 +1,7 @@
+com\training\demo\dao\StudentDao.class
+com\training\demo\util\HibernateUtil.class
+com\training\demo\model\Course.class
+com\training\demo\model\Student.class
+com\training\demo\App.class
+com\training\demo\dao\IDao.class
+com\training\demo\dao\CourseDao.class

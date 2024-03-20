@@ -1,5 +1,11 @@
 package com.training.learn.nestedclass;
-
+/*
+ * Anonymous inner class:
+ *  allwase created in the method & they don't have a name(if you don't want to inherit the class, you can use anonymous inner class) or (if you want to change the behavior of a method, only for a particular instance, you can use anonymous inner class)
+ * run: javac -d . *.java [2 files will be created in the package(AnonymousInnerClasses.class & Animal.class & Anime.class & Runnable.class & Animal$1.class & Animal$2.class & Animal$3.class & Anonymous)] every time you create a new anonymous inner class, a new class file will be created
+ * run: java com.training.learn.nestedclass.AnonymousInnerClasses
+ * usualy anonymous classes are made for interfaces
+ */
 public class AnonymousInnerClasses {
     
     public static void main(String[] args) {

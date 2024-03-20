@@ -2,6 +2,9 @@ package com.training.learn.nestedclass;
 
 /*
  * Nested/inner class: Non-static && Static class and method
+ * to compile: javac -d . *.java [2 files will be created in the package(OuterClass.class & OuterClass$InnerClass.class & Greeting.class)]
+ * >> com.training.learn.nestedclass.OuterClass    it returns: Inner class
+ * >> com.training.learn.nestedclass.OuterClass$InnerClass    it returns: Outer field: 10 Inner field: 20
  */
 public class OuterClass {
     // non-static field
