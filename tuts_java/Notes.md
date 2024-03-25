@@ -32,7 +32,6 @@
   with a large suite of tools:
   – A compiler (javac): takes the text file work of a developer and compiles it into a platform-independent Java file
   – An interpreter (java): used to run the compiled Java bytecode program
-  – A documentation generator (javadoc)
   – A class file packaging tool and so on.
   - (JDK)(software development environment which is used to develop Java applications) -> (JRE)(provide the runtime environment) -> (JVM)(environment in which Java bytecode can be executed)
         - -> javadoc, RMI compiler, debuggers, applet viewer.
@@ -40,23 +39,24 @@
   - Java Runtime Environment (JRE) is the runtime environment for Java applications. It is physically existent. It contains the Java Virtual Machine (JVM), the core libraries and other additional components to run applications and applets written in Java.
   - Java Virtual Machine (JVM)(OS Specific) is the `heart` of the Java environment. It is an abstract computing machine that enables a computer to run a Java program. It exists physically. It is a software process that `converts the compiled Java byte code to machine language`.
   - Garbage collection thread: JVM has a garbage collection thread that `automatically` removes the unused memory from the heap memory.
-- jvm(platform dependent): .class is a compiled file and can directly run any where.
+- jvm(platform dependent): .class is a compiled file and can directly run any where. but to generate the .class file we need the jdk which is platform dependent.
+  – A documentation generator (javadoc)
 ```bash
-path: C:\Program Files\Java\jdk-16.0.1\bin
+path:      C:\Program Files\Java\jdk-16.0.1\bin
 classpath: C:\Program Files\Java\jdk-16.0.1\lib
 JAVA_HOME: C:\Program Files\Java\jdk-16.0.1
 ```
 ```css
 Architecture 
 	a. JDK -> Java Development Kit     ->will have files/exe which will support building of java app
-	b. JRE -> Java Runtime Environment ->supports execution application build on java
+	b. JRE -> Java Runtime Environment ->supports execution application build on java (platform independant)
 	C. jvm -> java virtual machine (OS specific)
 				.java ->compile->.class
 				.class-> executed ->.class which is platform independant
 ```
 ############################################################################################
 Why?
-	*SEcure : Two way checking of the .class 
+	*Secure : Two way checking of the .class 
 		
 	1. Platform independant 
 	JVM ->OS dependant 
@@ -85,7 +85,7 @@ How ?
   javac -d . Main.java
   java com.trainer.Main
 ```
-- More than one class in a Folder with package:
+- More than one class in a Folder with package:2
 ```bash
 javac -d . *.java
 java com.training.learn.basics.Main AYON 'SSP - software specialist programmer' 1 23 0.4
@@ -207,7 +207,7 @@ Some of the commonly used tags in documentation comments:
 
 
 
-### Primitive Types
+## Primitive Types
 Primitive Types(simple types):
   – byte, short, int, and long for integer values
   – float and double for real/fractional values
@@ -228,7 +228,7 @@ Wrapper Class:Byte,Short,Integer,Long,Float,Double,Char,Boolean
 	2. initialize
 	3. use
 C/c++ forgot initialize add junk variable 
-Java if you do not provide values/initialize in case of Field variable
+Java if you do not provide values/initialize in case of class Field variable
 byte	0
 short	0
 int		0
@@ -260,7 +260,7 @@ Long  : 123L
 2. Field/Instance -> class , private, the get initialised when constructor => multiple copies
 3. statick variable-> single copy   ***
 
-String concatenation : we used + 
+String concatenation : we used +
 System.out.println(""+greeting1.getGreetingNo());
 greeting1.getGreetingNo()=> calling a method on greeting1 object
 
@@ -1863,7 +1863,10 @@ create a Maven project: [TO Learn](https://www.javatpoint.com/how-to-create-a-ma
 13. `junit5`: unit testing look jdbcdemo2 ma'ams code.
 14. to run a maven project: in the terminal `mvn clean package` `mvn clean install`
 15. (tomcat vscode extension) -> install tomcat server and run the project.
-
+### Dynamic Web Project
+1. create a project `DynamicWebProject` in eclipse.
+2. give project name`web01`
+3. select the target runtime as `Apache Tomcat v8.5`
 #### Go to `C:\CODE\1]_Lets_Compile\3]_learning_java\JDBC\jdbc-tuts2` to learn more about JDBC
 	1. Model
 	2. DAO
@@ -1898,3 +1901,12 @@ create a Maven project: [TO Learn](https://www.javatpoint.com/how-to-create-a-ma
 
 #### servelate: [Link](https://www.javatpoint.com/servlet-tutorial)
 #### [create-a-dynamic-web-project-in-vs-code](https://stackoverflow.com/questions/76013263/how-can-we-create-a-dynamic-web-project-in-vs-code)
+##### [life-cycle-of-a-servlet](https://www.geeksforgeeks.org/life-cycle-of-a-servlet/)
+##### [JavaServlets](https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaServlets.html)
+
+#### JSP
+##### [baeldung.jsp](https://www.baeldung.com/jsp)
+##### [javatpoint.jsp](https://www.javatpoint.com/jsp-api)
+##### [crud-in-jsp](https://www.javatpoint.com/crud-in-jsp)
+##### [jsp_directives](https://www.tutorialspoint.com/jsp/jsp_directives.htm)
+##### [jsp_actions](https://www.tutorialspoint.com/jsp/jsp_actions.htm)
