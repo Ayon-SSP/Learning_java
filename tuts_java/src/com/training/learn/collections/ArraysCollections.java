@@ -34,14 +34,14 @@ public class ArraysCollections {
         
         // array list only stores objects (reference data type)
         ArrayList<String> namesList = new ArrayList<String>(); // no fixed size
-        ArrayList<String> namesList1 = new ArrayList<>(Arrays.asList("Ayon", "Rahman", "Rafi"));
+        ArrayList<String> namesList1 = new ArrayList<>(Arrays.asList("Ayon", "karmakar", "sahab"));
         /*
          * [https://youtu.be/n60Dn0UsbEk?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&t=2232]
          * stack memory | heap memory
          * namesList -> |  [ref1,  ref2,   ref3, null, null]
          *              |   |      |       | 
          *              |  🔽     🔽      🔽
-         *              | "Ayon" "Rahman" "Rafi"
+         *              | "Ayon" "karmakar" "sahab"
          */
 
         for (int value : numbers2) {
@@ -55,13 +55,15 @@ public class ArraysCollections {
             System.out.println(name);
         }
 
+        namesList1.addAll(Arrays.asList("broo", "foooooo", "barrrrrr"));
+
         System.out.println(numbers.length + " " + numbers[0]); // 5 0
         System.out.println(namesList1.size() + " " + namesList1.get(0)); // 3 Ayon
         System.out.println(num + " " + numbers + " " + names + " " + multiDimArr + " " + numbers2 + " " + namesList + " " + namesList1); // [I@15db9742 [I@6d06d69c [Ljava.lang.String;@7852e922 [[I@4e25154f [I@70dea4e [Ljava.lang.String;@5c647e05 [Ayon, Rahman, Rafi]
         System.out.println("namesList1: " + namesList1); // namesList1: [Ayon, Rahman, Rafi]
         System.out.println(namesList1.toString());
 
-        namesList1.add("Rahim");
+        namesList1.add("krishna");
         namesList1.remove(namesList1.size() - 1);
 
         System.out.println("-------------------------");
@@ -99,7 +101,6 @@ public class ArraysCollections {
         list.add(2);
         list.size(); // 2
         list.get(0); // 1
-
 
         sc.close();
     }

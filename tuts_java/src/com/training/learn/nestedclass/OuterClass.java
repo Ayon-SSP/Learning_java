@@ -74,6 +74,7 @@ public class OuterClass {
         // System.out.println(innerStaticClass.innerInt);
         System.out.println(innerStaticClass.innerStaticInt);
         InnerStaticClass.staticDisplay();
+        innerStaticClass.display();
         // To access the `static method` out of the class
         // OuterClass.InnerStaticClass innerStaticClass = new
         // OuterClass.innerStaticClass()

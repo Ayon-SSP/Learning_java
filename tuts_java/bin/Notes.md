@@ -143,6 +143,9 @@ for classes which represents controllers => com.training.demo.controller
 for classes which represents data access logic => com.training.demo.dao
 for classes which represents services => com.training.demo.services
 
+- If you import a package, subpackages will not be imported.
+- 
+
 Creating project certain -> business need
 ```css
 package-> com.zomato
@@ -274,99 +277,52 @@ greeting1.getGreetingNo()=> calling a method on greeting1 object
 - what ever things are stored in the stack it give a unique id to it. that unique id -> contains the address of the object in the heap/stored directly in the compiled code.
 - when a non-premitive is `final` we cannot reassign it.
 
+## Control Statements
+> Javatpoint
 
 
-## Strings
-String(string buffer, string pul, string object)
-- *Code:* [src.com.training.learn.stringObj.\*.java]
-- Javatpoint: https://www.javatpoint.com/java-string & YT(https://youtu.be/Bj9Mx_Lx3q4?si=7elMjycmJjImFxu8)
-- String is immutable
-- toString() Method
-
-
-
-## Collections API in Java [img](https://media.geeksforgeeks.org/wp-content/uploads/20230406131807/Collections-in-Java.webp)
-- *Code:* [src.com.training.learn.collections.\*.java]
-- [gfg-collections-class-in-java](https://www.geeksforgeeks.org/collections-class-in-java/)
-- IS-A
-1. List -> ArrayList, LinkedList, Vector, Stack
-2. Set -> HashSet, LinkedHashSet, TreeSet
-3. Queue -> PriorityQueue, Deque
-- HAS-A
-4. Map -> Map & SortedMap
-
-
-```java
-Collection<String> c = new ArrayList<String>();
-c.add("A");
-c.remove("A");
-c.contains("A");
-c.size();
-c.isEmpty(); ... go to the file and check the methods
-
-List<User> users = new ArrayList<>();
-Iterator<User> iterator = users.iterator();
-while(iterator.hasNext()){
-  User user = iterator.next();
-  System.out.println(user);
-}
-
-Set<User> set = new HashSet<User>(); // no duplicate, unordered -hashcode and equals
-SortedSet<User> set = new TreeSet<User>(); // no duplicate, ordered -comparable and comparator
-
-Set<User> set = new LinkedHashSet<User>(); // no duplicate, ordered -insertion order
-Set<User> set = new TreeSet<User>(); // no duplicate, ordered -comparable and comparator
-Queue<User> queue = new PriorityQueue<User>(); // no duplicate, ordered -natural order
-Deque<User> deque = new ArrayDeque<User>(); // no duplicate, ordered -natural order
-Map<Integer, User> map = new HashMap<Integer, User>(); // no duplicate, unordered -hashcode and equals
-Map<Integer, User> map = new TreeMap<Integer, User>(); // no duplicate, ordered -comparable and comparator
-Map<Integer, User> map = new LinkedHashMap<Integer, User>(); // no duplicate, ordered -insertion order
-Collection<User> c = new ArrayList<User>();
-Comparator<User> comparator = new Comparator<User>(){
-  public int compare(User u1, User u2){
-	return u1.getName().compareTo(u2.getName());
-  }
-};
-
-for (Map.Entry<Integer, User> entry : map.entrySet()) {
-  System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
-}
-```
-```java
-class Registration{
-	private static Map<Student, List<Course>> studentCourseMap = new HashMap<Student, List<Course>>(); // where registration is a view which allws to use both objects.
-	to itrate
-	for (Map.Entry<Student, List<Course>> entry : studentCourseMap.entrySet()) {
-		System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
-		for(Course course: entry.getValue()){
-			System.out.println(course);
-		}
-		
-	}
-}
-```
 ## Object Oriented Programming in Java
-OOP SOLID PRINCIPLE :
-1. S SRP 						:Single Responsibility Principle
-2. O OCP Open/Closed Principle : Open for extenstion Close for modification
-3. L LSP Liskov Substitution Principle: 
-4. I ISP Interface Segregation Principle:
-5. D DSP Dependency Inversion Principle:
+OOPs (Object-Oriented Programming System)
+Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects. It simplifies software development and maintenance by providing some concepts:
+  1. Object
+  2. Class
+  3. Inheritance
+  4. Polymorphism
+  5. Abstraction
+  6. Encapsulation
 
-### Types of classes:
-1. Concreate class: class with implementation(POJO, JavaBean) | public class ClassName{}  | can be instantiated
-2. Abstract class: class without implementation | public abstract class ClassName{} | can't be instantiated
-3. Nested/inner class: class inside a class | public class ClassName{ public [static] class InnerClass{} } | can be instantiated [must do concepts]
-   1. Static Classes
-   2. Non-static Classes
-4. Anonymous class: class without a name | 
-5. Singleton class: class with only one object | public class ClassName{ private static ClassName obj = new ClassName(); private ClassName(){} public static ClassName getInstance(){ return obj; } } | can be instantiated.
-#### POJO vs JavaBean
+### Object-Oriented design PRINCIPLEs:
+
+Apart from these concepts, there are some other terms which are used in Object-Oriented design:
+  1. **Coupling:** refers to the degree of dependency between different classes or modules. Low coupling is desirable because it promotes better code reusability, maintainability, and flexibility.
+  2. **Cohesion:** in software engineering refers to the degree to which the elements within a module or component belong together. It's a measure of how strongly related and focused the responsibilities of a module are. High cohesion is desirable because it leads to modules that are focused, understandable, and easier to maintain.
+  3. **Association:** Association represents the relationship between the objects. Here, one object can be associated with one object or many objects. There can be four types of association between the objects:
+  	- One to One
+  	- One to Many
+  	- Many to One, and
+  	- Many to Many
+  4. **Aggregation:** HAS-A relationship. 
+  5. **Composition:** HAS-A relationship with a strong ownership.
+
+OOP SOLID PRINCIPLE :
+  1. S SRP :Single Responsibility Principle
+  2. O OCP Open/Closed Principle : Open for extenstion Close for modification
+  3. L LSP Liskov Substitution Principle: 
+  4. I ISP Interface Segregation Principle:
+  5. D DSP Dependency Inversion Principle:
+
+
+### POJO vs JavaBean
 > [pojo-in-java](https://www.javatpoint.com/pojo-in-java)
-##### POJO:
+> Every JavaBean is a Pojo, but not every pojo is java bean
+
+#### POJO:
+POJO : Plain old Java Object 
 **Rules**
-1. No Extend, No Implement, No outside Annotations(@Entity)
-2. No extra stuffs or libaries.
+1. Every class in Java is POJO 
+2. No Extend, No Implement, No outside Annotations(@Entity): when it is not extending any classes except the serialziation package 
+4. No extra stuffs or libaries.
+
 ```java
 publicclass Student{  
   private int id;  
@@ -374,21 +330,6 @@ publicclass Student{
   // ..
 }  
 ```
-
-
-##### JavaBean:
-1. No public arg-constructor
-2. Properties must be private
-3. public getter and setter methods
-4. Must be serializable(className implements Serializable)
-
-
-
-POJO : Plain old Java Object 
-What is POJO?
-Every class in Java is POJO 
-when it is not extending any classes except the serialziation package 
-
 Properties of POJO class
 Below are some properties of the POJO class:
   The POJO class must be public.
@@ -401,20 +342,76 @@ Below are some properties of the POJO class:
   It should not have any prespecified annotation.
 
 
-For example:
-{ "name" : "ABC",
-  "gender : "Female",
-  "phone : 1234567890 }
-
-What is JavaBean?
+#### JavaBean:
 If any class full fils below its a Java Bean
-1. Class is Pojo where it is exteding till Serializable
-2. Class has default constructor
-3. class has private data members 
-4. class has public getter and setter for private datamembers 
+1. Class has default constructor
+2. class has private data members 
+3. class has public getter and setter for private datamembers 
+4. No public arg-constructor
 
-Every JavaBean is a Pojo, but not every pojo is java bean
 
+
+### Types of classes:
+1. Concreate class: class with implementation(POJO, JavaBean) | public class ClassName{}  | Instantiable | Cannot be Abstract
+2. Abstract class: class without implementation | public abstract class ClassName{} | can't be instantiated | Interface(100%) |
+3. Nested/inner class: class inside a class | public class ClassName{ public [static] class InnerClass{} } | can be instantiated [must do concepts]
+   1. Static Classes
+   2. Non-static Classes
+4. Anonymous class: class without a name | Encapsulation topic | inner class without a name | new InterfaceName(){ //code } | can't be instantiated
+5. Singleton class: class with only one object | public class ClassName{ private static ClassName obj = new ClassName();}
+6. 'private ClassName(){} public static ClassName getInstance(){ return obj; }
+
+
+
+### Singleton class in Java 
+**Code:** [src.com.training.learn.singleton.\*.java] and multithreading
+> [singleton-class-in-java](https://www.javatpoint.com/singleton-class-in-java)
+- Lazy Initialization
+- can be instantiated(exactly one object).
+- Thread Safety
+- Serialization
+```java
+public class Singleton {
+    // Private static variable to hold the single instance of the class
+    private static Singleton instance;
+
+    // Private constructor to prevent instantiation from outside
+    private Singleton() {}
+
+    // Static method to get the single instance of the class
+    public static synchronized Singleton getInstance() {
+        // Lazy initialization: create the instance only if it hasn't been created yet
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+
+    // Other methods of the class
+    public void showMessage() {
+        System.out.println("Hello, I am a Singleton!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Get the Singleton instance
+        Singleton singletonInstance1 = Singleton.getInstance();
+        // Call a method on the instance
+        singletonInstance1.showMessage();
+
+        // Trying to create another instance
+        Singleton singletonInstance2 = Singleton.getInstance();
+
+        // Both instances point to the same object
+        if (singletonInstance1 == singletonInstance2) {
+            System.out.println("Both instances are the same object.");
+        } else {
+            System.out.println("Instances are different.");
+        }
+    }
+}
+```
 
 ### Class && Object
 ref:
@@ -422,7 +419,7 @@ ref:
 	- javatpoint: https://www.javatpoint.com/java-oops-concepts
 
 ```java
-public class className extends ParentClass implements Interface1, Interface2{
+public class className extends ParentClass implements Interface1, Interface2 {
 	// Fields(class members, Instance variables) [A variable which is created inside the class but outside the method is known as an instance variable. 
     // Instance variable doesn't get memory at compile time. It gets memory at runtime when an object or instance is created. That is why it is known as an instance variable.]
 
@@ -433,10 +430,10 @@ public class className extends ParentClass implements Interface1, Interface2{
 
 	// Blocks(first static block, then instance block)
 		// static block
-		// instance block
 		static {
-
+			
 		}
+    	// instance block
 		{
 
 		}
@@ -458,29 +455,17 @@ public class className extends ParentClass implements Interface1, Interface2{
 - this => keyword used to refer to the current object
 - default and overloaded constructor (polymorphism)
 
-
-- *Code:* [src.com.training.learn.oop.\*.java]
 - all objects are stored in heap memory
 - Coupling, Cohesion, Association(1-1, 1-N...), Aggregation, Composition.
 - Overriding Object.toString() -> Greeting/Contact -> to provide custom string on the call of toString()
-
-
-- **coupling:** refers to the degree of dependency between different classes or modules. Low coupling is desirable because it promotes better code reusability, maintainability, and flexibility.
-- **Cohesion:** in software engineering refers to the degree to which the elements within a module or component belong together. It's a measure of how strongly related and focused the responsibilities of a module are. High cohesion is desirable because it leads to modules that are focused, understandable, and easier to maintain.
-- **Association:** Association represents the relationship between the objects. Here, one object can be associated with one object or many objects. There can be four types of association between the objects:
-	- One to One
-	- One to Many
-	- Many to One, and
-	- Many to Many
-
 
 - int arr[]; arr getting defined in the stack
 - arr = new int[5]; and now the memory is allocated in the heap.
 - int arr[] = new int[5]; // 5 is the size of the array
 
 - ToWatch: 
-  - Class format: Traner_notes\src\org\training\learn\model\Book.java
-  - Class Object: Traner_notes\src\org\training\OuterClass.java
+  - Class Object: **Code:** [src\com\training\learn\basics\OuterClass.java]
+  - Book.class *** HAS-A relationship
 
 - instanceof: test whether the object is an instance of the specified type (class or subclass or interface). || obj instanceof className
 - Obj.getClass().getName()... many just use vscode to get the methods and variables of the object.
@@ -492,7 +477,7 @@ Using clone() method: @Override public Object clone() throws CloneNotSupportedEx
 Using newInstance() method of the Class class   || MyClass instance1 = (MyClass) myClass.newInstance();
 Using newInstance() method of the Constructor class
 Using Deserialization
-- Rectangle r1=new Rectangle(), r2=new Rectangle();//creating two objects  
+- Rectangle r1=new Rectangle(), r2=new Rectangle(); //creating two objects  
 
 #### Method in Java
 > [method-in-java](https://www.javatpoint.com/method-in-java)
@@ -505,13 +490,16 @@ Using Deserialization
    2. Mutator Method setVal(): sets the value of the variable
 3. Abstract Method: abstract void method_name(); (abstract method is a method declared without an implementation)
 
-
-
-
+##### Local variable
+- Local variable: declared withing the functions exist within that function
+    1. local variable has block scope. {}
+    2. must have data type metioned and initialized before use
+    3. depending on it type
+    4. local class can't be static
 
 #### Constructor
 > [Link](https://www.javatpoint.com/java-constructor)
-**Code**: [src.com.training.learn.constructor.\*.java]
+**Code:** [src.com.training.learn.constructor.\*.java]
 new Greeting() => Constructor of the Greeting Class => Default Constructor
 	
 Constructor
@@ -526,52 +514,49 @@ Constructor
 	- ClassName(){this(a = 1, b = 4)} => default constructor
 	- ClassName(int a, int b){} => overloaded constructor
 
+1. Java Copy Constructor
+	```java
+	ClassName(ClassName obj){
+	//copy fields
+	}
+	```
+2.  Copying values without constructor
+	```java
+	public class Greeting {
+	String greeting;
+	public Greeting(Greeting obj){
+		greeting = obj.greeting;
+	}
+	public static void main(String[] args) {
+		Greeting greeting1 = new Greeting();
+		greeting1.setGreeting("Hello");
+		Greeting greeting2 = new Greeting(greeting1);
+		System.out.println(greeting2.getGreeting());
+	}
+	}
+	```
+3. How to Compare Two Objects in Java [link](https://www.javatpoint.com/how-to-compare-two-objects-in-java)
+   - The equals() method of the Object class compare the equality of two objects. The two objects will be equal if they share the same memory address.
+   - - In Java, the == operator compares that two references are identical or not
+   ```java
+   public class MyClass {
+       private int value;
 
+       // Constructor, getters, setters, etc.
 
-
-#### Java Copy Constructor
-```java
-ClassName(ClassName obj){
-  //copy fields
-}
-```
-#### Copying values without constructor
-```java
-public class Greeting {
-  String greeting;
-  public Greeting(Greeting obj){
-    greeting = obj.greeting;
-  }
-  public static void main(String[] args) {
-    Greeting greeting1 = new Greeting();
-    greeting1.setGreeting("Hello");
-    Greeting greeting2 = new Greeting(greeting1);
-    System.out.println(greeting2.getGreeting());
-  }
-}
-```
-#### How to Compare Two Objects in Java [link](https://www.javatpoint.com/how-to-compare-two-objects-in-java)
-- The equals() method of the Object class compare the equality of two objects. The two objects will be equal if they share the same memory address.
-- - In Java, the == operator compares that two references are identical or not
-```java
-public class MyClass {
-    private int value;
-
-    // Constructor, getters, setters, etc.
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-        MyClass other = (MyClass) obj;
-        return value == other.value;
-    }
-} // When we override the equals() method, it is necessary to override the hashCode() method
-```
+       @Override
+       public boolean equals(Object obj) {
+           if (this == obj) {
+               return true;
+           }
+           if (obj == null || getClass() != obj.getClass()) {
+               return false;
+           }
+           MyClass other = (MyClass) obj;
+           return value == other.value;
+       }
+   } // When we override the equals() method, it is necessary to override the hashCode() method
+   ```
 
 #### static keyword
 > [static-keyword-in-java](https://www.javatpoint.com/static-keyword-in-java)
@@ -591,11 +576,10 @@ Type of methods:
   2. non-static:
 
 - outside classes cannot be static.
-- static methods can only access static variables and methods.
+- static methods can only access static variables and methods. to access you need to create an object.
 - static class can only have static methods and variables. ***
 - static class are always created inside the non-static class. ***
 - static methods will never be inherited/overridden. (When you define a static method in a subclass with the same name as a static method in the parent class, it won't override the parent class's method; instead, it will simply shadow it. This means that the subclass will have its own static method with the same name, but it won't affect the parent class's method or any other subclasses that might use it.) ***
-- static method in class can only access static variables and methods. to access you need to create an object.
 - if a class is static 'static class ClassName{}' then automatically all the methods and variables are static.
 
 
@@ -607,17 +591,10 @@ Type of methods:
 5. this can be passed as argument in the constructor call. | A(){ B b=new B(this);  //lines -> B(A obj){} } |
 6. this can be used to return the current class instance from the method. | return this; |
 
-#### Local variable
-- Local variable: declared withing the functions exist within that function
-    1. local variable has block scope. {}
-    2. must have data type metioned and initialized before use
-    3. depending on it type
-
-
 
 
 ### Inheritance
-**Code**: [src.com.training.learn.inheritance.\*.java]
+**Code:** [src.com.training.learn.inheritance.\*.java]
 > Must: Mastek trainee 
 >   -> Day5 bankapp06 && bankapp07(***) bankacc -> (saving, sails acc). inheriting.
 >   -> Day6 Demo24 Has-a relationship.
@@ -644,9 +621,6 @@ Types of Inheritance:
   1. extendable 
 	extends	 		class extends class, interface extends interface
 	implements 		class implements interface 
-
-#### Aggregation(HAS-A) open link [aggregation-in-java](https://www.javatpoint.com/aggregation-in-java)
-##### bankapp11
 ```java
 interface IDeposit{String deposit(double amount);}
 interface IWithdraw{String withdraw(double amount) throws InsufficientBalanceException;}
@@ -666,61 +640,9 @@ diagram
 	SavingAccount + CurrentAccount + SalaryAccount
 ```
 
+#### Aggregation(HAS-A) open link [aggregation-in-java](https://www.javatpoint.com/aggregation-in-java)
+> Tree has a Node, Car has a wheel, Department has a teacher
 
-### Polymorphism
-
-#### Method Overloading in Java
-#### Method Overriding in Java
-> runtime polymorphism or Dynamic Polymorphism
-
-**problem without method overriding:** Eg1:
-```java
-class Vehicle{  
-  void run(){System.out.println("Vehicle is running");}  
-}  
-class Bike extends Vehicle{  
-  public static void main(String args[]){  
-  Bike obj = new Bike();  
-  obj.run();  
-  }  
-}  
-
-```
-**Example of method overriding** Eg2:
-```java
-class Vehicle{  
-  void run(){System.out.println("Vehicle is running");}  
-}
-class Bike extends Vehicle{  
-  void run(){System.out.println("Bike is running safely");}  
-  public static void main(String args[]){  
-  Bike obj = new Bike();  
-  obj.run();  
-  }  
-}  
-```
-**A real example of Java Method Overriding**
-
-
-
-#### Covariant Return Type
-```java
-foo(){return new A();}
-obj.foo().print();  
- 
-```
-
-#### Super Keyword in Java
-
-#### Instance initializer block
-```java
-class A{  
-  {
-    System.out.println("instance initializer block is invoked");
-  }
-}
-```
-- first static block, then instance block, then constructor, then main method.
 
 
 
@@ -730,7 +652,7 @@ class A{
 - *Code:* [src.com.training.learn.polymorphism.\*.java]
 - ploy = many, morph = forms
 1. `compile time(static polymorphism)`: 💀 No such thing in java
-   1. `Method Overloading`: same method name with different parameters
+   1. `Method Overloading`: same method name with different paraeemeters
    2. No `operator Overloading` in java
    3. Constructor Overloading: same constructor name with different parameters
    4. Method Overloading and Type Promotion:  https://static.javatpoint.com/images/java-type-promotion.png
@@ -738,16 +660,11 @@ class A{
    1. `Method Overriding`: same method name with same parameters in parent and child class
       - @override: to check if the method is overridden or not
       - can't override static, final, private methods
-      - earling binding: method call is resolved at compile time [vdo](https://youtu.be/W6s7RZo06nA?si=MC8YR8DY3cmsJG4h)
-      - late binding: method call is resolved at runtime
    2. Below is an example of Dynamic Polymorphism	
 		Parent obj2 = new Child(); | at compile time Parent obj2 will consider it's own methods but while running it will consider the child methods.
 		The obj2 a refrence variable of type Parent
 		Who is point to objectof child new Child();
 		At runtime JVM will understand obj2 will behave like Child 
-
-
-
 
 - **Java Runtime Polymorphism with Data Member:** A method is overridden, not the data members, so runtime polymorphism can't be achieved by data members.
 ```java
@@ -763,7 +680,7 @@ class Honda3 extends Bike {
      Bike obj=new Honda3();  
      System.out.println(obj.speedlimit); // 90  
    }
-}
+} // as it is premitive it is directly store in stack, in case of methods/object it stores the pointer/reference in stack and the actual object in heap.
 ```
 - **Java Runtime Polymorphism with Multilevel Inheritance**
 ```java
@@ -802,7 +719,12 @@ class Dog extends Animal{
 
 - **Static Binding and Dynamic Binding:** Connecting a method call to the method body is known as binding.
 1. Static Binding (also known as Early Binding). 
+      method call is resolved at `compile time` same method name but different prameters [vdo](https://youtu.be/W6s7RZo06nA?si=MC8YR8DY3cmsJG4h)
 2. Dynamic Binding (also known as Late Binding).
+      method call is resolved at runtime.
+
+ 
+- **Covariant Return Type:** return type of the overriding method can be subclass of the return type of the overridden method.
 
 
 - **Java instanceof:** sout(obj instanceof ClassName);
@@ -814,8 +736,13 @@ class Dog extends Animal{
 ```
 
 
+#### Super Keyword
+> javatpoint
+
+
+
 #### Final Keyword
-**Final can be:** variable, method, class
+**Final can be:** variablea(stop value change), method(stop method overriding), class(stop inheritance)
 - can be static
 ```java
 class Bike{  
@@ -831,7 +758,7 @@ class Honda extends Bike{
    }  
 }   //Error Compile Time Error
 ```
-- final class can't be extended.
+- final class can't be extended(If you make any class as final, you cannot extend it).
 - final method can be inherited but can't be overridden.
 ```java
 class Bike{  
@@ -841,7 +768,7 @@ class Honda2 extends Bike{
    public static void main(String args[]){  
     new Honda2().run();  
    }  
-}  
+}  // error
 ```
 
 - final parameter?
@@ -853,14 +780,11 @@ class Honda2 extends Bike{
 ```
 
 
-
-
-
 ### Java Abstraction: 
 > javaTpoing/[John](https://youtu.be/HvPlEJ3LHgE?si=CdM3J1G-NAY9x29W) [Must](https://www.javatpoint.com/difference-between-abstract-class-and-interface)
-There are two ways to achieve abstraction in java
+There are two ways to achieve abstraction in java: showing only essential things to the user and hiding the internal details
     1. Abstract class (0 to 100%)
-    1. Interface (100%)
+    2. Interface (100%)
 #### Abstract class
 - *Code:* [src.com.training.learn.abstractclass.\*.java]
 - public `abstract` class Parent{`abstract` void methodsFoo();} || public class Son `extends` Parent{}/public class Daughter `extends` Parent{}
@@ -877,7 +801,6 @@ There are two ways to achieve abstraction in java
 	1. Concreate class: class with implementation(POJO, JavaBean) | public class ClassName{}
 	2. Abstract class: class without implementation | public abstract class ClassName{}
 - Abstraction is a process of hiding the implementation details and showing only functionality to the user. || Another way, it shows only essential things to the user and hides the internal details, for example, sending SMS where you type the text and send the message. You don't know the internal processing about the message delivery. || Abstraction lets you focus on what the object does instead of how it does it.
-
 - If a class has one abstract method then the class must be abstract.
 - Parent will give just the definition not the implementation(body)
 - All the abstract methods must be implemented in the child class or must override the methods.
@@ -896,7 +819,7 @@ There are two ways to achieve abstraction in java
   interface B extends A {foo()}
   Main implements B
 Interface:
-    1. variables: final & static only (cant initialize cause no object no constructor)(use: all child class will have same value).
+    1. variables: final & static only (should initialize cause no object no constructor)(use: all child class will have same value).
     2. methods: public & abstract by default | !final (final must contain body) | can create private but no use | can have (default/static) or both methods (need to have body)
     3. 
     4. may contains default methods
@@ -906,16 +829,16 @@ Interface:
 ```
 - every method in interface is public and abstract
 - Interface is a reference type in Java. It is similar to class. It is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface.
-- can't create an object of an interface
+- Can't instantiate(abstract class can't be instantiated directly)
 - an interface can extend multiple interfaces
 - [src\com\training\learn\interfaces\NestedInterface\B.java]
-
-- abstract class can  
-
-- Can't instantiate(abstract class can't be instantiated directly)
 - all are public abstract methods
 - variables: static and final by default. final cause if you can't create constructor then how you will initialize the variable. static cause, if no static then parent1(value1) and parent2(value1) so child.value will be ambiguous don't know which one to access so all variables are static.
 - An interface which has no member is known as a marker or tagged interface
+- **Java Functional Interfaces:** An interface with only one abstract method is called a functional interface. || @FunctionalInterface annotation is used to ensure an interface is a functional interface. || Runnable, ActionListener, Comparable are some of the examples of functional interfaces.
+	- can have any number of default, static methods but can contain only one abstract method.
+- **marker or tagged interface:** interface which has no member
+- **Nested Interface**
 
 ```java
 // Defining the interface One
@@ -961,20 +884,21 @@ public interface FileFilter {
   in interface: if we declare fealds is alwasys public static final but in abstract class we can have non-static and non-final fields which is access to every class so abstract is introduced to restrict the access of the fields.
 
 
-### Encapsulation
+### Java Encapsulation
 - Encapsulation is a process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines.
-
+- `Java bean` is the fully encapsulated class because all the data members are private here.
+- **Java style guide.Java Package**
 #### Access Modifiers in Java
 - `public`: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
 - `Protected`: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
 - `default`: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
 - `private`: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+#### Encapsulation in Java
 
 
-#### Data Hiding
 
 
-### Java Nested & Inner Classes
+### ⚓ Java Nested & Inner Classes
 - *Code:* [src.com.training.learn.nestedclass.\*.java]
 #### Java Inner Classes
 - can access all the members (data members and methods) of the outer class
@@ -982,7 +906,16 @@ public interface FileFilter {
 - A nested class is a member of its enclosing class. 
 - Non-static nested classes (inner classes) have access to other members of the enclosing class, even if they are declared private. 
 - Static nested classes do not have access to other members of the enclosing class. As a member of the OuterClass, a nested class can be declared private, public, protected, or package private. (Recall that outer classes can only be declared public or package private.)
+- An inner class is a part of a nested class. Non-static nested classes are known as **inner classes**.
+nested[inner, static]
 
+##### Types of Nested classes
+  > There are two types of nested classes non-static and static nested classes. The non-static nested classes are also known as inner classes.
+  1. Non-static nested class (inner class)
+  	- Member inner class
+  	- Anonymous inner class
+  	- Local inner class
+  2. Static nested class
 
 #### Inner Anonymous Classes
 1. Class (may be abstract or concrete).
@@ -1036,21 +969,81 @@ class TestNestedInterface1 implements Showable.Message {
 }
 ```
 
+## Strings
+String(string buffer, string pul, string object)
+- *Code:* [src.com.training.learn.stringObj.\*.java]
+- Javatpoint: https://www.javatpoint.com/java-string & YT(https://youtu.be/Bj9Mx_Lx3q4?si=7elMjycmJjImFxu8)
+- String is immutable
+- toString() Method
+
+
+## Collections API in Java [img](https://media.geeksforgeeks.org/wp-content/uploads/20230406131807/Collections-in-Java.webp)
+- *Code:* [src.com.training.learn.collections.\*.java]
+- [gfg-collections-class-in-java](https://www.geeksforgeeks.org/collections-class-in-java/)
+- IS-A
+1. List -> ArrayList, LinkedList, Vector, Stack
+2. Set -> HashSet, LinkedHashSet, TreeSet
+3. Queue -> PriorityQueue, Deque
+- HAS-A
+4. Map -> Map & SortedMap
+
+- Comparable<T> compareTo(Object o)
+- Compartor<T>	 compare(Object o1, Object O2)
 
 
 
+```java
+Collection<String> c = new ArrayList<String>();
+c.add("A");
+c.remove("A");
+c.contains("A");
+c.size();
+c.isEmpty(); ... go to the file and check the methods
+
+List<User> users = new ArrayList<>();
+Iterator<User> iterator = users.iterator();
+while(iterator.hasNext()){
+  User user = iterator.next();
+  System.out.println(user);
+}
+
+Set<User> set = new HashSet<User>(); // no duplicate, unordered -hashcode and equals
+SortedSet<User> set = new TreeSet<User>(); // no duplicate, ordered -comparable and comparator
+
+Set<User> set = new LinkedHashSet<User>(); // no duplicate, ordered -insertion order
+Set<User> set = new TreeSet<User>(); // no duplicate, ordered -comparable and comparator
+Queue<User> queue = new PriorityQueue<User>(); // no duplicate, ordered -natural order
+Deque<User> deque = new ArrayDeque<User>(); // no duplicate, ordered -natural order
+Map<Integer, User> map = new HashMap<Integer, User>(); // no duplicate, unordered -hashcode and equals
+Map<Integer, User> map = new TreeMap<Integer, User>(); // no duplicate, ordered -comparable and comparator
+Map<Integer, User> map = new LinkedHashMap<Integer, User>(); // no duplicate, ordered -insertion order
+Collection<User> c = new ArrayList<User>();
+Comparator<User> comparator = new Comparator<User>(){
+  public int compare(User u1, User u2){
+	return u1.getName().compareTo(u2.getName());
+  }
+};
+
+for (Map.Entry<Integer, User> entry : map.entrySet()) {
+  System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+}
+```
+```java
+class Registration{
+	private static Map<Student, List<Course>> studentCourseMap = new HashMap<Student, List<Course>>(); // where registration is a view which allws to use both objects.
+	to itrate
+	for (Map.Entry<Student, List<Course>> entry : studentCourseMap.entrySet()) {
+		System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+		for(Course course: entry.getValue()){
+			System.out.println(course);
+		}
+		
+	}
+}
+```
 
 
-
-
-### Singleton class in Java 
-**Code**: [src.com.training.learn.singleton.\*.java] and multithreading
-> [singleton-class-in-java](https://www.javatpoint.com/singleton-class-in-java)
-- Lazy Initialization
-- e
-
-### More
-#### Java Lambda Expressions & Functional Interfaces & Stream
+### Java Lambda Expressions & Functional Interfaces & Stream
 > *Code:* [src.com.training.learn.lambda.\*.java]
 ```java
 (argument-list) -> {body}  
@@ -1065,6 +1058,10 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+		numbers.forEach(number -> System.out.println(number));
+		numbers.forEach((number) -> System.out.println(number));
+		numbers.forEach(System.out::println);
+		
 
         // Using lambda expression to filter even numbers
         List<Integer> evenNumbers = numbers.stream()
@@ -1910,3 +1907,22 @@ create a Maven project: [TO Learn](https://www.javatpoint.com/how-to-create-a-ma
 ##### [crud-in-jsp](https://www.javatpoint.com/crud-in-jsp)
 ##### [jsp_directives](https://www.tutorialspoint.com/jsp/jsp_directives.htm)
 ##### [jsp_actions](https://www.tutorialspoint.com/jsp/jsp_actions.htm)
+
+#### crud: https://www.javaguides.net/2019/03/jsp-servlet-jdbc-mysql-crud-example-tutorial.html
+https://www.tutorialspoint.com/jsp/jsp_syntax.htm
+- https://jqueryvalidation.org/
+- https://www.geeksforgeeks.org/form-validation-using-jquery/
+- https://www.geeksforgeeks.org/postman-tutorial/
+- xml from w3 schools
+
+```txt
+Web Service Introduction - Architecture : https://www.geeksforgeeks.org/java-web-services/
+. WSDL Structure - 							https://www.geeksforgeeks.org/wsdl-introduction/
+. Sample WSDL with usage of XML:			https://www.geeksforgeeks.org/xml-basics/
+. XSD:										https://www.w3schools.com/xml/schema_intro.asp
+. SOAP Service:								https://www.javatpoint.com/soap-web-services
+. REST Service / REST Service Operation	   			https://www.digitalocean.com/community/tutorials/restful-web-services-tutorial-java
+. Postman Tool Introduction: https://www.geeksforgeeks.org/postman-tutorial/
+. SoapUI Tool Introduction
+https://www.bing.com/search?q=SoapUI+Tool+Introduction+tutorial&qs=n&form=QBRE&sp=-1&lq=0&pq=soapui+tool+introduction+tutorial&sc=0-33&sk=&cvid=46E4BE1427B74475814C7AA4AAFD8DEF&ghsh=0&ghacc=0&ghpl=				
+```

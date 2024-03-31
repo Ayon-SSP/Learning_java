@@ -19,11 +19,11 @@ public class Main implements B, C {
         // interface C {default foo() default inC() static inC2()}
         // Main implements B, C 
 
-
         Main obj = new Main();
         obj.foo();
         obj.inC();
         C.inC2();
+        // obj.x = 20; // static final variable can't be reassigned
+        System.out.println(C.x);
     }
-
 }

@@ -36,10 +36,5 @@ public class StringLearn {
         sbf.append(" World!");
         System.out.println(sbf); // Hello World!
         System.out.println(sbf.capacity()); // 21
-
-        
-
-
-
     }
 }

@@ -13,5 +13,4 @@ public class NameStr {
         this.id = id;
         this.name = name;
     }
-
 }

@@ -27,20 +27,41 @@ Java ☕:
    2. javadoc tags
    3. Java Naming Convention
 4. Primitive Types
-5. Strings (inc)
-6. Collections in Java (inc)
-   1. ArrayList
-   2. Map
-   3. Set
-7. .
-8. Object Oriented Programming in Java
-   1. POJO vs JavaBean
-   2. Class && Object
-   3. Java Abstraction
+5. Control Statements
+6. Object Oriented Programming in Java
+   1. Object-Oriented design
+   2. POJO vs JavaBean
+   3. Types of classes
+      - Singleton class
+   4. Class && Object
+      - Methods:
+      - Constructor
+      - static keyword
+      - this keyword
+      - Local variables
+   5. Inheritance
+      - inheritance(IS-A)
+      - aggregation(HAS-A)
+   6. Polymorphism
+      - Overloading, Overriding
+      - Runtime Polymorphism
+      - Super & Final Keyword
+   7. Abstraction
       1. Abstract class
       2. Interface
       3. Abstract vs Interface
-9.  
-10. 
+   8. Encapsulation
+      - Access Modifiers in Java
+      - Encapsulation
+7. ⚓ Java Nested & Inner Classes
+8. Strings
+9. Collections in Java
+   1. ArrayList
+   2. Map
+   3. Set...
+10. Java Lambda Expressions & Functional Interfaces & Stream 🤖
 11. 
-12. 
+12. Exception Handling ⚠️
+13. 
+14. 
+15. 
