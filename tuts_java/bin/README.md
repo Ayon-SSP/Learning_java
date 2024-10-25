@@ -49,7 +49,8 @@ Java ☕:
    7. Abstraction
       1. Abstract class
       2. Interface
-      3. Abstract vs Interface
+      3. Marker Interface
+      4. Abstract vs Interface
    8. Encapsulation
       - Access Modifiers in Java
       - Encapsulation
@@ -60,8 +61,13 @@ Java ☕:
    2. Map
    3. Set...
 10. Java Lambda Expressions & Functional Interfaces & Stream 🤖
-11. 
+11. Enum in Java
 12. Exception Handling ⚠️
 13. 
 14. 
 15. 
+
+
+
+ToLook:
+solid principles

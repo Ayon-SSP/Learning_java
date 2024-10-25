@@ -49,11 +49,13 @@ JAVA_HOME: C:\Program Files\Java\jdk-16.0.1
 ```css
 Architecture 
 	a. JDK -> Java Development Kit     ->will have files/exe which will support building of java app
-	b. JRE -> Java Runtime Environment ->supports execution application build on java (platform independant)
+	b. JRE -> Java Runtime Environment ->supports execution application build on java (platform independant)| only gives the envirment | executing Java bytecode | libraries and other components necessary for running Java applications | When you install the JRE on your system, you can run Java programs without needing to compile them yourself
 	C. jvm -> java virtual machine (OS specific)
-				.java ->compile->.class
+				.java ->compile/debug->.class
 				.class-> executed ->.class which is platform independant
 ```
+
+JDK converts `.java` to `.class` javac compiler which is provided by jDK ***
 ############################################################################################
 Why?
 	*Secure : Two way checking of the .class 
@@ -134,7 +136,7 @@ Main() => default constructor/non parameterised constructor
 
 ## 👷‍♂️ Java style guide
 ### Java Package
-
+Java Package: java, lang, awt, javax, swing, net, io, util, sql etc.
 Project must have one public class with public void static main(String [] args){}:- Main.java/App.java
 Project all classes should be kept inside relevant packages 
 package for Main.java => com.training.demo.Main.java
@@ -224,7 +226,7 @@ Literals(constants values):
 
 8 Data types
 Primitive: byte,short,int,long,float,double,char,boolean
-Wrapper Class:Byte,Short,Integer,Long,Float,Double,Char,Boolean
+Wrapper Class: Byte,Short,Integer,Long,Float,Double,Char,Boolean
 
 -- variable 
 	1. declare
@@ -261,7 +263,7 @@ Long  : 123L
 
 1. Local variable -> function paratmeters {} variable 
 2. Field/Instance -> class , private, the get initialised when constructor => multiple copies
-3. statick variable-> single copy   ***
+3. static variable-> single copy   ***
 
 String concatenation : we used +
 System.out.println(""+greeting1.getGreetingNo());
@@ -316,11 +318,21 @@ OOP SOLID PRINCIPLE :
 > [pojo-in-java](https://www.javatpoint.com/pojo-in-java)
 > Every JavaBean is a Pojo, but not every pojo is java bean
 
+| Feature | POJO | Java Bean |
+|---|---|---|
+| Restrictions | No special restrictions | Must follow certain conventions |
+| Member Control | Limited | Full control |
+| Serializable | Can implement | Must implement |
+| Field Access | By name | Getters and setters |
+| Field Visibility | Any | Private |
+| Constructor | May or may not have no-arg constructor | Must have no-arg constructor |
+| Use Case | When you don't want to restrict members and give users complete access | When you want to restrict access to members and provide a controlled interface |
+
 #### POJO:
 POJO : Plain old Java Object 
 **Rules**
 1. Every class in Java is POJO 
-2. No Extend, No Implement, No outside Annotations(@Entity): when it is not extending any classes except the serialziation package 
+2. No Extend, No Implement, No outside Annotations(@Entity): when it is not extending any classes MAY OR MAYNOT implement the serialziation package 
 4. No extra stuffs or libaries.
 
 ```java
@@ -344,7 +356,7 @@ Below are some properties of the POJO class:
 
 #### JavaBean:
 If any class full fils below its a Java Bean
-1. Class has default constructor
+1. Class MUST has default constructor
 2. class has private data members 
 3. class has public getter and setter for private datamembers 
 4. No public arg-constructor
@@ -360,16 +372,17 @@ If any class full fils below its a Java Bean
 4. Anonymous class: class without a name | Encapsulation topic | inner class without a name | new InterfaceName(){ //code } | can't be instantiated
 5. Singleton class: class with only one object | public class ClassName{ private static ClassName obj = new ClassName();}
 6. 'private ClassName(){} public static ClassName getInstance(){ return obj; }
+7. final class: Final class is a complete and immutable class, so data elements do not change by external access | Final class provides security as it cannot be extended or inherited by any other class,
 
-
-
-### Singleton class in Java 
+#### Singleton class in Java 
 **Code:** [src.com.training.learn.singleton.\*.java] and multithreading
 > [singleton-class-in-java](https://www.javatpoint.com/singleton-class-in-java)
 - Lazy Initialization
 - can be instantiated(exactly one object).
 - Thread Safety
-- Serialization
+- Serialization: it is a marker interface(interface that doesn't declare any required methods)
+
+
 ```java
 public class Singleton {
     // Private static variable to hold the single instance of the class
@@ -459,8 +472,8 @@ public class className extends ParentClass implements Interface1, Interface2 {
 - Coupling, Cohesion, Association(1-1, 1-N...), Aggregation, Composition.
 - Overriding Object.toString() -> Greeting/Contact -> to provide custom string on the call of toString()
 
-- int arr[]; arr getting defined in the stack
-- arr = new int[5]; and now the memory is allocated in the heap.
+- int arr[]; arr getting defined in the stack(compile time)
+- arr = new int[5]; and now the memory is allocated in the heap.(`dynamically` at `run time`)
 - int arr[] = new int[5]; // 5 is the size of the array
 
 - ToWatch: 
@@ -491,7 +504,7 @@ Using Deserialization
 3. Abstract Method: abstract void method_name(); (abstract method is a method declared without an implementation)
 
 ##### Local variable
-- Local variable: declared withing the functions exist within that function
+- Local variable/class: declared withing the functions exist within that function
     1. local variable has block scope. {}
     2. must have data type metioned and initialized before use
     3. depending on it type
@@ -587,7 +600,7 @@ Type of methods:
 1. this can be used to refer current class instance variable. | this.variableName = x |
 2. this can be used to invoke current class method (implicitly) | this.methodName(args); |
 3. this() can be used to invoke current class constructor. | ClassName(){ this(args); }  | ClassName(arg1, arg2, arg3){} ClassName(arg1, arg2, arg3, arg4){ this(arg1, arg2, arg3); this.arg4 = arg4 } *** |
-4. this can be passed as an argument in the method call.  | this.methodName(this); |
+4. this can be passed as argument in the method call.  | this.methodName(this); |
 5. this can be passed as argument in the constructor call. | A(){ B b=new B(this);  //lines -> B(A obj){} } |
 6. this can be used to return the current class instance from the method. | return this; |
 
@@ -613,7 +626,7 @@ Types of Inheritance:
 	1. Single Inheritance: A -> B
 	2. Multilevel Inheritance: A -> B -> C
 	3. Hierarchical Inheritance: A -> B, A -> C, A -> D
-	4. Multiple Inheritance: A-> Child, B-> Child, C-> Child
+	4. Multiple Inheritance: A -> Child, B-> Child, C-> Child
       	- Java does not support multiple inheritance
         	- A.num | B.num | C.num || now Child.num will be ambiguous, so we use interface
 	5. Hybrid Inheritance: A -> B, A -> C, B -> D, C -> D
@@ -644,8 +657,6 @@ diagram
 > Tree has a Node, Car has a wheel, Department has a teacher
 
 
-
-
 ### Polymorphism
 
 #### Runtime Polymorphism(Dynamic Method Dispatch, Overriding)
@@ -655,7 +666,7 @@ diagram
    1. `Method Overloading`: same method name with different paraeemeters
    2. No `operator Overloading` in java
    3. Constructor Overloading: same constructor name with different parameters
-   4. Method Overloading and Type Promotion:  https://static.javatpoint.com/images/java-type-promotion.png
+   4. Method Overloading and Type Promotion:  [Type Promotion img](https://static.javatpoint.com/images/java-type-promotion.png)
 2. `Run time(dynamic polymorphism)`:
    1. `Method Overriding`: same method name with same parameters in parent and child class
       - @override: to check if the method is overridden or not
@@ -761,7 +772,7 @@ class Honda extends Bike{
 - final class can't be extended(If you make any class as final, you cannot extend it).
 - final method can be inherited but can't be overridden.
 ```java
-class Bike{  
+class Bike {  
   final void run(){System.out.println("running...");}  
 }  
 class Honda2 extends Bike{  
@@ -775,7 +786,7 @@ class Honda2 extends Bike{
 ```java
   int cube(final int n){  
    n=n+2;//can't be changed as n is final  
-   n*n*n;  
+   return n*n*n;  
   }  
 ```
 
@@ -790,16 +801,9 @@ There are two ways to achieve abstraction in java: showing only essential things
 - public `abstract` class Parent{`abstract` void methodsFoo();} || public class Son `extends` Parent{}/public class Daughter `extends` Parent{}
   ```java
   Abstract class:
-    1. Constructor / abstract constructor not allowed(abstract classes cannot be instantiated directly)
-    2. abstract and non-abstract methods
-    3. static/final variables/methods
-    4. Not instantiated: can\'t create an object of an abstract class.
     5. Class can't be private or final
     6. abstract static/final methods not allowed(Final/static methods can't override them. so, can't use in child class)(static methods are not override(static methods are belongs to class not object))
   ```
-- class Types:
-	1. Concreate class: class with implementation(POJO, JavaBean) | public class ClassName{}
-	2. Abstract class: class without implementation | public abstract class ClassName{}
 - Abstraction is a process of hiding the implementation details and showing only functionality to the user. || Another way, it shows only essential things to the user and hides the internal details, for example, sending SMS where you type the text and send the message. You don't know the internal processing about the message delivery. || Abstraction lets you focus on what the object does instead of how it does it.
 - If a class has one abstract method then the class must be abstract.
 - Parent will give just the definition not the implementation(body)
@@ -818,15 +822,8 @@ There are two ways to achieve abstraction in java: showing only essential things
   interface A {foo() bar()}
   interface B extends A {foo()}
   Main implements B
-Interface:
-    1. variables: final & static only (should initialize cause no object no constructor)(use: all child class will have same value).
-    2. methods: public & abstract by default | !final (final must contain body) | can create private but no use | can have (default/static) or both methods (need to have body)
-    3. 
-    4. may contains default methods
-    5. can't have constructor
-    6. can't have instance variables
-
 ```
+- Nested interface
 - every method in interface is public and abstract
 - Interface is a reference type in Java. It is similar to class. It is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface.
 - Can't instantiate(abstract class can't be instantiated directly)
@@ -835,6 +832,7 @@ Interface:
 - all are public abstract methods
 - variables: static and final by default. final cause if you can't create constructor then how you will initialize the variable. static cause, if no static then parent1(value1) and parent2(value1) so child.value will be ambiguous don't know which one to access so all variables are static.
 - An interface which has no member is known as a marker or tagged interface
+
 - **Java Functional Interfaces:** An interface with only one abstract method is called a functional interface. || @FunctionalInterface annotation is used to ensure an interface is a functional interface. || Runnable, ActionListener, Comparable are some of the examples of functional interfaces.
 	- can have any number of default, static methods but can contain only one abstract method.
 - **marker or tagged interface:** interface which has no member
@@ -867,14 +865,44 @@ public interface Comparator<T> {
 public interface FileFilter {
   boolean accept(File pathname);
 };
-
 ```
 
+#### Marker Interface
+- A Marker Interface in Java is an interface that doesn't declare any required methods, but its presence alone indicates something about the implementing class to both the compiler and the runtime environment. Marker interfaces are used to provide metadata or behavioral information to classes that implement them.
+- Marker interfaces are also sometimes referred to as "tag" interfaces.
+
+
+- One well-known example of a marker interface in Java is the Serializable interface. When a class implements the Serializable interface, it indicates to Java's serialization mechanism that objects of that class can be serialized (converted to a stream of bytes) and deserialized (reconstructed from the stream of bytes).
+
+Here's an example of the Serializable marker interface:
+
+import java.io.Serializable;
+eg. 
+	1. Serializable: Object Persistence/Caching: objects can be saved to a file system or a database | Network Communication:
+	2. Cloneable
+	3. Remote
+	4. SingleThreadModel
+	5. RandomAccess
 
 #### Difference between Abstract class and Interface
+Both:
+	1. Can't be instantiated
+	2. Class can't be private or final
+Abstract:
+	1. fields: static, final, non-static, non-final, private, protected, public.
+	2. Constructor: can have a constructor.(only to initialize the variables)
+	3. notFinalNotStatic methods static/final methods are allowed, abstract static/final methods NOT allowed. || default not allowed || static methods allowed || can have private methods.
+	4. doesn't support multiple inheritance.
+Interface:
+	1. fields: static and final by default. only public.
+	2. Constructor: can't have a constructor.
+	3. all methods are public and abstract by default. || can have default and static methods.
+	4. supports multiple inheritance
+
+
 1. extends abstractClass, implements interface1, interface2(extends only one abstract class, implements)
 2. If adding features `extends`, if just want to implement then `implements`
-3. An abstract class can extend another Java class and implement multiple Java interfaces. *** An interface can extend another Java interface only.x    
+3. An abstract class can extend another Java class and implement multiple Java interfaces. *** An interface can extend another Java interface only.    
 
 - Abstract class can have abstract and non-abstract methods. Interface can have only abstract methods. Since Java 8, it can have default and static methods also.
 - Abstract class can have final, non-final, static and non-static variables abstract or non-abstract methods. Interface has only static and final variables and public, abstract methods.
@@ -886,14 +914,20 @@ public interface FileFilter {
 
 ### Java Encapsulation
 - Encapsulation is a process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines.
-- `Java bean` is the fully encapsulated class because all the data members are private here.
+- `Java bean` is the fully encapsulated class because all the data members are `private` here.
 - **Java style guide.Java Package**
 #### Access Modifiers in Java
 - `public`: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
 - `Protected`: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
 - `default`: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
 - `private`: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+
 #### Encapsulation in Java
+
+
+
+
+
 
 
 
@@ -1061,7 +1095,7 @@ public class Main {
 		numbers.forEach(number -> System.out.println(number));
 		numbers.forEach((number) -> System.out.println(number));
 		numbers.forEach(System.out::println);
-		
+
 
         // Using lambda expression to filter even numbers
         List<Integer> evenNumbers = numbers.stream()
@@ -1102,6 +1136,8 @@ public class Main {
         //                                     .filter(age -> age > 18 == 0)
         //                                     .mapToDouble(age -> age)
         //                                     .average();
+
+		// for more go to file.
 
     }
 }
@@ -1373,7 +1409,7 @@ public class Main {
 }
 ```
 
-#### Enum in Java
+## Enum in Java
 - predefined set of values that don't change. eg. days of the week.
 ```java
 public enum Booleans{  
@@ -1710,7 +1746,6 @@ public class Main {
  
 }
  ```
-TODO: Need to complet lambda pdf.
 
 
 
@@ -1751,7 +1786,7 @@ unchecked Exception
 3. Always remember we can have multiple catch on single try
 ```java
 try{}
-catch(InsufficientBalanceException e) {}
+catch (InsufficientBalanceException e) {}
 catch (RuntimeException e) {} // maintain the hiriarchy
 catch (Exception e) {}
 catch (Throwable e) {}
@@ -1765,6 +1800,10 @@ finally{} // used to close resources
 - **Code:** [src.com.training.learn.fileio.\*.java]
 - Complete File io [oracle docs](https://docs.oracle.com/javase/tutorial/essential/io/)
 
+Driver interface
+Connection interface
+Statement interface
+PreparedStatement interface
 
 ### Serialization and Deserialization in Java [Link](https://www.javatpoint.com/serialization-in-java)
 
@@ -1821,6 +1860,23 @@ public class OracleBlobExample {
         return inputStream;
     }
 }
+
+
+Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydatabase", "username", "password");
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM mytable");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM tbl_name");
+			rs.next()
+			rs.getInt(1)
+			rs.getString(2) or rs.getString("name")
+
+			PreparedStatement pstmt = conn.prepareStatement("INSERT INTO mytable (name, age) VALUES (?, ?)");
+			pstmt.setString(1, "John");
+            pstmt.setInt(2, 30);
+			int rowsAffected = pstmt.executeUpdate();
+
+
+
 ```
 
 ## JDBC: Day12_jdbc_singlton_thread & Day13_jdbcdemo02_junit4
@@ -1883,7 +1939,56 @@ create a Maven project: [TO Learn](https://www.javatpoint.com/how-to-create-a-ma
 #### DAO: 
 - [The DAO Pattern in Java](https://www.baeldung.com/java-dao-pattern) - 🎉[*** imp Has-A relation]
 - [DAO Class in Java](https://www.javatpoint.com/dao-class-in-java)
-#### Collection: 
+
+```java
+// dynamically load the JDBC driver for Oracle
+Class.forName("oracle.jdbc.driver.OracleDriver");
+conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ebook-app", "root", "password");
+PreparedStatement ps = conn.prepareStatement("select * from book_dtls where bookId=?");
+ps.setInt(1, id);
+ResultSet rs = ps.executeQuery();
+while (rs.next()){
+	rs.getInt(1)
+	rs.getString(2)
+	...
+}
+```
+
+##### Get recordes by search.
+```java
+public List<BookDtls> getBookBySerch(String ch) {
+
+List<BookDtls> list = new ArrayList<BookDtls>();
+BookDtls b = null;
+try {
+
+	String sql = "select * from book_dtls where bookname like ? or author like ? or bookCategory like ? and status=? ";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setString(1, "%" + ch + "%");
+	ps.setString(2, "%" + ch + "%");
+	ps.setString(3, "%" + ch + "%");
+	ps.setString(4, "Active");
+
+	ResultSet rs = ps.executeQuery();
+	while (rs.next()) {
+		b = new BookDtls();
+		b.setBookId(rs.getInt(1));
+		b.setBookName(rs.getString(2));
+		b.setAuthor(rs.getString(3));
+		b.setPrice(rs.getString(4));
+		b.setBookCategory(rs.getString(5));
+		b.setStatus(rs.getString(6));
+		b.setPhotoName(rs.getString(7));
+		b.setEmail(rs.getString(8));
+		list.add(b);
+	}
+} catch (Exception e) {
+	e.printStackTrace();
+}
+return list;
+}
+```
+
 #### Services: [Service Locator Pattern and Java](https://www.baeldung.com/java-service-locator-pattern)
 #### DTO: [The DTO Pattern (Data Transfer Object)](https://www.baeldung.com/java-dto-pattern)
 ##### Conclusion:
@@ -1901,12 +2006,203 @@ create a Maven project: [TO Learn](https://www.javatpoint.com/how-to-create-a-ma
 ##### [life-cycle-of-a-servlet](https://www.geeksforgeeks.org/life-cycle-of-a-servlet/)
 ##### [JavaServlets](https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaServlets.html)
 
+#### Life Cycle of a Servlet
+1. Servlet initialization by calling init() : only once when the url is hit for the first time.
+2. Request handling by calling service() method
+3. CRUD
+4. Servlet destruction by calling destroy() method
+
+RequestDispatcher in Servlet: servelet to another servlet
+```java
+doGet doPost
+req resp parameters
+resp.sendRedirect("../all_books.jsp");
+```
+
+
+```java
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/hello")
+public class HelloServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+    
+    @Override
+    public void init() throws ServletException {
+        // Initialization code, executed once when the servlet is first loaded
+        System.out.println("Servlet initialized.");
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html");
+        
+        PrintWriter out = response.getWriter();
+        out.println("<html><head><title>Hello Servlet</title></head>");
+        out.println("<body><h1>Hello, World! (GET)</h1></body></html>");
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html");
+        
+        PrintWriter out = response.getWriter();
+        out.println("<html><head><title>Hello Servlet</title></head>");
+        out.println("<body><h1>Hello, World! (POST)</h1></body></html>");
+    }
+    
+    @Override
+    public void destroy() {
+        // Cleanup code, executed once when the servlet is unloaded
+        System.out.println("Servlet destroyed.");
+    }
+}
+
+```
+
+
+
+
 #### JSP
 ##### [baeldung.jsp](https://www.baeldung.com/jsp)
 ##### [javatpoint.jsp](https://www.javatpoint.com/jsp-api)
 ##### [crud-in-jsp](https://www.javatpoint.com/crud-in-jsp)
 ##### [jsp_directives](https://www.tutorialspoint.com/jsp/jsp_directives.htm)
 ##### [jsp_actions](https://www.tutorialspoint.com/jsp/jsp_actions.htm)
+
+```jsp
+
+The Lifecycle of a JSP Page: https://static.javatpoint.com/images/jspflow.JPG
+The JSP pages follow these phases:
+	Translation of JSP Page
+	Compilation of JSP Page
+	Classloading (the classloader loads class file)
+	Instantiation (Object of the Generated Servlet is created).
+	Initialization ( the container invokes jspInit() method).
+	Request processing ( the container invokes _jspService() method).
+	Destroy ( the container invokes jspDestroy() method).
+
+
+
+JSP Action Tags: https://www.javatpoint.com/jsp-action-tags-forward-action
+
+<jsp:forward page="printdate.jsp" />  
+<% out.print("Today is:"+java.util.Calendar.getInstance().getTime()); %>  
+<jsp:forward page="printdate.jsp" >  
+<jsp:param name="name" value="javatpoint.com" /> in jsp <%= request.getParameter("name") %>  
+jsp:include action tag
+jsp:useBean action tag: https://www.javatpoint.com/jsp-useBean-action
+<jsp:useBean id= "instanceName" scope= "page | request | session | application"   
+class= "packageName.className" type= "packageName.className"  
+beanName="packageName.className | <%= expression >" >  
+</jsp:useBean>  
+<jsp:useBean id="obj" class="com.javatpoint.Calculator"/>  
+<%  
+int m=obj.cube(5);  
+out.print("cube of 5 is "+m);  
+%>  
+
+
+
+
+
+<div style="margin-top: 130px;">
+		<%@include file="footer.jsp"%></div>
+
+<c:if test="${empty userobj}">
+   <c:redirect url="../login.jsp" />
+</c:if>
+
+<c:if test="${not empty succMsg }">
+   <h5 class="text-center text-success">${succMsg }</h5>
+   <c:remove var="succMsg" scope="session" />
+</c:if>
+
+
+<a href="../delete?id=<%=b.getBookId()%>">Delete</a>
+
+direct servlet call
+<a href="../logout">Logout</a>
+
+<tbody>
+	<%
+	BookDAOImpl dao = new BookDAOImpl(DBConnect.getConn());
+	List<BookDtls> list = dao.getAllBooks();
+	for (BookDtls b : list) {
+	%>
+	<tr>
+		<td><%=b.getBookId()%></td>
+		<td><img src="../book/<%=b.getPhotoName()%>"
+			style="width: 50px; height: 50Px;"></td>
+		<td><%=b.getBookName()%></td>
+		<td><%=b.getAuthor()%></td>
+		<td><%=b.getIsbn()%></td>
+		<td><%=b.getGenre()%></td>
+		<td><%=b.getPrice()%></td>
+		<td><%=b.getBookCategory()%></td>
+		<td><%=b.getStatus()%></td>
+		<td><a href="edit_books.jsp?id=<%=b.getBookId()%>"
+			class="btn btn-sm btn-primary"><i class="fas fa-edit"></i>
+				Edit</a> <a href="../delete?id=<%=b.getBookId()%>"
+			class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i>
+				Delete</a></td>
+	</tr>
+	<%
+	}
+	%>
+</tbody>
+
+
+
+
+
+JSP scriptlet tag
+<% out.print("welcome to jsp"); %>  `
+
+expression tag
+<%= "welcome to jsp" %> 
+<%= n1+n2 %> 
+<%= java.util.Calendar.getInstance().getTime() %>  
+<%= "Welcome "+request.getParameter("uname") %>   
+<%= "Value of the variable is:" + data %>
+
+<%! %> <%! int data=50; %>  Declares variables and methods accessible throughout the JSP page.
+
+JSP directives
+<%@ directive attribute="value" %>  Defines attributes for the JSP page.
+<%@ page import="com.entity.BookDtls"%> 
+<%@ page import="com.DB.DBConnect"%>
+<%@ include file="navbar.jsp"%>
+<%@ page isThreadSafe="false" %>
+<%@ page errorPage="myerrorpage.jsp" %>  
+<%@ taglib uri="http://www.javatpoint.com/tags" prefix="mytag" %>  
+
+<%   
+response.sendRedirect("http://www.google.com");  
+%>  
+
+Exception Handling in JSP
+<%@ page errorPage="error.jsp" %>  if error got to error.jsp: https://www.javatpoint.com/exception-handling-in-jsp
+<location>/error.jsp</location>   if error in web.xml
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### crud: https://www.javaguides.net/2019/03/jsp-servlet-jdbc-mysql-crud-example-tutorial.html
 https://www.tutorialspoint.com/jsp/jsp_syntax.htm
@@ -1926,3 +2222,32 @@ Web Service Introduction - Architecture : https://www.geeksforgeeks.org/java-web
 . SoapUI Tool Introduction
 https://www.bing.com/search?q=SoapUI+Tool+Introduction+tutorial&qs=n&form=QBRE&sp=-1&lq=0&pq=soapui+tool+introduction+tutorial&sc=0-33&sk=&cvid=46E4BE1427B74475814C7AA4AAFD8DEF&ghsh=0&ghacc=0&ghpl=				
 ```
+
+
+
+### Sessions
+> key values and Storing Objects
+```java
+HttpSession session = req.getSession();
+session.setAttribute("succMsg", "Book Add Sucessfully");
+// to use 
+${succMsg} -> directly in jsp.
+${not empty userobj} -> to check if the object is empty or not.
+```
+
+```java
+HttpSession session = req.getSession();
+User us = new User();
+us.setName("Admin");
+session.setAttribute("userobj", us);
+User us = (User) session.getAttribute("userobj");
+```
+### Notifing
+```
+	<c:if test="${not empty failedMsg }">
+		<h5 class="text-center text-danger">${failedMsg }</h5>
+		<c:remove var="failedMsg" scope="session" />
+	</c:if>
+```
+
+### Password Hashing
