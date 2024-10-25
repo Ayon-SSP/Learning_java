@@ -2,6 +2,7 @@ package com.training.learn.abstractclass;
 
 public abstract class Parent{
     int age;
+    private int hs;
     static int count = 0;
     final String PARENT_NAME = "Parent";
 
@@ -24,5 +25,23 @@ public abstract class Parent{
     // create a static method
     public static void myStaticMethod() {
         System.out.println("This is a static method");
+    }
+
+    // default void myDefaultMethod() {
+    //     System.out.println("This is a default method");
+    // } // not allowed in abstract class
+}
+
+interface MathOperations {
+    default int add(int a, int b) {
+        return a + b + getOffset();
+    }
+
+    default int subtract(int a, int b) {
+        return a - b + getOffset();
+    }
+
+    private int getOffset() {
+        return 10; // A common offset used in calculations
     }
 }

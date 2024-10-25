@@ -11,6 +11,9 @@ public interface Engine {
     void decelerate();
     void turn();
     void changeGear();
+    private void commonMethod() {
+        System.out.println("Common method");
+    }
 
     // final void printModel(); // final methods are not allowed in interfaces
     // final void printModel(){

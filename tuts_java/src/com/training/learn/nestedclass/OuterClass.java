@@ -12,6 +12,7 @@ public class OuterClass {
 
     // Static field
     static int staticInt = 10;
+    // int staticInt = 10;
 
     public void display() {
         System.out.println("Outer class");
